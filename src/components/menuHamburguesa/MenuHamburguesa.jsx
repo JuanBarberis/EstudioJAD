@@ -1,5 +1,4 @@
 import React from 'react'
-import { CgClose } from "react-icons/cg";
 import { Link } from 'react-scroll';
 import './menuhamburguesa.css'
 
