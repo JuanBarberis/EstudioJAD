@@ -1,12 +1,15 @@
 .div-home {
     width: 100%;
     min-height: 90vh;
+    background-image: url('../../assets/imagenes/fondo-textura-gris.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .texto-presentacion {
     font-size: 90px;
     position: absolute;
-    color: black;
+    color: white;
     top: 70%;
     left: 5%;
     z-index: 1;
