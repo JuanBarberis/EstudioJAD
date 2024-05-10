@@ -1,53 +1,91 @@
-
 .nav-container {
     width: 100%;
     min-height: 10vh;
     background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 0 20px; /* Añadí un padding a los lados para separar el contenido del borde */
-    align-items: center; /* Alinear verticalmente en el centro */
+    padding: 0 20px;
+    /* Añadí un padding a los lados para separar el contenido del borde */
+    align-items: center;
+    /* Alinear verticalmente en el centro */
 }
 
 .link-container {
-    width: auto; /* Cambiado de 30% a auto para ocupar el ancho necesario */
+    width: auto;
+    /* Cambiado de 30% a auto para ocupar el ancho necesario */
     display: flex;
-    gap: 20px; /* Aumenté el espacio entre los enlaces */
+    gap: 20px;
+    /* Aumenté el espacio entre los enlaces */
     margin-right: 10px;
 }
 
 .link-path {
     text-decoration: none;
-    font-size: large; /* Ajusté el tamaño de fuente */
+    font-size: large;
+    /* Ajusté el tamaño de fuente */
     font-weight: 300;
     color: white;
 }
 
 .img-logo {
-    width: auto; /* Cambiado de 5% a auto para ajustar automáticamente el tamaño */
-    height: 50px; /* Cambiado de 5% a 50px */
+    width: 5%;
+    height:5%;
 }
- .menuhamburguesa {
+
+.div-menuhamburguesa {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 3px;  
+   
+}
+.div-menuhamburguesa :hover{
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 3px;  
+}
+
+.menuhamburguesa {
     color: white;
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
-} 
-
-
-@media screen and (max-width: 768px) {
-    .link-container {
-        display: none; /* Ocultar los enlaces en dispositivos móviles */
-    } 
+    width: 30px;
+    height: 30px;
+    padding: 3px;
 }
-@media screen and (min-width: 768px) {
+.menuhamburguesa :hover {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .link-container {
+        display: none;
+        /* Ocultar los enlaces en dispositivos móviles */
+    }
+}
+
+@media screen and (min-width: 767px) {
     .menuhamburguesa {
         display: none;
-     } 
+    }
+    .div-menuhamburguesa{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .nav-container {
-        padding: 0 10px; /* Reducir el padding en tablets */
+        padding: 0 10px;
+        /* Reducir el padding en tablets */
     }
 }
