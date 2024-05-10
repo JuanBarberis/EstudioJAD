@@ -1,27 +1,53 @@
+
 .nav-container {
     width: 100%;
     min-height: 10vh;
     background-color: black;
     display: flex;
     justify-content: space-between;
-    
+    padding: 0 20px; /* Añadí un padding a los lados para separar el contenido del borde */
+    align-items: center; /* Alinear verticalmente en el centro */
 }
 
 .link-container {
-    width: 30%;
+    width: auto; /* Cambiado de 30% a auto para ocupar el ancho necesario */
     display: flex;
-    align-items: end;
-    gap: 5%;
+    gap: 20px; /* Aumenté el espacio entre los enlaces */
+    margin-right: 10px;
 }
 
 .link-path {
     text-decoration: none;
-    font-size: x-large;
+    font-size: large; /* Ajusté el tamaño de fuente */
     font-weight: 300;
     color: white;
 }
 
 .img-logo {
-    width: 10%;
-    height: 10%;
+    width: auto; /* Cambiado de 5% a auto para ajustar automáticamente el tamaño */
+    height: 50px; /* Cambiado de 5% a 50px */
+}
+ .menuhamburguesa {
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+} 
+
+
+@media screen and (max-width: 768px) {
+    .link-container {
+        display: none; /* Ocultar los enlaces en dispositivos móviles */
+    } 
+}
+@media screen and (min-width: 768px) {
+    .menuhamburguesa {
+        display: none;
+     } 
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 10px; /* Reducir el padding en tablets */
+    }
 }

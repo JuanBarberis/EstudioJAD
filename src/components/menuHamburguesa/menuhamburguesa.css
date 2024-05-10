@@ -1,0 +1,46 @@
+.nav-container-hamburguesa {
+    width: 80%;
+    min-height: 40vh;
+    background: rgb(102, 102, 102);
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+
+
+.nav-container-hamburguesa.active {
+    height: auto;
+    /* Cuando se añade la clase 'active', la altura será automática */
+}
+
+.close-menu {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    gap: 15px;
+
+}
+
+.link-menu-hamburguesa {
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .nav-container-hamburguesa {
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+    }
+}
