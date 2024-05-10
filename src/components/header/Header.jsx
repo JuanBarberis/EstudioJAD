@@ -8,12 +8,12 @@ import { IoMenu, IoClose } from "react-icons/io5";
 export const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [render, setRender] = useState(false);
 
     const handleRender = () => {
-        // setRender(!render)
+        setRender(!render)
         setIsOpen(!isOpen);
     }
-
 
     return (
         <div className='nav-container'>
@@ -30,7 +30,7 @@ export const Header = () => {
                         <IoMenu onClick={handleRender} className='menuhamburguesa' />
                     </div>
             }
-            {isOpen && <MenuHamburguesa handleRender={handleRender} />}
+            {render ? <MenuHamburguesa handleRender={handleRender} open={isOpen} /> : ''}
 
             <div className='link-container'>
                 <Link className='link-path' to='inicio' spy={true} smooth={true} offset={0} duration={800}>Inicio</Link>
@@ -40,5 +40,7 @@ export const Header = () => {
             </div>
 
         </div>
+
+
     )
 }
