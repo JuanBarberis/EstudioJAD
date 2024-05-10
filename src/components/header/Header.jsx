@@ -3,7 +3,6 @@ import './header.css'
 import logo from '../../assets/imagenes/logo.png'
 import { Link } from 'react-scroll';
 import MenuHamburguesa from '../menuHamburguesa/MenuHamburguesa';
-import { FiMenu, FiX } from "react-icons/fi";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 export const Header = () => {
