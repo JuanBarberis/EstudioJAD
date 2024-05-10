@@ -5,31 +5,34 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    /* Añadí un padding a los lados para separar el contenido del borde */
     align-items: center;
-    /* Alinear verticalmente en el centro */
 }
 
 .link-container {
     width: auto;
-    /* Cambiado de 30% a auto para ocupar el ancho necesario */
     display: flex;
-    gap: 20px;
-    /* Aumenté el espacio entre los enlaces */
+    gap: 2rem;
     margin-right: 10px;
 }
 
+
 .link-path {
     text-decoration: none;
-    font-size: large;
-    /* Ajusté el tamaño de fuente */
+    font-size: 18px;
     font-weight: 300;
     color: white;
+    padding: 5px;
+    cursor: pointer; 
+}
+
+.link-path:hover {
+    border-bottom: 2px solid white;
+    color: rgb(239, 237, 237);
 }
 
 .img-logo {
     width: 5%;
-    height:5%;
+    height: 5%;
 }
 
 .div-menuhamburguesa {
@@ -39,10 +42,11 @@
     align-items: center;
     justify-content: center;
     border: 1px solid white;
-    border-radius: 3px;  
-   
+    border-radius: 3px;
+
 }
-.div-menuhamburguesa :hover{
+
+.div-menuhamburguesa :hover {
     background-color: white;
     color: black;
     width: 30px;
@@ -51,7 +55,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid white;
-    border-radius: 3px;  
+    border-radius: 3px;
 }
 
 .menuhamburguesa {
@@ -60,6 +64,7 @@
     height: 30px;
     padding: 3px;
 }
+
 .menuhamburguesa :hover {
     width: 30px;
     height: 30px;
@@ -78,7 +83,8 @@
     .menuhamburguesa {
         display: none;
     }
-    .div-menuhamburguesa{
+
+    .div-menuhamburguesa {
         display: none;
     }
 }
