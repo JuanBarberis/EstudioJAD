@@ -1,4 +1,42 @@
-.div-home{
+.div-home {
+    width: 100%;
     min-height: 90vh;
-    background-color: aqua;
+}
+
+.texto-presentacion {
+    font-size: 90px;
+    position: absolute;
+    color: black;
+    top: 70%;
+    left: 5%;
+    z-index: 1;
+    font-family: 'fantasy',
+}
+
+.image-gallery-container {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.image-gallery-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .image-gallery-container {
+        max-width: 100%;
+    }
+
+    .image-gallery-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .texto-presentacion{
+        font-size: 50px;
+        top: 50%;
+    }
 }
