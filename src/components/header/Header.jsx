@@ -35,6 +35,7 @@ export const Header = () => {
             <div className='link-container'>
                 <Link className='link-path' to='inicio' spy={true} smooth={true} offset={0} duration={800}>Inicio</Link>
                 <Link className='link-path' to='quienes-somos' spy={true} smooth={true} offset={0} duration={800}>Quienes Somos</Link>
+                <Link className='link-path' to='servicios' spy={true} smooth={true} offset={0} duration={800}>Servicios</Link>
                 <Link className='link-path' to='proyectos' spy={true} smooth={true} offset={0} duration={800}>Proyectos</Link>
                 <Link className='link-path' to='contacto' spy={true} smooth={true} offset={0} duration={800}>Contacto</Link>
             </div>
