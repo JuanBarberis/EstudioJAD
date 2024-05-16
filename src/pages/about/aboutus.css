@@ -1,4 +1,143 @@
-.div-aboutus{
+.div-aboutus {
+    width: 100%;
     min-height: 100vh;
-    background-color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: whitesmoke;
+
+}
+
+.div-title-about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.title-about {
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* .div-aboutus .div-title-about .div-servicios {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+} */
+
+/* .text-servicios {
+    color: rgb(90, 88, 88);
+    font-weight: bold;
+    font-size: 20px;
+} */
+
+.text-jad {
+    width: 70%;
+    display: flex;
+    font-size: 24px;
+    color: rgb(116, 114, 114);
+    text-align: center;
+}
+
+.div-nombres {
+    display: flex;
+    gap: 10%;
+}
+
+.div-nombres .texto-nombre {
+    font-size: 18px;
+    border: 1px solid grey;
+    background-color: grey;
+    color: white;
+    /* border-radius: 10px; */
+    text-align: center;
+    padding: 3px;
+    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.container-map {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.container-map .img-quienes-somos {
+    width: 60%;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.2); */
+
+}
+
+.div-box-about {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    align-items: center;
+    padding: 5;
+}
+
+@media (max-width: 900px) {
+    .div-nombres {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .div-nombres .texto-nombre{
+        padding: 10px;
+    }
+    .container-map .img-quienes-somos{
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .div-aboutus {
+        flex-direction: column-reverse;
+        
+    }
+
+    .div-title-about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .title-about {
+        width: 90%;
+    }
+
+    .container-map {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .container-map .img-quienes-somos{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .div-nombres {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .div-nombres .texto-nombre{
+        padding: 10px;
+    }
+    .text-jad{
+        font-size: 20px;
+    }
 }

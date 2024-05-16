@@ -1,4 +1,55 @@
-.div-proyects{
+.div-proyects {
     min-height: 100vh;
-    background-color: rgb(220, 220, 112);
+    background-color: whitesmoke;
+}
+
+.div-proyectos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.container-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.project-name{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.clase1 {
+    width: 400px;
+    height: 250px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;  
+}
+
+.clase2 {
+    width: 400px;
+    height: 250px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+
+.clase1:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.clase2:hover {
+    transform: scale(1.05);
+    opacity: 1;
 }
