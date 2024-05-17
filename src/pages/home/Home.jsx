@@ -13,30 +13,34 @@ import iconoWsp from '../../assets/imagenes/icono-whatsapp.png'
 const Home = () => {
 
     const [showMessage, setShowMessage] = useState(false);
-    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    // const carruselImage = [
-    //     {
-    //         original: imagen1,
-    //         thumbnail: imagen1,
-    //     },
-    //     {
-    //         original: imagen2,
-    //         thumbnail: imagen2,
-    //     },
-    //     {
-    //         original: imagen3,
-    //         thumbnail: imagen3,
-    //     },
-    //     {
-    //         original: imagen5,
-    //         thumbnail: imagen5,
-    //     },
-    //     {
-    //         original: imagen4,
-    //         thumbnail: imagen4,
-    //     }
-    // ]
+    const carruselImage = [
+        {
+            original: imagen1,
+            thumbnail: imagen1,
+            description:'ARQUITECTURA'
+        },
+        {
+            original: imagen2,
+            thumbnail: imagen2,
+            description:'INTERIORISMO'
+        },
+        {
+            original: imagen3,
+            thumbnail: imagen3,
+            description:'CONSTRUCCION '
+        },
+        {
+            original: imagen5,
+            thumbnail: imagen5,
+            description:'SOMOS ESTUDIO JAD '
+        },
+        {
+            original: imagen4,
+            thumbnail: imagen4,
+        }
+    ]
 
     // const imageStyles = {
 
@@ -45,18 +49,23 @@ const Home = () => {
     //     objectFit: 'cover',
 
     // };
+       const imageStyles = {
+        width: '100%',
+        height: '100vh',
+        objectFit: 'cover'
+    };
 
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setWindowWidth(window.innerWidth);
-    //     };
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
 
-    //     window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', handleResize);
 
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-    // }, []);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const handleWhatsAppClick = () => {
         const phoneNumber = '543513586001';
@@ -78,7 +87,7 @@ const Home = () => {
     return (
         <div className='div-home' id='inicio'>
 
-            {/* <ImageGallery
+            <ImageGallery
                 items={carruselImage}
                 showNav={false}
                 showPlayButton={false}
@@ -91,12 +100,13 @@ const Home = () => {
                     return (
                         <div className="image-gallery-image">
                             <img src={item.original} style={imageStyles} alt="" />
+                            <p className='texto-presentacion'>{item.description}</p>
                         </div>
                     );
                 }}
-            /> */}
+            />
 
-            <p className='texto-presentacion'>ESTUDIO JAD</p>
+            {/* <p className='texto-presentacion'>CONVERTIMOS TU SUEÑO, EN REALIDAD</p> */}
             <div className="whatsapp-container" onMouseEnter={handleWhatsAppMouseEnter} onMouseLeave={handleWhatsAppMouseLeave}>
                 <img
                     src={iconoWsp}
