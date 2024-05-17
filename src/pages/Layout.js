@@ -8,6 +8,9 @@ import Contact from './contact/Contact'
 import Servicios from './servicios/Servicios'
 import ProyectDetails from './proyects/proyectDetails/ProyectDetails'
 import LandingPage from '../layouts/LandingPage'
+import Arquitecture from './arquitecture/Arquitecture'
+import InteriorDesign from './interiorDesing/InteriorDesign'
+import Construction from './construction/Construction'
 
 export const router = createBrowserRouter([
     {
@@ -25,7 +28,10 @@ export const router = createBrowserRouter([
         path: '/',
         element: < MainLayouts />,
         children: [
-            { path: '/proyectos/:proyectId', element: <ProyectDetails /> }
+            { path: '/proyectos/:proyectId', element: <ProyectDetails /> },
+            { path: '/arquitectura', element: <Arquitecture /> },
+            { path: '/interiorismo', element: <InteriorDesign /> },
+            { path: '/construccion', element: <Construction /> },
         ]
     }
 ])
