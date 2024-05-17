@@ -60,7 +60,7 @@ const Proyects = () => {
                                 onClick={() => handleProjectClick(item.id)}
                                 
                             >
-                                <img src={item.imagen} className={item.className === 'clase1' ? 'clase1' : 'clase2'} />
+                                <img src={item.imagen} className={item.className === 'clase1' ? 'clase1' : 'clase2'} alt={item.nombre}/>
                                 <h2 className='project-name'>{item.nombre}</h2>
                             </div>
                         )

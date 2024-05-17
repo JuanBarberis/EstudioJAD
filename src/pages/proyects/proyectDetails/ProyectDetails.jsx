@@ -21,9 +21,7 @@ const ProyectDetails = () => {
         4: { nombre: 'Proyecto 4', descripcion: 'Descripción del Proyecto 4', imagen: Imagen4 },
         5: { nombre: 'Proyecto 5', descripcion: 'Descripción del Proyecto 5', imagen: Imagen5 },
     };
-    console.log(projectData)
-    console.log(projectId.proyectId
-    )
+  
     const project = projectData[projectId.proyectId];
 
     if (!project) {
@@ -34,7 +32,7 @@ const ProyectDetails = () => {
             <h1>{project.nombre}</h1>
             <img src={project.imagen} alt={project.nombre} />
             <p>{project.descripcion}</p>
-            <button onClick={()=> navigate(`/`)}>Volver atras</button>
+            <button onClick={()=> navigate(-1)}>Volver atras</button>
         </div>
     )
 }
