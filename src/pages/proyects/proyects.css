@@ -29,8 +29,8 @@
 .clase1 {
     width: 400px;
     height: 250px;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
+    /* border-top-left-radius: 30%;
+    border-top-right-radius: 30%; */
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     opacity: 0.5;  
 }
@@ -38,8 +38,8 @@
 .clase2 {
     width: 400px;
     height: 250px;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+    /* border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%; */
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     opacity: 0.5;
 }
