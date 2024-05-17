@@ -1,35 +1,31 @@
 import React from 'react'
 import './servicios.css'
-import { PiLightbulbFilamentThin, PiKeyLight , PiPencilLineThin } from "react-icons/pi";
+import { PiLightbulbFilamentThin, PiKeyLight, PiPencilLineThin } from "react-icons/pi";
 import { LiaToolsSolid, LiaPencilRulerSolid } from "react-icons/lia";
+import { useNavigate } from 'react-router-dom';
 
 const Servicios = () => {
 
+    const navigate = useNavigate()
     const data = [
         {
-            type: 'INTERIORISMO',
+            type: 'ARQUITECTURA',
             text: 'Te acompañamos en el proceso de elegir juntos cada revestimiento y detalle que corone tu espacio.',
-            icono: <PiLightbulbFilamentThin className="icono-servicio" />
+            icono: <PiLightbulbFilamentThin className="icono-servicio" />,
+            navigation: '/arquitectura'
         },
         {
-            type: 'CONSTRUCCIÓN',
+            type: 'INTERIORISMO',
             text: 'Desarrollamos distintos sistemas constructivos según la necesidad y preferencia del cliente.',
-            icono: <LiaPencilRulerSolid className="icono-servicio" />
+            icono: <LiaPencilRulerSolid className="icono-servicio" />,
+            navigation: '/interiorismo'
+
         },
         {
-            type: 'REFACCIÓN',
+            type: 'CONSTRUCCION',
             text: 'Nos apasiona transformar espacios, viendo y explotando el máximo potencial que tienen.',
-            icono: <LiaToolsSolid className="icono-servicio" />
-        },
-        {
-            type: 'PLANOS',
-            text: 'Relevamientos y proyectos, resolvemos de forma integral desde el 2D hasta el 3D.',
-            icono: <PiPencilLineThin className="icono-servicio" />
-        },
-        {
-            type: 'CONTRATACIÓN',
-            text: 'Desde conducción técnica hasta llave en mano, elegí el que necesites y dispongas.',
-            icono: <PiKeyLight  className="icono-servicio" />
+            icono: <LiaToolsSolid className="icono-servicio" />,
+            navigation: '/construccion'
         },
     ]
 
@@ -47,6 +43,7 @@ const Servicios = () => {
                                     </div>
                                     <h2 className='type-container'>{item.type}</h2>
                                     <p className='text-container'>{item.text}</p>
+                                    <button className='button-servicios' onClick={()=>navigate(`${item.navigation}`)}>Leer mas</button>
                                 </div>
                             </>
                         )
