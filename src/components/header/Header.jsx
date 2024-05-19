@@ -9,16 +9,28 @@ export const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [render, setRender] = useState(false);
+    const [navbar, setNavbar] = useState(false);
+
 
     const handleRender = () => {
         setRender(!render)
         setIsOpen(!isOpen);
     }
 
+    const changeBackground = () => {
+        if (window.scrollY >= 100) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground)
+
     return (
-        <div className='nav-container'>
+        <div className={navbar ? 'nav-container-active' : 'nav-container'}>
             <Link to="inicio" spy={true} smooth={true} duration={800} className='img-logo'>
-                <img src={logo} alt='img-logo' width={160} height={100} />
+                <img src={logo} alt='img-logo' className='logo-nav' />
             </Link>
             {
                 isOpen ?
@@ -35,8 +47,8 @@ export const Header = () => {
             <div className='link-container'>
                 <Link className='link-path' to='inicio' spy={true} smooth={true} offset={0} duration={800}>INICIO</Link>
                 <Link className='link-path' to='servicios' spy={true} smooth={true} offset={10} duration={800}>SERVICIOS</Link>
-                <Link className='link-path' to='proyectos' spy={true} smooth={true} offset={0} duration={800}>PORTFOLIO</Link>
-                <Link className='link-path' to='quienes-somos' spy={true} smooth={true} offset={0} duration={800}>ESTUDIO</Link>
+                <Link className='link-path' to='proyectos' spy={true} smooth={true} offset={-100} duration={800}>PORTFOLIO</Link>
+                <Link className='link-path' to='quienes-somos' spy={true} smooth={true} offset={-50} duration={800}>ESTUDIO</Link>
                 <Link className='link-path' to='contacto' spy={true} smooth={true} offset={0} duration={800}>CONTACTO</Link>
             </div>
 

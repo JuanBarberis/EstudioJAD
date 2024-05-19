@@ -1,13 +1,12 @@
 .nav-container-hamburguesa {
     width: 100%;
     min-height: 20vh;
-    /* background: rgb(102, 102, 102); */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.566);
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 103px;
-    /* margin-right: 10px; */
+    margin-top: 100px;
+    border: none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;   
     z-index: 1;
