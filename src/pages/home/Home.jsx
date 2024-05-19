@@ -13,59 +13,43 @@ import iconoWsp from '../../assets/imagenes/icono-whatsapp.png'
 const Home = () => {
 
     const [showMessage, setShowMessage] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const carruselImage = [
         {
             original: imagen1,
             thumbnail: imagen1,
-            description:'ARQUITECTURA'
+            description: 'ARQUITECTURA'
         },
         {
             original: imagen2,
             thumbnail: imagen2,
-            description:'INTERIORISMO'
+            description: 'INTERIORISMO'
         },
         {
             original: imagen3,
             thumbnail: imagen3,
-            description:'CONSTRUCCION '
+            description: 'CONSTRUCCION '
         },
         {
             original: imagen5,
             thumbnail: imagen5,
-            description:'SOMOS ESTUDIO JAD '
+            description: 'SOMOS ESTUDIO JAD '
         },
-        {
-            original: imagen4,
-            thumbnail: imagen4,
-        }
+
     ]
 
-    // const imageStyles = {
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         setWindowWidth(window.innerWidth);
+    //     };
 
-    //     width: windowWidth,
-    //     height: '100%',
-    //     objectFit: 'cover',
+    //     window.addEventListener('resize', handleResize);
 
-    // };
-       const imageStyles = {
-        width: '100%',
-        height: '100vh',
-        objectFit: 'cover'
-    };
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('resize', handleResize);
+    //     };
+    // }, []);
 
     const handleWhatsAppClick = () => {
         const phoneNumber = '543513586001';
@@ -86,7 +70,6 @@ const Home = () => {
 
     return (
         <div className='div-home' id='inicio'>
-
             <ImageGallery
                 items={carruselImage}
                 showNav={false}
@@ -96,17 +79,16 @@ const Home = () => {
                 autoPlay={true}
                 slideDuration={1000}
                 slideInterval={3000}
-                renderItem={(item) => {
-                    return (
-                        <div className="image-gallery-image">
-                            <img src={item.original} style={imageStyles} alt="" />
-                            <p className='texto-presentacion'>{item.description}</p>
-                        </div>
-                    );
-                }}
+                renderItem={(item) => (
+                    <div className="image-gallery">
+                        <img src={item.original} className='img-home-carrousel' alt="" />
+                    </div>
+                )}
             />
-
-            {/* <p className='texto-presentacion'>CONVERTIMOS TU SUEÑO, EN REALIDAD</p> */}
+            <div className='div-text-welcome'>
+                <p className='texto-presentacion'>{'ARQUITECTURA CON ESTILO'}</p>
+                <p className='texto-bienvenida'>{'Hola, te invitamos a pasar, sentite comodo'}</p>
+            </div>
             <div className="whatsapp-container" onMouseEnter={handleWhatsAppMouseEnter} onMouseLeave={handleWhatsAppMouseLeave}>
                 <img
                     src={iconoWsp}
@@ -114,16 +96,15 @@ const Home = () => {
                     alt="WhatsApp"
                     onClick={handleWhatsAppClick}
                     style={{
-                        width:'60px',
-                        height:'60px',
-                        position:'fixed',
-                        bottom:0,
-                        right:0,
-                        marginBottom:'20px',
-                        marginRight:'20px',
-                        cursor:'pointer'
+                        width: '60px',
+                        height: '60px',
+                        position: 'fixed',
+                        bottom: 0,
+                        right: 0,
+                        marginBottom: '20px',
+                        marginRight: '20px',
+                        cursor: 'pointer'
                     }}
-                   
                 />
                 {showMessage && <p className="whatsapp-message">¡Conversemos!</p>}
             </div>
