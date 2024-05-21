@@ -93,7 +93,7 @@ const InteriorDesing = () => {
         />
         <div className='div-text-arquitectura'>
           <p className='texto-bienvenida-arquitectura'>{'Interiorismo'}</p>
-          <p className='texto-presentacion-arquitectura'>{'Remodelamos a tu gusto'}</p>
+          <p className='texto-presentacion-arquitectura'>{'Remodelamos a tu gusto!'}</p>
         </div>
         <div className='div-container-arquitecture' >
           {
