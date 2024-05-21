@@ -5,15 +5,11 @@ import ImageGallery from 'react-image-gallery'
 import imagen1 from '../../assets/imagenes/imagen1.jpg'
 import imagen2 from '../../assets/imagenes/imagen2.jpg'
 import imagen3 from '../../assets/imagenes/imagen3.jpg'
-import imagen4 from '../../assets/imagenes/imagen4.jpg'
 import imagen5 from '../../assets/imagenes/imagen5.jpg'
-import iconoWsp from '../../assets/imagenes/icono-whatsapp.png'
+import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 
 
 const Home = () => {
-
-    const [showMessage, setShowMessage] = useState(false);
-    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const carruselImage = [
         {
@@ -39,35 +35,6 @@ const Home = () => {
 
     ]
 
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setWindowWidth(window.innerWidth);
-    //     };
-
-    //     window.addEventListener('resize', handleResize);
-
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-    // }, []);
-
-    const handleWhatsAppClick = () => {
-        const phoneNumber = '543513586001';
-        const message = 'Hola, queria realizar una consulta.';
-        // Construye el enlace para dirigir al usuario a WhatsApp
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        // Redirecciona al usuario a WhatsApp
-        window.location.href = url;
-    };
-
-    const handleWhatsAppMouseEnter = () => {
-        setShowMessage(true);
-    };
-
-    const handleWhatsAppMouseLeave = () => {
-        setShowMessage(false);
-    };
-
     return (
         <div className='div-home' id='inicio'>
             <ImageGallery
@@ -89,25 +56,8 @@ const Home = () => {
                 <p className='texto-presentacion'>{'ARQUITECTURA CON ESTILO'}</p>
                 <p className='texto-bienvenida'>{'Hola, te invitamos a pasar, sentite comodo'}</p>
             </div>
-            <div className="whatsapp-container" onMouseEnter={handleWhatsAppMouseEnter} onMouseLeave={handleWhatsAppMouseLeave}>
-                <img
-                    src={iconoWsp}
-                    className="icono-whatsapp"
-                    alt="WhatsApp"
-                    onClick={handleWhatsAppClick}
-                    style={{
-                        width: '60px',
-                        height: '60px',
-                        position: 'fixed',
-                        bottom: 0,
-                        right: 0,
-                        marginBottom: '20px',
-                        marginRight: '20px',
-                        cursor: 'pointer'
-                    }}
-                />
-                {showMessage && <p className="whatsapp-message">¡Conversemos!</p>}
-            </div>
+           
+            <BotonWhatsapp/>
         </div>
     )
 }

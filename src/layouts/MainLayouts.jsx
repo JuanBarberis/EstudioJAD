@@ -11,8 +11,11 @@ import ProyectDetails from '../pages/proyects/proyectDetails/ProyectDetails'
 export const MainLayouts = () => {
     return (
         <>
-            {/* <Header /> */}
-            <Outlet />
+            
+                {/* <Header /> */}
+                <Outlet />
+                <Contact />
+         
 
         </>
     )

@@ -65,15 +65,37 @@
 }
 
 .div-map-servicios .servicio-item .button-servicios {
+    
     width: 30%;
     height: 10%;
+    display: flex;
+    justify-content: center;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid black;
+    position: relative;
+    /* Asegura que el ::after esté posicionado correctamente */
+    cursor: pointer;
+
 }
 
-.div-map-servicios .servicio-item .button-servicios:hover {
-    background-color: rgb(218, 218, 218);  
+.div-map-servicios .servicio-item .button-servicios::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    /* Altura del borde */
+    background-color: grey;
+    transform: scaleX(0);
+    /* Inicia escondido */
+    transition: transform 0.3s ease;
+    /* Transición suave */
+}
+
+.div-map-servicios .servicio-item .button-servicios:hover::after {
+    transform: scaleX(1);
+    /* Muestra el borde al hacer hover */
 }
 
 @media (max-width: 1024px) {
