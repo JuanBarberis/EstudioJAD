@@ -1,0 +1,22 @@
+.whatsapp-container {
+    width: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    z-index: 3;
+
+}
+
+.whatsapp-message {
+    background-color: rgba(202, 202, 202, 0.692);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 1px solid white;
+}

@@ -39,11 +39,6 @@
     position: relative;
 }
 
-/* .link-path:hover {
-    border-bottom: 2px solid white;
-    color: rgb(239, 237, 237);
-} */
-
 .link-path::after {
     content: '';
     position: absolute;
