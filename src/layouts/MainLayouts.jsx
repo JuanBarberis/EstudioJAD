@@ -12,7 +12,7 @@ export const MainLayouts = () => {
     return (
         <>
             
-                {/* <Header /> */}
+                <Header />
                 <Outlet />
                 <Contact />
          
