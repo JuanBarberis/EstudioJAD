@@ -6,7 +6,6 @@ import imagen2 from '../../assets/imagenes/imagen2.jpg'
 import imagen3 from '../../assets/imagenes/imagen3.jpg'
 import imagen4 from '../../assets/imagenes/imagen4.jpg'
 import imagen5 from '../../assets/imagenes/imagen5.jpg'
-import { Header } from '../../components/header/Header'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 
 const Construction = () => {
@@ -74,7 +73,6 @@ const Construction = () => {
 
   return (
     <>
-      {/* <Header /> */}
       <div className='div-arquitecture'>
         <ReactImageGallery
           items={carruselImage}

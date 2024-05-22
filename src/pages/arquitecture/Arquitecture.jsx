@@ -6,11 +6,11 @@ import imagen2 from '../../assets/imagenes/imagen2.jpg'
 import imagen3 from '../../assets/imagenes/imagen3.jpg'
 import imagen4 from '../../assets/imagenes/imagen4.jpg'
 import imagen5 from '../../assets/imagenes/imagen5.jpg'
-import { Header } from '../../components/header/Header'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 
 const Arquitecture = () => {
 
+ 
   const carruselImage = [
     {
       original: imagen1,
@@ -74,7 +74,6 @@ const Arquitecture = () => {
 
   return (
     <>
-      {/* <Header /> */}
       <div className='div-arquitecture'>
         <ReactImageGallery
           items={carruselImage}
@@ -102,6 +101,7 @@ const Arquitecture = () => {
                 <>
                   <div className={item.id % 2 === 0 ? 'div-container-draft' : 'div-container-draft2'}>
                     <div className='div-contain-info'>
+                      <div style={{border: '1px solid black'}}></div>
                       <div className='div-contain-title'>
                         <p className='text-title-arquitecture'>{item.title}</p>
                         <p className='text-subtitle-arquitecture'> {item.subtitle} </p>
