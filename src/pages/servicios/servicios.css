@@ -24,7 +24,7 @@
 
 .servicio-item {
     width: 30%;
-    height: 40vh;
+    /* height: 40vh; */
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
 }
 
 .div-map-servicios .servicio-item .button-servicios {
-    
+
     width: 30%;
     height: 10%;
     display: flex;
@@ -75,6 +75,7 @@
     position: relative;
     /* Asegura que el ::after esté posicionado correctamente */
     cursor: pointer;
+    margin-bottom: 10px;
 
 }
 
@@ -98,11 +99,16 @@
     /* Muestra el borde al hacer hover */
 }
 
+
+
 @media (max-width: 1024px) {
     .servicio-item {
         width: 45%;
         height: auto;
         margin: 10px;
+    }
+    .div-map-servicios{
+        margin-top: 20px;
     }
 }
 
@@ -110,6 +116,10 @@
 
     .servicio-item {
         width: 50%;
+    }
+
+    .div-map-servicios{
+        margin-top: 20px;
     }
 
     .div-servicios .title-servicios {
@@ -127,9 +137,13 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 600px) {
     .servicio-item {
         width: 90%;
         height: auto;
+        
+    }
+    .div-map-servicios{
+        margin-top: 20px;
     }
 }
