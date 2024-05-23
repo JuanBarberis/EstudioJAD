@@ -11,6 +11,7 @@ import LandingPage from '../layouts/LandingPage'
 import Arquitecture from './arquitecture/Arquitecture'
 import InteriorDesign from './interiorDesing/InteriorDesign'
 import Construction from './construction/Construction'
+import AllProyects from './proyects/allProyects/AllProyects'
 
 export const router = createBrowserRouter([
     {
@@ -32,6 +33,7 @@ export const router = createBrowserRouter([
             { path: '/arquitectura', element: <Arquitecture /> },
             { path: '/interiorismo', element: <InteriorDesign /> },
             { path: '/construccion', element: <Construction /> },
+            { path: '/all-proyects', element: <AllProyects /> },
         ]
     }
 ])
