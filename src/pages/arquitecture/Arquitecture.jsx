@@ -7,10 +7,11 @@ import imagen3 from '../../assets/imagenes/imagen3.jpg'
 import imagen4 from '../../assets/imagenes/imagen4.jpg'
 import imagen5 from '../../assets/imagenes/imagen5.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
+import { Link as ScrollLink } from 'react-scroll';
 
 const Arquitecture = () => {
 
- 
+
   const carruselImage = [
     {
       original: imagen1,
@@ -87,12 +88,16 @@ const Arquitecture = () => {
           renderItem={(item) => (
             <div className="arquitecture-gallery">
               <img src={item.original} className='img-arquitecture-carrousel' alt={item.description} />
+
             </div>
           )}
         />
         <div className='div-text-arquitectura'>
           <p className='texto-bienvenida-arquitectura'>{'Arquitectura'}</p>
           <p className='texto-presentacion-arquitectura'>{'¡Hacemos realidad tus ideas.!'}</p>
+          <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
+            <button className='boton-presupuesto'>Pedi tu presupuesto</button>
+          </ScrollLink>
         </div>
         <div className='div-container-arquitecture' >
           {
@@ -101,7 +106,7 @@ const Arquitecture = () => {
                 <>
                   <div className={item.id % 2 === 0 ? 'div-container-draft' : 'div-container-draft2'}>
                     <div className='div-contain-info'>
-                      <div style={{border: '1px solid black'}}></div>
+                      <div style={{ border: '1px solid black' }}></div>
                       <div className='div-contain-title'>
                         <p className='text-title-arquitecture'>{item.title}</p>
                         <p className='text-subtitle-arquitecture'> {item.subtitle} </p>

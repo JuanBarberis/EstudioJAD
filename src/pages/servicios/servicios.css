@@ -46,15 +46,16 @@
 
 .div-map-servicios .servicio-item .type-container {
     color: black;
+    font-weight: 300;
 
 }
 
 .div-map-servicios .servicio-item .text-container {
     width: 60%;
-    /* color: grey; */
     color: black;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .div-map-servicios .servicio-item .button-servicios {
@@ -64,6 +65,7 @@
     display: flex;
     justify-content: center;
     background-color: transparent;
+    font-weight: 200;
     border: none;
     position: relative;
     /* Asegura que el ::after esté posicionado correctamente */

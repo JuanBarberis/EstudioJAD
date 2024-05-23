@@ -7,6 +7,8 @@ import imagen3 from '../../assets/imagenes/imagen3.jpg'
 import imagen4 from '../../assets/imagenes/imagen4.jpg'
 import imagen5 from '../../assets/imagenes/imagen5.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const InteriorDesing = () => {
 
@@ -92,6 +94,9 @@ const InteriorDesing = () => {
         <div className='div-text-arquitectura'>
           <p className='texto-bienvenida-arquitectura'>{'Interiorismo'}</p>
           <p className='texto-presentacion-arquitectura'>{'Remodelamos a tu gusto'}</p>
+          <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
+            <button className='boton-presupuesto'>Pedi tu presupuesto</button>
+          </ScrollLink>
         </div>
         <div className='div-container-arquitecture' >
           {
