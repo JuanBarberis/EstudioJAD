@@ -31,18 +31,18 @@ const Proyects = () => {
             imagen: Imagen3,
             className: 'clase1'
         },
-        {
-            id: 4,
-            nombre: 'Proyecto 4',
-            imagen: Imagen4,
-            className: 'clase2'
-        },
-        {
-            id: 5,
-            nombre: 'Proyecto 5',
-            imagen: Imagen5,
-            className: 'clase1'
-        },
+        // {
+        //     id: 4,
+        //     nombre: 'Proyecto 4',
+        //     imagen: Imagen4,
+        //     className: 'clase2'
+        // },
+        // {
+        //     id: 5,
+        //     nombre: 'Proyecto 5',
+        //     imagen: Imagen5,
+        //     className: 'clase1'
+        // },
     ]
 
     const handleProjectClick = (id) => {
@@ -51,22 +51,26 @@ const Proyects = () => {
 
     return (
         <div className='div-proyects' id='proyectos'>
-            <h1 className='title-proyect'>Portfolio</h1>
+            <div>
+                <h1 className='title-proyect'>Portfolio</h1>
+                <h2 className='subtitle-proyect'>Nuestro Proyectos</h2>
+            </div>
             <div className='div-proyectos-container'>
                 {
                     data.map((item, index) => {
                         return (
                             <div className='container-proyectos' key={index}
                                 onClick={() => handleProjectClick(item.id)}
-                                
+
                             >
-                                <img src={item.imagen} className={item.className === 'clase1' ? 'clase1' : 'clase2'} alt={item.nombre}/>
+                                <img src={item.imagen} className={item.className === 'clase1' ? 'clase1' : 'clase2'} alt={item.nombre} />
                                 <h2 className='project-name'>{item.nombre}</h2>
                             </div>
                         )
                     })
                 }
             </div>
+            <button onClick={()=>navigate(`all-proyects`)}>ver todos los proyectos</button>
         </div>
     )
 }
