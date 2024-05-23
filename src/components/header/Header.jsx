@@ -4,14 +4,17 @@ import logo from '../../assets/imagenes/logo-vector.png'
 // import { Link } from 'react-scroll';
 import MenuHamburguesa from '../menuHamburguesa/MenuHamburguesa';
 import { IoMenu, IoClose } from "react-icons/io5";
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 
 export const Header = () => {
 
+    const navigate = useNavigate();
+    const params = useParams()
+    const navParams = params.proyectId
+    console.log(navParams)
     const [isOpen, setIsOpen] = useState(false);
     const [render, setRender] = useState(false);
     const [navbar, setNavbar] = useState(false);
-    const navigate = useNavigate();
 
     const handleRender = () => {
         setRender(!render)
@@ -27,14 +30,14 @@ export const Header = () => {
     }
 
     window.addEventListener('scroll', changeBackground)
-    
-   
+
+
     const handleLinkClick = (path, sectionId) => {
         navigate(path, { state: { sectionId } });
     };
 
     return (
-        <div className={navbar ? 'nav-container-active' : 'nav-container'}>
+        <div className={navParams ? 'nav-container-black' : (navbar ? 'nav-container-active' : 'nav-container')}>
             <Link to="/inicio" spy={true} smooth={true} duration={800} className='img-logo'>
                 <img src={logo} alt='img-logo' className='logo-nav' />
             </Link>

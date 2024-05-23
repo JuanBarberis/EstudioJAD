@@ -21,6 +21,17 @@
     position: fixed;
     z-index: 5;
 }
+.nav-container-black {
+    background-color: black;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+}
 
 .link-container {
     width: auto;
@@ -33,7 +44,7 @@
 .link-path {
     text-decoration: none;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 100;
     color: white;
     padding: 5px;
     cursor: pointer;
