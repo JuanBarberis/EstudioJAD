@@ -7,7 +7,7 @@
     bottom: 0;
     right: 0;
     margin-bottom: 30px;
-    margin-right: 100px;
+    margin-right: 105px;
     z-index: 3;
 
 }
@@ -16,7 +16,7 @@
     background-color: rgba(202, 202, 202, 0.692);
     padding: 10px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 200;
     border-radius: 50px;
     border: 1px solid white;
 }
