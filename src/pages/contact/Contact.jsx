@@ -8,11 +8,13 @@ const Contact = () => {
     name: '',
     mail: '',
     message: '',
+    reason: ''
   });
   const [data, setData] = useState({
     name: '',
     mail: '',
     message: '',
+    reason: ''
   })
 
   const handleChange = (e) => {
@@ -40,6 +42,9 @@ const Contact = () => {
     if (!data.message.trim()) {
       newErrors.message = 'El mensaje no puede estar vacío';
     }
+    if (!data.reason.trim()) {
+      newErrors.reason = 'Debe seleccionar un motivo de consulta';
+    }
 
     // Si hay errores, actualiza el estado de los errores
     if (Object.keys(newErrors).length > 0) {
@@ -50,7 +55,8 @@ const Contact = () => {
       setData({
         name: '',
         mail: '',
-        message: ''
+        message: '',
+        reason: '',
       })
     }
   };
@@ -82,6 +88,13 @@ const Contact = () => {
           errors.mail &&
           <p className="error-message">{errors.mail}</p>
         }
+        <select className='input-form' id="reason" name="reason" value={data.reason} onChange={handleChange}>
+          <option className='option-select' value="">Selecciona un motivo</option>
+          <option className='option-select' value="arquitectura">Arquitectura</option>
+          <option className='option-select' value="interiorismo">Interiorismo</option>
+          <option className='option-select' value="construccion">Construcción</option>
+        </select>
+        {errors.reason && <p className="error-message">{errors.reason}</p>}
         <label className='label-form' for="msg">Mensaje:</label>
         <textarea className='area-form' id="msg" name="message" value={data.message} onChange={handleChange} />
         {
