@@ -11,7 +11,6 @@ export const Header = () => {
     const navigate = useNavigate();
     const params = useParams()
     const navParams = params.proyectId
-    console.log(navParams)
     const [isOpen, setIsOpen] = useState(false);
     const [render, setRender] = useState(false);
     const [navbar, setNavbar] = useState(false);
