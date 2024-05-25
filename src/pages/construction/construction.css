@@ -35,7 +35,7 @@
     z-index: 0;
 }
 
-.div-text-arquitectura {
+.div-text-construction {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,19 +52,20 @@
     /* Añade un sombreado al texto para mejorar la legibilidad */
 }
 
-.texto-bienvenida-arquitectura {
+.texto-bienvenida-construction {
     font-size: 30px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 700;
 }
 
-.texto-presentacion-arquitectura {
-    font-size: 55px;
+.texto-presentacion-construction {
+    font-size: 40px;
     font-weight: 200;
+    font-style: italic;
     text-align: center;
 }
 
-.div-container-arquitecture {
+/* .div-container-arquitecture {
     width: 100%;
     margin-top: 10%;
     display: flex;
@@ -72,8 +73,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    /* Ajusta este valor según tus necesidades */
-}
+} */
 
 
 .div-container-draft {
@@ -124,8 +124,8 @@
     font-weight: 200;
     color: black;
 }
-.imagen-arquitecture{
+/* .imagen-arquitecture{
    width: 50%; 
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-}
+} */

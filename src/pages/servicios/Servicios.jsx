@@ -1,7 +1,6 @@
 import React from 'react'
 import './servicios.css'
-import { PiLightbulbFilamentThin, PiKeyLight, PiPencilLineThin } from "react-icons/pi";
-import { LiaToolsSolid, LiaPencilRulerSolid } from "react-icons/lia";
+import { PiLightbulbFilamentThin, PiArmchairThin, PiHammerThin } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
 
 const Servicios = () => {
@@ -10,21 +9,21 @@ const Servicios = () => {
     const data = [
         {
             type: 'ARQUITECTURA',
-            text: 'Te acompañamos en el proceso de elegir juntos cada revestimiento y detalle que corone tu espacio.',
+            text: ['Proyecto', ' Obra', 'Remodelación'],
             icono: <PiLightbulbFilamentThin className="icono-servicio" />,
             navigation: '/arquitectura'
         },
         {
             type: 'INTERIORISMO',
-            text: 'Desarrollamos distintos sistemas constructivos según la necesidad y preferencia del cliente.',
-            icono: <LiaPencilRulerSolid className="icono-servicio" />,
+            text: ['Asesoramiento', 'Diseño de interiores', 'Equipamiento'],
+            icono: <PiArmchairThin className="icono-servicio" />,
             navigation: '/interiorismo'
 
         },
         {
             type: 'CONSTRUCCION',
-            text: 'Nos apasiona transformar espacios, viendo y explotando el máximo potencial que tienen.',
-            icono: <LiaToolsSolid className="icono-servicio" />,
+            text: ['Sistema de contratación llave en mano'],
+            icono: <PiHammerThin className="icono-servicio" />,
             navigation: '/construccion'
         },
     ]
@@ -38,12 +37,15 @@ const Servicios = () => {
                         return (
                             <>
                                 <div key={index} className='servicio-item'>
+
                                     <div className='icon-container'>
                                         {item.icono}
+                                        <h2 className='type-container'>{item.type}</h2>
                                     </div>
-                                    <h2 className='type-container'>{item.type}</h2>
-                                    <p className='text-container'>{item.text}</p>
-                                    <button className='button-servicios' onClick={()=>navigate(`${item.navigation}`)}>Leer mas</button>
+                                    {item.text.map((textItem, textIndex) => (
+                                        <p key={textIndex} className='text-container'>{`- ${textItem}`}</p>
+                                    ))}
+                                    <button className='button-servicios' onClick={() => navigate(`${item.navigation}`)}>Leer mas</button>
                                 </div>
                             </>
                         )

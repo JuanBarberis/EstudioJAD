@@ -4,10 +4,9 @@ import ReactImageGallery from 'react-image-gallery'
 import imagen1 from '../../assets/imagenes/imagen1.jpg'
 import imagen2 from '../../assets/imagenes/imagen2.jpg'
 import imagen3 from '../../assets/imagenes/imagen3.jpg'
-import imagen4 from '../../assets/imagenes/imagen4.jpg'
-import imagen5 from '../../assets/imagenes/imagen5.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 import { Link as ScrollLink } from 'react-scroll';
+import Divider from '../../components/divider/Divider'
 
 const Arquitecture = () => {
 
@@ -31,42 +30,58 @@ const Arquitecture = () => {
 
   ]
 
-  const data = [
+  const infoServicio = [
     {
       id: 1,
-      title: 'Desde Cero',
-      subtitle: '',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen1
+      title: 'PROYECTO',
+      subtitle: [
+        {
+          id: 1,
+          title: 'PROCESEO DE DISEÑO',
+          subtitle: 'Anteproyecto',
+          description: ['Busqueda del diseño, croquis preliminares', 'Planos de Arquitectura ', 'Maqueta virtual 3D ', 'Renders, imágenes fotorealistas en 3D ']
+        },
+        {
+          id: 2,
+          title: 'PROCESO TECNICO',
+          subtitle: 'Proyecto Ejecutivo',
+          description: ['Proyecto de Ingeniería ', '	Proyecto de Instalaciones ', 'Plano Municipal según Normativa del Municipio', 'Computo Métrico de materiales', 'Presupuesto de Obra / Costo de la Inversión']
+        }
+      ],
+      imagen: imagen1,
     },
     {
       id: 2,
-      title: 'Ante Proyecto',
-      subtitle: 'Proceso Creativo',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen2
+      title: 'OBRA',
+      subtitle: [
+        {
+          id: 1,
+          title: 'PROCESO DE EJECUCION DE OBRA',
+          subtitle: '',
+          description: ['	Plan de Avance con Tiempos y Recursos según Etapas de la obra', '	Tramites preliminares para el inicio de obra (permiso de edificación, alta de servicios, cerco de obra, obrador, etc.) ', 'Administración de Materiales/Recursos', 'Equipos de Trabajos Especializados para cada Etapa', 'Dirección Técnica de obra por Profesionales designados']
+        },
+      ],
+      imagen: imagen2,
     },
     {
       id: 3,
-      title: 'Proyecto',
-      subtitle: 'Etapa de formalizacion',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen3
-    },
-    {
-      id: 4,
-      title: 'Construcción',
-      subtitle: 'Etapa de concretación',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen5
-    },
-    {
-      id: 5,
-      title: 'Final de obra',
-      subtitle: 'Momento de disfrutar',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen4
-    },
+      title: 'REMODELACIÓN',
+      subtitle: [
+        {
+          id: 1,
+          title: 'PROCESEO DE DISEÑO',
+          subtitle: 'Proyecto de Refacción',
+          description: ['Releavamiento fotográfico y medidas de los espacios a intervenir', 'Planteo de ideas preliminares', 'Planos 2D del proyecto de Refaccion', 'Presupuesto de obra / Costo de la Inversión']
+        },
+        {
+          id: 2,
+          title: 'PROCESO DE OBRA',
+          subtitle: 'Ejecución de Obra de Refacción',
+          description: ['Administración de Materiales/Recursos', '	Equipos de Trabajos Especializados ', 'Dirección Técnica de obra por Profesionales designados']
+        }
+      ],
+      imagen: imagen3,
+    }
   ]
 
   useEffect(() => {
@@ -93,31 +108,84 @@ const Arquitecture = () => {
           )}
         />
         <div className='div-text-arquitectura'>
-          <p className='texto-bienvenida-arquitectura'>{'Arquitectura'}</p>
-          <p className='texto-presentacion-arquitectura'>{'¡Hacemos realidad tus ideas.!'}</p>
+          <p className='texto-bienvenida-arquitectura'>{'ARQUITECTURA'}</p>
+          <p className='texto-presentacion-arquitectura'>{'Transformamos los espacios vacíos en escenarios con vida'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
             <button className='boton-presupuesto'>Pedi tu presupuesto</button>
           </ScrollLink>
         </div>
-        <div className='div-container-arquitecture' >
-          {
-            data.map((item, index) => {
-              return (
-                <>
-                  <div className={item.id % 2 === 0 ? 'div-container-draft' : 'div-container-draft2'}>
-                    <div className='div-contain-info'>
-                      <div style={{ border: '1px solid black' }}></div>
-                      <div className='div-contain-title'>
-                        <p className='text-title-arquitecture'>{item.title}</p>
-                        <p className='text-subtitle-arquitecture'> {item.subtitle} </p>
-                      </div>
-                      <p className='text-describe-arquitecture'>{item.description}</p>
+
+        <div className='container-presentacion-arquitectura'>
+          <div className='container-presentacion-h3-h6'>
+            <h6 className='h6-presentacion-arquitectura'>NUESTRAS ESPECIALIDADES</h6>
+            <h3 className='h3-presentacion-arquitectura'>Arquitectura Residencial, Comercial y Corporativa</h3>
+            <p className='p-presentacion-arquitectura'>Te guiamos en todas las etapas de tu proyecto con una propuesta integral. Nuestros servicios de arquitectura incluyen
+            </p>
+          </div>
+          <div className='container-presentacion-arquitectura-p'>
+            <ScrollLink to="PROYECTO" spy={true} smooth={true} offset={-70} duration={800}>
+              <p className='p-servicios-arquitectura'>PROYECTO</p>
+            </ScrollLink>
+            <Divider thickness={"1px"} height={"30px"} color={"black"} direction={"vertical"} />
+            <ScrollLink to="OBRA" spy={true} smooth={true} offset={-70} duration={800}>
+              <p className='p-servicios-arquitectura'>OBRA</p>
+            </ScrollLink>
+            <Divider thickness={"1.5px"} height={"30px"} color={"black"} direction={"vertical"} />
+            <ScrollLink to="REMODELACIÓN" spy={true} smooth={true} offset={-70} duration={800}>
+              <p className='p-servicios-arquitectura'>REMODELACIÓN</p>
+            </ScrollLink>
+          </div>
+          <div className='container-recomendacion-arquitectura'>
+            <p className='p-recomendacion-arquitectura'>si contas con un terreno, te recomendamos los servicios de Proyecto + Obra </p>
+          </div>
+        </div>
+
+        <div className='div-container-arquitecture'>
+          {infoServicio.map((item, index) => {
+            return (
+              <>
+                {
+                  item.id === 3 &&
+                  (
+                    <div key={index} className='container-remodelacion-propiedad'>
+                      <p className='p-remodelacion-propiedad'>Para remodelar o ampliar tu vivienda existente, consulta nuestro servicio de Remodelación a continuación</p>
                     </div>
-                    <img src={item.image} className='imagen-arquitecture' />
+                  )
+                }
+
+                <div
+                  id={item.title}
+                  key={index}
+                  className={`div-container-item ${index % 2 !== 0 ? 'div-container-item-reverse' : ''
+                    }`}
+                >
+
+                  <div className='div-contain-info'>
+                    <h1 className='title-arquitectura'>{item.title}</h1>
+                    {item.subtitle.map((subItem, subIndex) => (
+                      <div className='info-detallada-arquitectura' key={subIndex}>
+                        <h2 className='h2-title-arquitectura'>{subItem.title}</h2>
+                        <p className={subItem.subtitle ? 'p-subtitle-arquitectura' : ''}>
+                          {subItem.subtitle}
+                        </p>
+                        {subItem.description.map((desc, descIndex) => (
+                          <p key={descIndex} className='descripcion-arquitectura'>
+                            {`- ${desc}`}
+                          </p>
+                        ))}
+                      </div>
+                    ))}
                   </div>
-                </>
-              )
-            })
+                  <img
+                    src={item.imagen}
+                    alt={item.title}
+                    className='imagen-arquitecture'
+                  />
+                </div>
+              </>
+            )
+          })
+
           }
         </div>
       </div>

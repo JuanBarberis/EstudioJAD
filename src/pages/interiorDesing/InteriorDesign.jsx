@@ -8,6 +8,7 @@ import imagen4 from '../../assets/imagenes/imagen4.jpg'
 import imagen5 from '../../assets/imagenes/imagen5.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 import { Link as ScrollLink } from 'react-scroll';
+import Divider from '../../components/divider/Divider'
 
 
 const InteriorDesing = () => {
@@ -31,42 +32,52 @@ const InteriorDesing = () => {
 
   ]
 
-  const data = [
+  const infoServicio = [
     {
       id: 1,
-      title: 'Desde Cero',
-      subtitle: '',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen1
+      title: 'ASESORAMIENTO',
+      subtitle: [
+        {
+          id: 1,
+          title: 'ASESORIA',
+          subtitle: '',
+          description: ['Relevamiento de ambiente a intervenir', 'Moodboard con propuesta']
+        },
+      ],
+      imagen: imagen1,
     },
     {
       id: 2,
-      title: 'Ante Proyecto',
-      subtitle: 'Proceso Creativo',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen2
+      title: 'DISEÑO DE INTERIORES',
+      subtitle: [
+        {
+          id: 1,
+          title: 'PROCESO DE DISEÑO',
+          subtitle: 'Proyecto de Interiorismo',
+          description: ['	Busqueda del Estilo, croquis preliminares', '	Esquemas en 2D ', 'Maqueta virtual 3D ', 'Presupuesto de obra / Costo de la inversión ']
+        },
+        {
+          id: 2,
+          title: 'PROCESO DE OBRA',
+          subtitle: 'Ejecucion de Obra de Interiorismo',
+          description: ['Fabricacion e Instalacion de Mobiliarios con nuestro Equipo Especializado', 'Administracion de Materiales', 'Conduccion Tecnica, por profesionales en Interiorismo ']
+        },
+      ],
+      imagen: imagen2,
     },
     {
       id: 3,
-      title: 'Proyecto',
-      subtitle: 'Etapa de formalizacion',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen3
-    },
-    {
-      id: 4,
-      title: 'Construcción',
-      subtitle: 'Etapa de concretación',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen5
-    },
-    {
-      id: 5,
-      title: 'Final de obra',
-      subtitle: 'Momento de disfrutar',
-      description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, incidunt.',
-      image: imagen4
-    },
+      title: 'EQUIPAMIENTO',
+      subtitle: [
+        {
+          id: 1,
+          title: 'FABRICACION A MEDIDA',
+          subtitle: '',
+          description: ['Diseño a medida de Mobiliario ', 'Fabricacion e Instalacion con nuestro Equipo de Carpinteros y Herreros']
+        },
+      ],
+      imagen: imagen3,
+    }
   ]
 
   useEffect(() => {
@@ -91,31 +102,80 @@ const InteriorDesing = () => {
             </div>
           )}
         />
-        <div className='div-text-arquitectura'>
-          <p className='texto-bienvenida-arquitectura'>{'Interiorismo'}</p>
-          <p className='texto-presentacion-arquitectura'>{'Remodelamos a tu gusto'}</p>
+        <div className='div-text-interior'>
+          <p className='texto-bienvenida-interior'>{'INTERIORISMO'}</p>
+          <p className='texto-presentacion-interior'>{'Estudiamos a las texturas para que nos reciten sensaciones'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
             <button className='boton-presupuesto'>Pedi tu presupuesto</button>
           </ScrollLink>
         </div>
-        <div className='div-container-arquitecture' >
-          {
-            data.map((item, index) => {
-              return (
-                <>
-                  <div className={item.id % 2 === 0 ? 'div-container-draft' : 'div-container-draft2'}>
-                    <div className='div-contain-info'>
-                      <div className='div-contain-title'>
-                        <p className='text-title-arquitecture'>{item.title}</p>
-                        <p className='text-subtitle-arquitecture'> {item.subtitle} </p>
+
+        <div className='container-presentacion-interiorismo'>
+          <div className='container-presentacion-h3-h6'>
+            <h6 className='h6-presentacion-interiorismo'>NUESTRAS ESPECIALIDADES</h6>
+            <h3 className='h3-presentacion-interiorismo'>Interiorismo para Alquileres Temporarios, Viviendas y Locales Comerciales</h3>
+            <p className='p-presentacion-interiorismo'>Te guiamos en todas las etapas de tu proyecto con una propuesta integral. Nuestros servicios de interiorismo incluyen
+            </p>
+          </div>
+          <div className='container-presentacion-interiorismo-p'>
+            <ScrollLink to="ASESORAMIENTO" spy={true} smooth={true} offset={-70} duration={800}>
+              <p className='p-servicios-interiorismo'>ASESORAMIENTO </p>
+            </ScrollLink>
+            <Divider thickness={"1.5px"} height={"30px"} color={"black"} direction={"vertical"} />
+            <ScrollLink to="DISEÑO DE INTERIORES" spy={true} smooth={true} offset={-70} duration={800}>
+              <p className='p-servicios-interiorismo'>DISEÑO DE INTERIORES</p>
+            </ScrollLink>
+            <Divider thickness={"1.5px"} height={"30px"} color={"black"} direction={"vertical"} />
+            <ScrollLink to="EQUIPAMIENTO" spy={true} smooth={true} offset={-70} duration={800}>
+              <p className='p-servicios-interiorismo'>EQUIPAMIENTO</p>
+            </ScrollLink>
+          </div>
+          <div className='container-recomendacion-interiorismo'>
+            <p className='p-recomendacion-interiorismo'>Si queres darle vida a tus ambientes interiores, eso si.. ¡ con diseño y buen gusto! te recomendamos el servicio de Interiorismo </p>
+          </div>
+        </div>
+
+        <div className='div-container-interiorismo'>
+          {infoServicio.map((item, index) => {
+            console.log(item)
+            return (
+              <>
+                <div
+                  id={item.title}
+                  key={index}
+                  className={`div-container-item ${index % 2 !== 0 ? 'div-container-item-reverse' : ''
+                    }`}
+                >
+
+                  <div className='div-contain-info-interiorismo'>
+                    <h1 className='title-interiorismo'>{item.title}</h1>
+                    {item.id != 2 &&
+                      (<Divider width={'80%'} />)
+                    }
+                    {item.subtitle.map((subItem, subIndex) => (
+                      <div className='info-detallada-interiorismo' key={subIndex}>
+                        <h2 className='h2-title-interiorismo'>{subItem.title}</h2>
+                        <p className={subItem.subtitle ? 'p-subtitle-interiorismo' : ''}>
+                          {subItem.subtitle}
+                        </p>
+                        {subItem.description.map((desc, descIndex) => (
+                          <p key={descIndex} className='descripcion-interiorismo'>
+                            {`- ${desc}`}
+                          </p>
+                        ))}
                       </div>
-                      <p className='text-describe-arquitecture'>{item.description}</p>
-                    </div>
-                    <img src={item.image}  className='imagen-arquitecture'/>
+                    ))}
                   </div>
-                </>
-              )
-            })
+                  <img
+                    src={item.imagen}
+                    alt={item.title}
+                    className='imagen-interiorismo'
+                  />
+                </div>
+              </>
+            )
+          })
+
           }
         </div>
       </div>

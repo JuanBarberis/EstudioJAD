@@ -90,9 +90,9 @@ const Construction = () => {
             </div>
           )}
         />
-        <div className='div-text-arquitectura'>
-          <p className='texto-bienvenida-arquitectura'>{'Construccion'}</p>
-          <p className='texto-presentacion-arquitectura'>{'Creamos para vos !'}</p>
+        <div className='div-text-construction'>
+          <p className='texto-bienvenida-construction'>{'CONSTRUCCION'}</p>
+          <p className='texto-presentacion-construction'>{'Materializamos tu proyecto'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
             <button className='boton-presupuesto'>Pedi tu presupuesto</button>
           </ScrollLink>
