@@ -14,17 +14,16 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Asegura que el contenedor de la imagen ocupe toda la altura del viewport */
 }
 
-.arquitecture-gallery :before {
+.arquitecture-gallery::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.353);
+    background: rgba(0, 0, 0, 0.575); /* Cambia el valor de opacidad según sea necesario */
     z-index: 1;
 }
 
@@ -48,17 +47,18 @@
     z-index: 1;
     color: white;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    gap: 15px;
 }
 
 .texto-bienvenida-arquitectura {
     font-size: 30px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .texto-presentacion-arquitectura {
     font-size: 40px;
-    font-weight: 200;
+    font-weight: 300;
     font-style: italic;
     text-align: center;
 
@@ -89,7 +89,6 @@
 .container-presentacion-arquitectura {
     width: 100%;
     min-height: 40vh;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,8 +98,7 @@
 }
 
 .container-presentacion-h3-h6 {
-    width: 50%;
-    /* background-color: rgb(255, 60, 0); */
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,12 +111,12 @@
 }
 
 .h6-presentacion-arquitectura {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
 }
 
 .p-presentacion-arquitectura {
-    width: 70%;
+    width: 100%;
     font-size: 18px;
     font-weight: 200;
     text-align: center;
@@ -139,6 +137,7 @@
     font-size: 20px;
     font-weight: 200;
 }
+
 .p-servicios-arquitectura:hover {
     color: rgba(0, 0, 0, 0.596);
     cursor: pointer;
@@ -163,20 +162,46 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 25px;
+}
+
+.container-proyecto-propiedad {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.p-proyecto-propiedad {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.container-obra-propiedad {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.p-obra-propiedad {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
 }
 
 .container-remodelacion-propiedad {
-    width: 70%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .p-remodelacion-propiedad {
-    margin-top: 5%;
+    text-align: center;
     font-size: 18px;
     font-weight: 200;
+    font-style: italic;
 }
 
 .div-container-item {
@@ -184,8 +209,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10%;
-    margin-top: 5%;
 }
 
 .div-container-item-reverse {
@@ -204,14 +227,14 @@
 }
 
 .title-arquitectura {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .h2-title-arquitectura {
     font-size: 20px;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .p-subtitle-arquitectura {
@@ -219,16 +242,18 @@
     font-weight: 200;
     font-style: italic;
     border-bottom: 1px solid black;
+
 }
 
 .descripcion-arquitectura {
     width: 100%;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 16px;
+    text-wrap: nowrap;
 }
 
 .imagen-arquitecture {
-    width: 35%;
+    width: 55%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 

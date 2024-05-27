@@ -39,13 +39,13 @@ const Arquitecture = () => {
           id: 1,
           title: 'PROCESEO DE DISEÑO',
           subtitle: 'Anteproyecto',
-          description: ['Busqueda del diseño, croquis preliminares', 'Planos de Arquitectura ', 'Maqueta virtual 3D ', 'Renders, imágenes fotorealistas en 3D ']
+          description: ['Busqueda del diseño, croquis preliminares', 'Planos de Arquitectura ', 'Maqueta virtual 3D ', 'Imágenes fotorealistas en 3D ']
         },
         {
           id: 2,
           title: 'PROCESO TECNICO',
           subtitle: 'Proyecto Ejecutivo',
-          description: ['Proyecto de Ingeniería ', '	Proyecto de Instalaciones ', 'Plano Municipal según Normativa del Municipio', 'Computo Métrico de materiales', 'Presupuesto de Obra / Costo de la Inversión']
+          description: ['Proyecto de Ingeniería ', '	Proyecto de Instalaciones ', 'Plano Municipal', 'Computo Métrico de materiales', 'Presupuesto de Obra / Costo de la Inversión']
         }
       ],
       imagen: imagen1,
@@ -58,7 +58,7 @@ const Arquitecture = () => {
           id: 1,
           title: 'PROCESO DE EJECUCION DE OBRA',
           subtitle: '',
-          description: ['	Plan de Avance con Tiempos y Recursos según Etapas de la obra', '	Tramites preliminares para el inicio de obra (permiso de edificación, alta de servicios, cerco de obra, obrador, etc.) ', 'Administración de Materiales/Recursos', 'Equipos de Trabajos Especializados para cada Etapa', 'Dirección Técnica de obra por Profesionales designados']
+          description: ['	Plan de Avance', 'Planificación de Inversión por Etapas' ,'	Tramites preliminares para el inicio de obra ', 'Administración de Materiales/Recursos', 'Equipos de Trabajos Especializados para cada Etapa', 'Dirección Técnica de obra por Profesionales designados']
         },
       ],
       imagen: imagen2,
@@ -69,9 +69,9 @@ const Arquitecture = () => {
       subtitle: [
         {
           id: 1,
-          title: 'PROCESEO DE DISEÑO',
+          title: 'PROCESO DE DISEÑO',
           subtitle: 'Proyecto de Refacción',
-          description: ['Releavamiento fotográfico y medidas de los espacios a intervenir', 'Planteo de ideas preliminares', 'Planos 2D del proyecto de Refaccion', 'Presupuesto de obra / Costo de la Inversión']
+          description: ['Relevamiento fotográfico y medidas de los espacios a intervenir', 'Planteo de ideas preliminares', 'Planos 2D del proyecto de Refaccion', 'Presupuesto de obra / Costo de la Inversión']
         },
         {
           id: 2,
@@ -98,8 +98,8 @@ const Arquitecture = () => {
           showFullscreenButton={false}
           showThumbnails={false}
           autoPlay={true}
-          slideDuration={4000}
-          slideInterval={3000}
+          slideDuration={7000}
+          slideInterval={4000}
           renderItem={(item) => (
             <div className="arquitecture-gallery">
               <img src={item.original} className='img-arquitecture-carrousel' alt={item.description} />
@@ -117,9 +117,9 @@ const Arquitecture = () => {
 
         <div className='container-presentacion-arquitectura'>
           <div className='container-presentacion-h3-h6'>
-            <h6 className='h6-presentacion-arquitectura'>NUESTRAS ESPECIALIDADES</h6>
+            <h6 className='h6-presentacion-arquitectura'>Nuestras especialidades</h6>
             <h3 className='h3-presentacion-arquitectura'>Arquitectura Residencial, Comercial y Corporativa</h3>
-            <p className='p-presentacion-arquitectura'>Te guiamos en todas las etapas de tu proyecto con una propuesta integral. Nuestros servicios de arquitectura incluyen
+            <p className='p-presentacion-arquitectura'>Te acompañamos en todas las etapas de tu proyecto con una propuesta integral. Nuestros servicios de arquitectura incluyen
             </p>
           </div>
           <div className='container-presentacion-arquitectura-p'>
@@ -135,24 +135,13 @@ const Arquitecture = () => {
               <p className='p-servicios-arquitectura'>REMODELACIÓN</p>
             </ScrollLink>
           </div>
-          <div className='container-recomendacion-arquitectura'>
-            <p className='p-recomendacion-arquitectura'>si contas con un terreno, te recomendamos los servicios de Proyecto + Obra </p>
-          </div>
+
         </div>
 
         <div className='div-container-arquitecture'>
           {infoServicio.map((item, index) => {
             return (
               <>
-                {
-                  item.id === 3 &&
-                  (
-                    <div key={index} className='container-remodelacion-propiedad'>
-                      <p className='p-remodelacion-propiedad'>Para remodelar o ampliar tu vivienda existente, consulta nuestro servicio de Remodelación a continuación</p>
-                    </div>
-                  )
-                }
-
                 <div
                   id={item.title}
                   key={index}
@@ -161,9 +150,36 @@ const Arquitecture = () => {
                 >
 
                   <div className='div-contain-info'>
+                    {
+                      item.id === 1 &&
+                      (
+                        <div key={index} className='container-proyecto-propiedad'>
+                          <p className='p-proyecto-propiedad'>Si contas solo con un terreno y queres comenzar el proceso de construir te recomendamos los servicios de Proyecto + Obra :</p>
+                        </div>
+                      )
+                    }
+                    {
+                      item.id === 2 &&
+                      (
+                        <div key={index} className='container-obra-propiedad'>
+                          <p className='p-obra-propiedad'>Si contas solo con un terreno y queres comenzar el proceso de construir te recomendamos los servicios de Proyecto + Obra :</p>
+                        </div>
+                      )
+                    }
+                    {
+                      item.id === 3 &&
+                      (
+                        <div key={index} className='container-remodelacion-propiedad'>
+                          <p className='p-remodelacion-propiedad'>Para remodelar o ampliar tu vivienda existente, consulta nuestro servicio de Remodelación </p>
+                        </div>
+                      )
+                    }
                     <h1 className='title-arquitectura'>{item.title}</h1>
                     {item.subtitle.map((subItem, subIndex) => (
                       <div className='info-detallada-arquitectura' key={subIndex}>
+                        {item.id === 2 &&
+                          (<Divider />)
+                        }
                         <h2 className='h2-title-arquitectura'>{subItem.title}</h2>
                         <p className={subItem.subtitle ? 'p-subtitle-arquitectura' : ''}>
                           {subItem.subtitle}
