@@ -44,8 +44,8 @@ const Home = () => {
                 showFullscreenButton={false}
                 showThumbnails={false}
                 autoPlay={true}
-                slideDuration={1000}
-                slideInterval={3000}
+                slideDuration={9000}
+                slideInterval={5000}
                 renderItem={(item) => (
                     <div className="image-gallery">
                         <img src={item.original} className='img-home-carrousel' alt="" />
@@ -53,11 +53,11 @@ const Home = () => {
                 )}
             />
             <div className='div-text-welcome'>
-                <p className='texto-presentacion'>{'ARQUITECTURA CON ESTILO'}</p>
-                <p className='texto-bienvenida'>{'Hola, te invitamos a pasar, sentite comodo'}</p>
+                <p className='texto-presentacion'>{'CREAMOS ESPACIOS QUE POTENCIAN TUS SENTIDOS'}</p>
+                <p className='texto-bienvenida'>{'Bienvenidos, te invitamos a pasar.'}</p>
             </div>
-           
-            <BotonWhatsapp/>
+
+            <BotonWhatsapp />
         </div>
     )
 }

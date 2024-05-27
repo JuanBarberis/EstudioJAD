@@ -19,22 +19,23 @@
     z-index: 1;
     color: white; /* Asegura que el texto sea visible sobre el carrusel */
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Añade un sombreado al texto para mejorar la legibilidad */
+    gap: 20px;
 }
 
 .texto-presentacion {
     font-size: 40px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
-    margin: 0;
-    /* padding: 10px; */
+    font-style: italic;
 }
 
 .texto-bienvenida {
     font-size: 25px;
     font-weight: 100;
     text-align: center;
-    margin: 10px 0;
-    /* padding: 5px; */
+   
+    
+   
     
 }
 
