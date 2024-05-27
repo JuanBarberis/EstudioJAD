@@ -30,7 +30,7 @@ const Servicios = () => {
 
     return (
         <div className='div-servicios' id='servicios'>
-            {/* <h2 className='title-servicios'>Nuestros Servicios</h2> */}
+            <h2 className='title-servicios'>NUESTROS SERVICIOS</h2>
             <div className='div-map-servicios'>
                 {
                     data.map((item, index) => {
@@ -43,7 +43,7 @@ const Servicios = () => {
                                         <h2 className='type-container'>{item.type}</h2>
                                     </div>
                                     {item.text.map((textItem, textIndex) => (
-                                        <p key={textIndex} className='text-container'>{`- ${textItem}`}</p>
+                                        <p key={textIndex} className='text-container'>{` ${textItem}`}</p>
                                     ))}
                                     <button className='button-servicios' onClick={() => navigate(`${item.navigation}`)}>Leer mas</button>
                                 </div>
