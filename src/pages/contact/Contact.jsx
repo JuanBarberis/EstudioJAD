@@ -88,6 +88,7 @@ const Contact = () => {
           errors.mail &&
           <p className="error-message">{errors.mail}</p>
         }
+        <label className='label-form' for="reason">Motivo de consulta</label>
         <select className='input-form' id="reason" name="reason" value={data.reason} onChange={handleChange}>
           <option className='option-select' value="">Selecciona un motivo</option>
           <option className='option-select' value="arquitectura">Arquitectura</option>
