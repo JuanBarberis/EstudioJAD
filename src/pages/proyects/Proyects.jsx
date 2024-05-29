@@ -31,18 +31,6 @@ const Proyects = () => {
             imagen: Imagen3,
             className: 'clase1'
         },
-        // {
-        //     id: 4,
-        //     nombre: 'Proyecto 4',
-        //     imagen: Imagen4,
-        //     className: 'clase2'
-        // },
-        // {
-        //     id: 5,
-        //     nombre: 'Proyecto 5',
-        //     imagen: Imagen5,
-        //     className: 'clase1'
-        // },
     ]
 
     const handleProjectClick = (id) => {
@@ -51,10 +39,9 @@ const Proyects = () => {
 
     return (
         <div className='div-proyects' id='proyectos'>
-            <div>
-                <h1 className='title-proyect'>Portfolio</h1>
-                <h2 className='subtitle-proyect'>Nuestro Proyectos</h2>
-            </div>
+
+            <h1 className='title-proyect'>PORTFOLIO</h1>
+
             <div className='div-proyectos-container'>
                 {
                     data.map((item, index) => {
@@ -70,7 +57,10 @@ const Proyects = () => {
                     })
                 }
             </div>
-            <button onClick={()=>navigate(`all-proyects`)}>ver todos los proyectos</button>
+            <div className='container-button-ver-todos'>
+                <button className='button-ver-todos' onClick={() => navigate(`all-proyects`)}>Ver más proyectos</button>
+
+            </div>
         </div>
     )
 }
