@@ -84,23 +84,23 @@ const AllProyects = () => {
 
     return (
         <div className='div-all-proyects'>
-            AllProyects
-            <div className='div-proyectos-container'>
-                {
-                    data.map((item, index) => {
-                        return (
-                            <div className='container-proyectos' key={index}
-                                onClick={() => handleProjectClick(item.id)}
-
-                            >
-                                <img src={item.imagen} className={item.className === 'clase1' ? 'clase1' : 'clase2'} alt={item.nombre} />
-                                <h2 className='project-name'>{item.nombre}</h2>
-                            </div>
-                        )
-                    })
-                }
+            <div className='div-all-proyectos-container'>
+                {data.map((item, index) => (
+                    <div
+                        className='container-all-proyectos'
+                        key={index}
+                        onClick={() => handleProjectClick(item.id)}
+                    >
+                        <img
+                            src={item.imagen}
+                            className='todos-los-proyectos'
+                            alt={item.nombre}
+                        />
+                        <h2 className='project-name-all'>{item.nombre}</h2>
+                    </div>
+                ))}
             </div>
-            <button onClick={() => navigate(-1)}>volver atras</button>
+            <button className='button-back' onClick={() => navigate(-1)}>Volver atrás</button>
         </div>
     )
 }
