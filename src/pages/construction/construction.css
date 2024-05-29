@@ -47,34 +47,39 @@
     align-items: center;
     z-index: 1;
     color: white;
-    /* Asegura que el texto sea visible sobre el carrusel */
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-    /* Añade un sombreado al texto para mejorar la legibilidad */
+    gap: 15px;
 }
 
 .texto-bienvenida-construction {
     font-size: 30px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .texto-presentacion-construction {
     font-size: 40px;
-    font-weight: 200;
+    font-weight: 300;
     font-style: italic;
     text-align: center;
 }
-
-/* .div-container-arquitecture {
+.container-presentacion-construccion{
     width: 100%;
-    margin-top: 10%;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-} */
+    gap: 30px;
+    margin-top: 10px;
+}
 
+.p-presentacion-construccion{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+}
 
 .div-container-draft {
     width: 80%;
@@ -96,18 +101,70 @@
 
     /* Espaciado entre los elementos */
 }
-
-
-.div-contain-info {
-    max-width: 60%;
-    /* Ajusta este valor según tus necesidades */
+.div-container-construccion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
-.div-contain-title {
-    margin-bottom: 20px;
+
+.div-contain-info-construccion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
-.text-title-arquitecture {
+.div-contain-info-construccion{
+    width: 100%;
+}
+.container-construccion-propiedad{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.p-construccion-propiedad{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+}
+.title-construccion{
+    font-size: 20px;
+    font-weight: 600;
+}
+.info-detallada-construccion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.h2-title-construccion{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.p-subtitle-construccion{
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+.descripcion-construccion{
+    width: 100%;
+    font-weight: 200;
+    font-size: 16px;
+    text-wrap: nowrap;
+}
+.imagen-construccion{
+    width: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* .text-title-arquitecture {
     font-size: 30px;
     font-weight: 500;
 }
@@ -123,7 +180,7 @@
     font-size: 20px;
     font-weight: 200;
     color: black;
-}
+} */
 /* .imagen-arquitecture{
    width: 50%; 
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
