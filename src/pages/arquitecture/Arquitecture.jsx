@@ -159,14 +159,6 @@ const Arquitecture = () => {
                       )
                     }
                     {
-                      item.id === 2 &&
-                      (
-                        <div key={index} className='container-obra-propiedad'>
-                          <p className='p-obra-propiedad'>Si contas solo con un terreno y queres comenzar el proceso de construir te recomendamos los servicios de Proyecto + Obra :</p>
-                        </div>
-                      )
-                    }
-                    {
                       item.id === 3 &&
                       (
                         <div key={index} className='container-remodelacion-propiedad'>

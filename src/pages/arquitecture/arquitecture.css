@@ -162,7 +162,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 40px;
 }
 
 .container-proyecto-propiedad {
@@ -171,7 +171,7 @@
 }
 
 .p-proyecto-propiedad {
-    text-align: center;
+    text-align: start;
     font-size: 18px;
     font-weight: 200;
     font-style: italic;
@@ -198,7 +198,7 @@
 }
 
 .p-remodelacion-propiedad {
-    text-align: center;
+    text-align: start;
     font-size: 18px;
     font-weight: 200;
     font-style: italic;
@@ -213,6 +213,7 @@
 
 .div-container-item-reverse {
     flex-direction: row-reverse;
+
 }
 
 .div-contain-info {
