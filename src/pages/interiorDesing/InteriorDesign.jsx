@@ -112,7 +112,7 @@ const InteriorDesing = () => {
 
         <div className='container-presentacion-interiorismo'>
           <div className='container-presentacion-h3-h6'>
-            <h6 className='h6-presentacion-interiorismo'>NUESTRAS ESPECIALIDADES</h6>
+            <h6 className='h6-presentacion-interiorismo'>Nuestras especialidades</h6>
             <h3 className='h3-presentacion-interiorismo'>Interiorismo para Alquileres Temporarios, Viviendas y Locales Comerciales</h3>
             <p className='p-presentacion-interiorismo'>Te guiamos en todas las etapas de tu proyecto con una propuesta integral. Nuestros servicios de interiorismo incluyen
             </p>
@@ -130,14 +130,13 @@ const InteriorDesing = () => {
               <p className='p-servicios-interiorismo'>EQUIPAMIENTO</p>
             </ScrollLink>
           </div>
-          <div className='container-recomendacion-interiorismo'>
+          {/* <div className='container-recomendacion-interiorismo'>
             <p className='p-recomendacion-interiorismo'>Si queres darle vida a tus ambientes interiores, eso si.. ¡ con diseño y buen gusto! te recomendamos el servicio de Interiorismo </p>
-          </div>
+          </div> */}
         </div>
 
         <div className='div-container-interiorismo'>
           {infoServicio.map((item, index) => {
-            console.log(item)
             return (
               <>
                 <div
@@ -148,6 +147,14 @@ const InteriorDesing = () => {
                 >
 
                   <div className='div-contain-info-interiorismo'>
+                    {
+                      item.id === 1 &&
+                      (
+                        <div key={index} className='container-proyecto-propiedad'>
+                          <p className='p-proyecto-propiedad'>Si queres darle vida a tus ambientes interiores, eso si.. ¡ con diseño y buen gusto! te recomendamos el servicio de Interiorismo</p>
+                        </div>
+                      )
+                    }
                     <h1 className='title-interiorismo'>{item.title}</h1>
                     {item.id != 2 &&
                       (<Divider width={'80%'} />)
