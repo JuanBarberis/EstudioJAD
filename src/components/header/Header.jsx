@@ -38,7 +38,7 @@ export const Header = () => {
     };
     const navClass = location.pathname === '/all-proyects'
         ? 'nav-container-black'
-        : navParams ? 'nav-container-black'
+        // : navParams ? 'nav-container-black'
             : (navbar ? 'nav-container-active' : 'nav-container');
 
     return (
