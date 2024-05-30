@@ -6,6 +6,7 @@ import Imagen2 from '../../../assets/imagenes/imagen2.jpg'
 import Imagen3 from '../../../assets/imagenes/imagen3.jpg'
 import Imagen4 from '../../../assets/imagenes/imagen4.jpg'
 import Imagen5 from '../../../assets/imagenes/imagen5.jpg'
+import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap'
 
 const AllProyects = () => {
 
@@ -101,6 +102,8 @@ const AllProyects = () => {
                 ))}
             </div>
             <button className='button-back' onClick={() => navigate(-1)}>Volver atrás</button>
+            <BotonWhatsapp />
+
         </div>
     )
 }

@@ -4,6 +4,7 @@
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     position: relative;
 }
@@ -70,27 +71,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .button-ver-todos {
     width: 15%;
     padding: 3px;
     border: none;
-    color: white;
-    background-color: grey;
-    font-size: 18px;
-    font-weight: 200;
+    color: black;
+    background-color: transparent;
+    /* background-color: grey; */
+    font-size:22px;
+    font-weight: 100;
     /* border-radius: 2px; */
-    /* position: relative;
-    cursor: pointer; */
+    position: relative;
+    cursor: pointer;
 
 }
-.button-ver-todos:hover{
+/* .button-ver-todos:hover{
     background-color: rgba(128, 128, 128, 0.637);
-}
+} */
 
-/* .button-ver-todos::after{
+.button-ver-todos::after{
     content: '';
     position: absolute;
     left: 0;
@@ -103,4 +105,4 @@
 }
 .button-ver-todos:hover::after{
     transform: scaleX(1);
-} */
+}
