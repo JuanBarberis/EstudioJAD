@@ -17,7 +17,7 @@ const MenuHamburguesa = ({ handleRender }) => {
 
     const navClass = location.pathname === '/all-proyects'
         ? 'nav-container-hamburguesa-black'
-        : navParams ? 'nav-container-hamburguesa-black'
+        // : navParams ? 'nav-container-hamburguesa-black'
             : 'nav-container-hamburguesa';
 
     return (
