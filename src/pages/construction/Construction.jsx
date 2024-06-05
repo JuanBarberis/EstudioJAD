@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './construction.css'
 import ReactImageGallery from 'react-image-gallery'
+import portadaConstruccion from '../../assets/imagenes/portada-construccion.jpg'
 import imagen1 from '../../assets/imagenes/imagen1.jpg'
 import imagen2 from '../../assets/imagenes/imagen2.jpg'
 import imagen3 from '../../assets/imagenes/imagen3.jpg'
@@ -11,25 +12,6 @@ import { Link as ScrollLink } from 'react-scroll';
 import Divider from '../../components/divider/Divider'
 
 const Construction = () => {
-
-  const carruselImage = [
-    {
-      original: imagen1,
-      thumbnail: imagen1,
-      description: 'ARQUITECTURA'
-    },
-    {
-      original: imagen2,
-      thumbnail: imagen2,
-      description: 'INTERIORISMO'
-    },
-    {
-      original: imagen3,
-      thumbnail: imagen3,
-      description: 'CONSTRUCCION '
-    },
-
-  ]
 
   const infoServicio = [
     {
@@ -63,21 +45,11 @@ const Construction = () => {
   return (
     <>
       <div className='div-arquitecture'>
-        <ReactImageGallery
-          items={carruselImage}
-          showNav={false}
-          showPlayButton={false}
-          showFullscreenButton={false}
-          showThumbnails={false}
-          autoPlay={true}
-          slideDuration={4000}
-          slideInterval={3000}
-          renderItem={(item) => (
-            <div className="arquitecture-gallery">
-              <img src={item.original} className='img-arquitecture-carrousel' alt={item.description} />
-            </div>
-          )}
-        />
+    
+        <div className="arquitecture-gallery">
+          <img src={portadaConstruccion} className='img-arquitecture-carrousel' alt={'portadaConstruccion'} />
+        </div>
+        
         <div className='div-text-construction'>
           <p className='texto-bienvenida-construction'>{'CONSTRUCCION'}</p>
           <p className='texto-presentacion-construction'>{'Materializamos tu proyecto'}</p>
@@ -107,7 +79,7 @@ const Construction = () => {
                 <div
                   id={item.title}
                   key={index}
-                  className={`div-container-item ${index % 2 !== 0 ? 'div-container-item-reverse' : ''
+                  className={`div-container-item-construccion ${index % 2 !== 0 ? 'div-container-item-reverse-construccion' : ''
                     }`}
                 >
 

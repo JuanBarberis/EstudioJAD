@@ -1,7 +1,6 @@
 .div-arquitecture {
     width: 100%;
     min-height: 100vh;
-    /* Asegura que el contenedor ocupe toda la altura de la ventana */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +62,8 @@
     font-style: italic;
     text-align: center;
 }
-.container-presentacion-construccion{
+
+.container-presentacion-construccion {
     width: 100%;
     min-height: 40vh;
     display: flex;
@@ -74,115 +74,112 @@
     margin-top: 10px;
 }
 
-.p-presentacion-construccion{
+.p-presentacion-construccion {
     width: 100%;
     font-size: 18px;
     font-weight: 200;
     text-align: center;
 }
 
-.div-container-draft {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    /* Espaciado entre los elementos */
-    padding: 10px;
-}
-
-.div-container-draft2 {
-    width: 80%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content:space-evenly;
-    padding: 10px;
-
-    /* Espaciado entre los elementos */
-}
 .div-container-construccion {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
 }
 
+.div-container-item-construccion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
 
 .div-contain-info-construccion {
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
 }
 
-.div-contain-info-construccion{
-    width: 100%;
-}
-.container-construccion-propiedad{
-    width: 100%;
+.container-construccion-propiedad {
+    width: 90%;
     margin-bottom: 10px;
 }
-.p-construccion-propiedad{
+
+.p-construccion-propiedad {
     text-align: center;
     font-size: 18px;
     font-weight: 200;
     font-style: italic;
 }
-.title-construccion{
+
+.title-construccion {
     font-size: 20px;
     font-weight: 600;
 }
-.info-detallada-construccion{
+
+.info-detallada-construccion {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.h2-title-construccion{
+
+.h2-title-construccion {
     font-size: 20px;
     font-weight: 300;
     margin-top: 10px;
 }
-.p-subtitle-construccion{
+
+.p-subtitle-construccion {
     font-size: 20px;
     font-weight: 200;
     font-style: italic;
     border-bottom: 1px solid black;
 }
-.descripcion-construccion{
+
+.descripcion-construccion {
     width: 100%;
     font-weight: 200;
     font-size: 16px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
 }
-.imagen-construccion{
+
+.imagen-construccion {
     width: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-/* .text-title-arquitecture {
-    font-size: 30px;
-    font-weight: 500;
+
+@media screen and (min-width: 320px) and (max-width:500px) {
+    .div-container-item-construccion {
+        flex-direction: column;
+    }
+    .imagen-construccion {
+        width: 90%;
+    }
+
+    .div-contain-info-construccion {
+        width: 90%;
+    }
+
 }
 
-.text-subtitle-arquitecture {
-    font-size: 25px;
-    font-weight: 200;
-    font-style: italic;
+
+@media screen and (min-width: 501px) and (max-width: 950px) {
+    .div-container-item-construccion {
+        flex-direction: column;
+    }
+
+    .div-contain-info-construccion {
+        width: 80%;
+    }
+
+    .imagen-construccion {
+        width: 80%;
+    }
 }
-
-.text-describe-arquitecture {
-    width: 50%;
-    font-size: 20px;
-    font-weight: 200;
-    color: black;
-} */
-/* .imagen-arquitecture{
-   width: 50%; 
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
-} */
