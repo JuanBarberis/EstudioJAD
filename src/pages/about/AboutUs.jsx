@@ -25,42 +25,16 @@ const AboutUs = () => {
   return (
     <div className='div-aboutus' id='quienes-somos'>
       <div className='div-title-about'>
-        {/* <h2 className='title-about'>Estudio JAD</h2> */}
         <h2 className='title-about'>¿QUIENES SOMOS?</h2>
-        {/* <div className='div-servicios'>
-          <p className='text-servicios'>+ ARQUITECTURA</p>
-          <p className='text-servicios'>+ INTERIORISMO</p>
-          <p className='text-servicios'>+ CONSTRUCCIÓN</p>
-        </div> */}
         <p className='text-jad'>Somos Estudio Jad, dos Hermanos que  nos enfocamos en transformar espacios y crear ambientes que reflejen la personalidad y el estilo de nuestros clientes. Con un enfoque innovador y una pasión por la excelencia, nos dedicamos a cada proyecto con un compromiso absoluto con la calidad, la funcionalidad y la estética.</p>
         <div className='div-nombres'>
           <p className='texto-nombre' >Arq. Juan Pablo Dousdourian</p>
           <p className='texto-nombre'>Dis. Agustina Dousdourian</p>
         </div>
-
-        {/* <p className='text-jad'>¿Por Que Estudio JAD ? porque nos enfocamos en transformar espacios y crear ambientes que reflejen la personalidad y el estilo de nuestros clientes. Con un enfoque innovador y una pasión por la excelencia, nos dedicamos a cada proyecto con un compromiso absoluto con la calidad, la funcionalidad y la estética.</p> */}
-
       </div>
       <div className='container-map'>
         <img src={imgfoto} className='img-quienes-somos' />
       </div>
-      {/* <div className='container-map' >
-        {
-          data.map((item, index) => {
-            return (
-              <div
-                className='div-box-about'
-              >
-                <img src={item.img} width={120} alt={item.img} />
-                <h3>{item.nombre}</h3>
-                <p>{item.profesion}</p>
-                <p>{item.text}</p>
-              </div>
-            )
-          })
-        }
-      </div> */}
-
     </div>
   )
 }

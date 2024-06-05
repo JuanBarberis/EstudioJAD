@@ -20,28 +20,17 @@
 
 .title-about {
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 600;
     color: rgb(0, 0, 0);
     text-align: center;
 }
-
-/* .div-aboutus .div-title-about .div-servicios {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-} */
-
-/* .text-servicios {
-    color: rgb(90, 88, 88);
-    font-weight: bold;
-    font-size: 20px;
-} */
 
 .text-jad {
     width: 70%;
     display: flex;
     font-size: 24px;
-    color: rgb(116, 114, 114);
+    font-weight: 200;
+    color: black;
     text-align: center;
 }
 
