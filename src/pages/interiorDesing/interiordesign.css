@@ -114,25 +114,11 @@
     font-size: 20px;
     font-weight: 200;
 }
+
 .p-servicios-interiorismo:hover {
     color: rgba(0, 0, 0, 0.596);
     cursor: pointer;
 }
-
-/* .container-recomendacion-interiorismo {
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.p-recomendacion-interiorismo {
-    width: 100%;
-    font-size: 18px;
-    font-weight: 200;
-    text-align: center;
-} */
-
-
 
 .div-container-interiorismo {
     width: 100%;
@@ -143,21 +129,25 @@
     gap: 40px;
 }
 
-.div-container-item {
-    width: 80%;
+.div-container-item-interiorismo {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10%;
+    justify-content: space-around;
+    /* gap: 10%; */
     /* margin-top: 5%; */
 }
 
-.div-container-item-reverse {
+.div-container-item-reverse-interiorismo {
     flex-direction: row-reverse;
+
 }
 
 .div-contain-info-interiorismo {
-    width: 100%;
+    width: 40%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-interiorismo {
@@ -189,10 +179,75 @@
     width: 100%;
     font-weight: 200;
     font-size: 16px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
 }
 
 .imagen-interiorismo {
     width: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 320px) and (max-width: 950px) {
+
+    .div-container-item-interiorismo {
+        flex-direction: column;
+    }
+
+    .h3-presentacion-interiorismo {
+        text-align: center;
+    }
+
+    .div-contain-info-arquitectura {
+        width: 80%;
+    }
+
+    .imagen-interiorismo {
+        width: 80%;
+    }
+
+    .container-presentacion-interiorismo-p {
+        width: 100%;
+    }
+
+    .div-contain-info-interiorismo {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 539px) {
+    .container-presentacion-interiorismo {
+        width: 90%;
+    }
+
+    .container-presentacion-h3-h6 {
+        width: 100%;
+    }
+
+    .container-presentacion-interiorismo-p {
+        width: 100%;
+        gap: 3px;
+    }
+    .p-servicios-interiorismo {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .h3-presentacion-interiorismo {
+        text-align: center;
+    }
+
+    .imagen-interiorismo {
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .descripcion-interiorismo {
+        text-wrap: wrap;
+    }
+
+
+
 }

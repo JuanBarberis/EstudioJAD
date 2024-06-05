@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './interiordesign.css'
 import ReactImageGallery from 'react-image-gallery'
+import portadaInteriorismo from '../../assets/imagenes/portada-interiorismo.jpg'
 import imagen1 from '../../assets/imagenes/imagen1.jpg'
 import imagen2 from '../../assets/imagenes/imagen2.jpg'
 import imagen3 from '../../assets/imagenes/imagen3.jpg'
@@ -12,25 +13,6 @@ import Divider from '../../components/divider/Divider'
 
 
 const InteriorDesing = () => {
-
-  const carruselImage = [
-    {
-      original: imagen1,
-      thumbnail: imagen1,
-      description: 'ARQUITECTURA'
-    },
-    {
-      original: imagen2,
-      thumbnail: imagen2,
-      description: 'INTERIORISMO'
-    },
-    {
-      original: imagen3,
-      thumbnail: imagen3,
-      description: 'CONSTRUCCION '
-    },
-
-  ]
 
   const infoServicio = [
     {
@@ -87,21 +69,11 @@ const InteriorDesing = () => {
   return (
     <>
       <div className='div-arquitecture'>
-        <ReactImageGallery
-          items={carruselImage}
-          showNav={false}
-          showPlayButton={false}
-          showFullscreenButton={false}
-          showThumbnails={false}
-          autoPlay={true}
-          slideDuration={4000}
-          slideInterval={3000}
-          renderItem={(item) => (
-            <div className="arquitecture-gallery">
-              <img src={item.original} className='img-arquitecture-carrousel' alt={item.description} />
-            </div>
-          )}
-        />
+      
+        <div className="arquitecture-gallery">
+          <img src={portadaInteriorismo} className='img-arquitecture-carrousel' alt={'portadaInteriorismo'} />
+        </div>
+
         <div className='div-text-interior'>
           <p className='texto-bienvenida-interior'>{'INTERIORISMO'}</p>
           <p className='texto-presentacion-interior'>{'Estudiamos a las texturas para que nos reciten sensaciones'}</p>
@@ -130,9 +102,6 @@ const InteriorDesing = () => {
               <p className='p-servicios-interiorismo'>EQUIPAMIENTO</p>
             </ScrollLink>
           </div>
-          {/* <div className='container-recomendacion-interiorismo'>
-            <p className='p-recomendacion-interiorismo'>Si queres darle vida a tus ambientes interiores, eso si.. ¡ con diseño y buen gusto! te recomendamos el servicio de Interiorismo </p>
-          </div> */}
         </div>
 
         <div className='div-container-interiorismo'>
@@ -142,7 +111,7 @@ const InteriorDesing = () => {
                 <div
                   id={item.title}
                   key={index}
-                  className={`div-container-item ${index % 2 !== 0 ? 'div-container-item-reverse' : ''
+                  className={`div-container-item-interiorismo ${index % 2 !== 0 ? 'div-container-item-reverse-interiorismo' : ''
                     }`}
                 >
 
