@@ -4,6 +4,9 @@
   font-family: 'Calibri';
   display: flex;
   background-color: whitesmoke;
+  /* background-image: url('../../assets/imagenes/fondo-textura-gris.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .div-container-contact {
@@ -11,38 +14,55 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
+}
+
+.div-hablemos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .todo-proyecto {
   font-size: 32px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 100;
+  /* color: white; */
 }
 
 .text-hablemos {
   font-size: 20px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 600;
+  /* color: white; */
+
 }
 
 .text-dejanos-datos {
   font-size: 32px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 100;
+  /* color: white; */
+
 }
 
 .text-equipo {
   font-size: 18px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 600;
+  /* color: white; */
+
 }
 
 .form-contacto {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  width: 50%;
   margin: auto;
-  gap: 20px;
+  gap: 10px;
+  margin-bottom: 10px;
+  /* color: white; */
+
 }
 
 .input-form,
@@ -53,8 +73,14 @@
   padding: 10px 5px;
   font-size: 18px;
   font-weight: 200;
-  transition: border-color 0.3s;
   background-color: transparent;
+  /* color: white; */
+
+}
+
+.label-form {
+  font-weight: 300;
+  text-align: start;
 }
 
 .area-form {
@@ -66,14 +92,13 @@
 .option-select {
   font-size: 18px;
   font-weight: 200;
+  color: black;
 }
 
 .input-form:focus,
 .area-form:focus {
   border-bottom-color: grey;
-  /* color al enfocar el input */
   outline: none;
-  /* quitar el borde de enfoque */
 }
 
 .button-form {
@@ -98,4 +123,43 @@
   height: 15vh;
   border: 1px solid;
   text-align: center;
+}
+
+.error-message {
+  width: 70%;
+  font-size: 15px;
+  color: red;
+  font-weight: 200;
+}
+
+@media screen and (min-width:320px) and (max-width:700px) {
+  .div-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-container-contact {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .form-contacto {
+    width: 100%;
+    align-items: center;
+  }
+
+  .input-form,
+  .area-form {
+    width: 70%;
+  }
+
+  .label-form {
+    width: 70%;
+    text-align: left;
+  }
+
+  .button-form {
+    width: 50%;
+  }
 }

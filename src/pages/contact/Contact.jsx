@@ -8,23 +8,34 @@ const Contact = () => {
     name: '',
     mail: '',
     message: '',
-    reason: ''
+    reason: '',
+    telefono: ''
   });
   const [data, setData] = useState({
     name: '',
     mail: '',
     message: '',
-    reason: ''
+    reason: '',
+    telefono: ''
   })
 
   const handleChange = (e) => {
-    setData({
-      ...data,
-      [e.target.name]: e.target.value
-    })
+    const { name, value } = e.target;
+    if (name === "telefono") {
+      const onlyNums = value.replace(/[^0-9]/g, '');
+      setData({
+        ...data,
+        [name]: onlyNums
+      });
+    } else {
+      setData({
+        ...data,
+        [name]: value
+      });
+    }
     setErrors({
       ...errors,
-      [e.target.name]: ''
+      [name]: ''
     });
   }
 
@@ -38,6 +49,8 @@ const Contact = () => {
     }
     if (!data.mail.trim()) {
       newErrors.mail = 'El correo electrónico no puede estar vacío';
+    } else if (!/\S+@\S+\.\S+/.test(data.mail)) {
+      newErrors.mail = 'El correo electrónico no es válido';
     }
     if (!data.message.trim()) {
       newErrors.message = 'El mensaje no puede estar vacío';
@@ -45,8 +58,10 @@ const Contact = () => {
     if (!data.reason.trim()) {
       newErrors.reason = 'Debe seleccionar un motivo de consulta';
     }
+    if (!data.telefono.trim()) {
+      newErrors.telefono = 'El numero de telefono no puede estar vacío';
+    }
 
-    // Si hay errores, actualiza el estado de los errores
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
@@ -57,6 +72,7 @@ const Contact = () => {
         mail: '',
         message: '',
         reason: '',
+        telefono: ''
       })
     }
   };
@@ -81,6 +97,12 @@ const Contact = () => {
         {
           errors.name &&
           <p className="error-message">{errors.name}</p>
+        }
+        <label className='label-form' htmlFor="telefono">Telefono</label>
+        <input className='input-form' type="text" id="telefono" name="telefono" value={data.telefono} onChange={handleChange} pattern="[0-9]*" />
+        {
+          errors.telefono &&
+          <p className="error-message">{errors.telefono}</p>
         }
         <label className='label-form' for="mail">Correo electrónico</label>
         <input className='input-form' type="email" id="mail" name="mail" value={data.mail} onChange={handleChange} />
