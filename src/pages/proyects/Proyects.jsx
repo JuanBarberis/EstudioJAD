@@ -50,7 +50,7 @@ const Proyects = () => {
                                 onClick={() => handleProjectClick(item.id)}
 
                             >
-                                <img src={item.imagen} className={item.className === 'clase1' ? 'clase1' : 'clase2'} alt={item.nombre} />
+                                <img src={item.imagen} className='clase1' alt={item.nombre} />
                                 <h2 className='project-name'>{item.nombre}</h2>
                             </div>
                         )
@@ -59,7 +59,6 @@ const Proyects = () => {
             </div>
             <div className='container-button-ver-todos'>
                 <button className='button-ver-todos' onClick={() => navigate(`all-proyects`)}>Ver más proyectos</button>
-
             </div>
         </div>
     )
