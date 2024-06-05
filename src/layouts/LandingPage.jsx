@@ -33,7 +33,7 @@ const LandingPage = () => {
              <Header />
             <div id='inicio'><Home /></div>
             <div id='servicios'><Servicios /></div>
-            <div id='proyectos'><Proyects /></div>
+            {/* <div id='proyectos'><Proyects /></div> */}
             <div id='quienes-somos'><AboutUs /></div>
             <div id='contacto'><Contact /></div>
         </>
