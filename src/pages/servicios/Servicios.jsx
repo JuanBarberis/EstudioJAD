@@ -2,6 +2,7 @@ import React from 'react'
 import './servicios.css'
 import { PiLightbulbFilamentThin, PiArmchairThin, PiHammerThin } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
+import fondoServicios from '../../assets/imagenes/fondo-servicios.png'
 
 const Servicios = () => {
 
@@ -30,27 +31,26 @@ const Servicios = () => {
 
     return (
         <div className='div-servicios' id='servicios'>
-            <h2 className='title-servicios'>NUESTROS SERVICIOS</h2>
-            <div className='div-map-servicios'>
-                {
-                    data.map((item, index) => {
-                        return (
-                            <>
-                                <div key={index} className='servicio-item'>
 
-                                    <div className='icon-container'>
-                                        {item.icono}
-                                        <h2 className='type-container'>{item.type}</h2>
-                                    </div>
-                                    {item.text.map((textItem, textIndex) => (
-                                        <p key={textIndex} className='text-container'>{` ${textItem}`}</p>
-                                    ))}
-                                    <button className='button-servicios' onClick={() => navigate(`${item.navigation}`)}>Leer mas</button>
-                                </div>
-                            </>
-                        )
-                    })
-                }
+            <div className='div-fondo-servicios'>
+                <img className='fondo-servicios' src={fondoServicios} />
+                <h2 className='title-servicios'>NUESTROS SERVICIOS</h2>
+            </div>
+
+
+            <div className='div-map-servicios'>
+                {data.map((item, index) => (
+                    <div key={index} className='servicio-item'>
+                        <div className='icon-container'>
+                            {item.icono}
+                            <h2 className='type-container'>{item.type}</h2>
+                        </div>
+                        {item.text.map((textItem, textIndex) => (
+                            <p key={textIndex} className='text-container'>{textItem}</p>
+                        ))}
+                        <button className='button-servicios' onClick={() => navigate(item.navigation)}>Leer más</button>
+                    </div>
+                ))}
             </div>
         </div>
     )
