@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './arquitecture.css'
 import ReactImageGallery from 'react-image-gallery'
+import portadaArquitectura from '../../assets/imagenes/portada-arquitectura.jpg'
 import imagen1 from '../../assets/imagenes/imagen1.jpg'
 import imagen2 from '../../assets/imagenes/imagen2.jpg'
 import imagen3 from '../../assets/imagenes/imagen3.jpg'
@@ -10,25 +11,6 @@ import Divider from '../../components/divider/Divider'
 
 const Arquitecture = () => {
 
-
-  const carruselImage = [
-    {
-      original: imagen1,
-      thumbnail: imagen1,
-      description: 'ARQUITECTURA'
-    },
-    {
-      original: imagen2,
-      thumbnail: imagen2,
-      description: 'INTERIORISMO'
-    },
-    {
-      original: imagen3,
-      thumbnail: imagen3,
-      description: 'CONSTRUCCION '
-    },
-
-  ]
 
   const infoServicio = [
     {
@@ -58,7 +40,7 @@ const Arquitecture = () => {
           id: 1,
           title: 'PROCESO DE EJECUCION DE OBRA',
           subtitle: '',
-          description: ['	Plan de Avance', 'Planificación de Inversión por Etapas' ,'	Tramites preliminares para el inicio de obra ', 'Administración de Materiales/Recursos', 'Equipos de Trabajos Especializados para cada Etapa', 'Dirección Técnica de obra por Profesionales designados']
+          description: ['	Plan de Avance', 'Planificación de Inversión por Etapas', '	Tramites preliminares para el inicio de obra ', 'Administración de Materiales/Recursos', 'Equipos de Trabajos Especializados para cada Etapa', 'Dirección Técnica de obra por Profesionales designados']
         },
       ],
       imagen: imagen2,
@@ -71,7 +53,7 @@ const Arquitecture = () => {
           id: 1,
           title: 'PROCESO DE DISEÑO',
           subtitle: 'Proyecto de Refacción',
-          description: ['Relevamiento fotográfico y medidas de los espacios a intervenir', 'Planteo de ideas preliminares', 'Planos 2D del proyecto de Refaccion', 'Presupuesto de obra / Costo de la Inversión']
+          description: ['Relevamiento fotográfico de  espacios a intervenir', 'Planteo de ideas preliminares', 'Planos 2D del proyecto de Refaccion', 'Presupuesto de obra / Costo de la Inversión']
         },
         {
           id: 2,
@@ -91,22 +73,11 @@ const Arquitecture = () => {
   return (
     <>
       <div className='div-arquitecture'>
-        <ReactImageGallery
-          items={carruselImage}
-          showNav={false}
-          showPlayButton={false}
-          showFullscreenButton={false}
-          showThumbnails={false}
-          autoPlay={true}
-          slideDuration={7000}
-          slideInterval={4000}
-          renderItem={(item) => (
-            <div className="arquitecture-gallery">
-              <img src={item.original} className='img-arquitecture-carrousel' alt={item.description} />
+        
+        <div className="arquitecture-gallery">
+          <img src={portadaArquitectura} className='img-arquitecture-carrousel' alt={'imagenArquitectura'} />
+        </div>
 
-            </div>
-          )}
-        />
         <div className='div-text-arquitectura'>
           <p className='texto-bienvenida-arquitectura'>{'ARQUITECTURA'}</p>
           <p className='texto-presentacion-arquitectura'>{'Transformamos los espacios vacíos en escenarios con vida'}</p>
@@ -149,7 +120,7 @@ const Arquitecture = () => {
                     }`}
                 >
 
-                  <div className='div-contain-info'>
+                  <div className='div-contain-info-arquitectura'>
                     {
                       item.id === 1 &&
                       (

@@ -23,7 +23,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.575); /* Cambia el valor de opacidad según sea necesario */
+    background: rgba(0, 0, 0, 0.575);
+    /* Cambia el valor de opacidad según sea necesario */
     z-index: 1;
 }
 
@@ -82,7 +83,7 @@
 }
 
 .boton-presupuesto:hover {
-    background: rgba(0, 0, 0, 0.24);
+    background: rgba(255, 255, 255, 0.308);
 }
 
 
@@ -205,10 +206,11 @@
 }
 
 .div-container-item {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .div-container-item-reverse {
@@ -216,8 +218,10 @@
 
 }
 
-.div-contain-info {
-    width: 100%;
+.div-contain-info-arquitectura {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-detallada-arquitectura {
@@ -254,32 +258,42 @@
 }
 
 .imagen-arquitecture {
-    width: 55%;
+    width: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 320px) and (max-width: 800px) {
-    .div-h3-h6 {
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
+@media screen and (min-width: 320px) and (max-width: 950px) {
 
     .div-container-item {
         flex-direction: column;
     }
 
-}
+    .div-contain-info-arquitectura {
+        width: 80%;
+    }
 
-@media screen and (min-width: 540px) and (max-width: 800px) {
     .imagen-arquitecture {
         width: 70%;
-        margin-top: 15px;
+    }
+
+    .container-presentacion-arquitectura-p {
+        width: 100%;
     }
 }
 
+
 @media screen and (min-width: 320px) and (max-width: 539px) {
-    .div-h3-h6 {
-        margin-bottom: 10px;
+    .container-presentacion-arquitectura {
+        width: 100%;
+    }
+
+    .container-presentacion-h3-h6 {
+        width: 90%;
+    }
+
+    .container-presentacion-arquitectura-p {
+        width: 100%;
+        
     }
 
     .h3-presentacion-arquitectura {
@@ -287,7 +301,17 @@
     }
 
     .imagen-arquitecture {
-        width: 100%;
+        width: 80%;
         margin-top: 15px;
     }
+
+    .descripcion-arquitectura {
+        text-wrap: wrap;
+    }
+
+    .p-servicios-arquitectura {
+        font-size: 18px;
+    }
+
+
 }
