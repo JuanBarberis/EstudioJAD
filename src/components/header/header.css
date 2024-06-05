@@ -11,6 +11,7 @@
 }
 
 .nav-container-active {
+    /* background-color: rgba(0, 0, 0, 0.566); */
     background-color: rgba(0, 0, 0, 0.566);
     width: 100%;
     min-height: 10vh;
@@ -21,6 +22,7 @@
     position: fixed;
     z-index: 5;
 }
+
 .nav-container-black {
     background-color: black;
     width: 100%;
@@ -91,32 +93,13 @@
     justify-content: center;
     border: 2px solid white;
     border-radius: 3px;
-
-}
-
-.div-menuhamburguesa :hover {
     background-color: white;
-    color: wheat;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius: 3px;
 }
 
 .menuhamburguesa {
-    color: white;
-    width: 30px;
-    height: 30px;
-    padding: 3px;
-}
-
-.menuhamburguesa :hover {
-    width: 30px;
-    height: 30px;
-    padding: 3px;
+    color: black;
+    width: 24px;
+    height: 24px;
 }
 
 
