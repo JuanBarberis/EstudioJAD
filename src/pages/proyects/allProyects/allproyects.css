@@ -1,14 +1,15 @@
 .div-all-proyects {
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .div-all-proyectos-container {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
 }
 
 
@@ -30,14 +31,41 @@
     transform: scale(1.05); /* Escala el contenedor cuando se hace hover */
 }
 .todos-los-proyectos {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 70%;
 }
 .project-name-all {
     text-align: center;
     margin-top: 18px;
     font-weight: 200;
     font-size: 20px;
+}
+.button-back{
+    width: 15%;
+    padding: 3px;
+    border: none;
+    color: black;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 100;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.button-back::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.button-back:hover::after {
+    transform: scaleX(1);
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px){

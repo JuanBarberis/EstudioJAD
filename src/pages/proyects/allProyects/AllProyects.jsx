@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import './allproyects.css'
 import { useNavigate } from 'react-router-dom'
-import Imagen1 from '../../../assets/imagenes/imagen1.jpg'
-import Imagen2 from '../../../assets/imagenes/imagen2.jpg'
-import Imagen3 from '../../../assets/imagenes/imagen3.jpg'
+import Imagen1 from '../../../assets/imagenes/betania-plazaII.jpg'
+import Imagen2 from '../../../assets/imagenes/Cocina-AG-PORTADA PORTFOLIO.jpg'
+import Imagen3 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.2.jpg'
 import Imagen4 from '../../../assets/imagenes/imagen4.jpg'
 import Imagen5 from '../../../assets/imagenes/imagen5.jpg'
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap'
@@ -15,64 +15,40 @@ const AllProyects = () => {
     const data = [
         {
             id: 1,
-            nombre: 'Proyecto 1',
+            nombre: 'BETANIA II',
             imagen: Imagen1,
             className: 'clase1'
 
         },
         {
             id: 2,
-            nombre: 'Proyecto 2',
+            nombre: 'CASA AG',
             imagen: Imagen2,
             className: 'clase2'
         },
         {
             id: 3,
-            nombre: 'Proyecto 3',
+            nombre: 'BETANIA I',
             imagen: Imagen3,
             className: 'clase1'
         },
         {
-            id: 4,
-            nombre: 'Proyecto 4',
-            imagen: Imagen4,
-            className: 'clase2'
-        },
-        {
-            id: 5,
-            nombre: 'Proyecto 5',
-            imagen: Imagen5,
-            className: 'clase1'
-        },
-        {
-            id: 6,
-            nombre: 'Proyecto 6',
+            id: 1,
+            nombre: 'BETANIA II',
             imagen: Imagen1,
             className: 'clase1'
 
         },
         {
-            id: 7,
-            nombre: 'Proyecto 7',
+            id: 2,
+            nombre: 'CASA AG',
             imagen: Imagen2,
             className: 'clase2'
         },
         {
-            id: 8,
-            nombre: 'Proyecto 8',
+            id: 3,
+            nombre: 'BETANIA I',
             imagen: Imagen3,
-            className: 'clase1'
-        },
-        {
-            id: 9,
-            nombre: 'Proyecto 9',
-            imagen: Imagen4,
-            className: 'clase2'
-        },
-        {
-            id: 10,
-            nombre: 'Proyecto 10',
-            imagen: Imagen5,
             className: 'clase1'
         },
     ]
