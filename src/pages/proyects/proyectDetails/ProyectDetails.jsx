@@ -1,11 +1,39 @@
 import React, { useEffect } from 'react'
 import './proyectDetails.css'
 import { useNavigate, useParams } from 'react-router-dom';
-import Imagen1 from '../../../assets/imagenes/imagen1.jpg'
-import Imagen2 from '../../../assets/imagenes/imagen2.jpg'
-import Imagen3 from '../../../assets/imagenes/imagen3.jpg'
-import Imagen4 from '../../../assets/imagenes/imagen4.jpg'
-import Imagen5 from '../../../assets/imagenes/imagen5.jpg'
+import Imagen1 from '../../../assets/imagenes/betania-plazaII.jpg'
+import betaniaPlaza1 from '../../../assets/imagenes/BETANIA-PLAZA-II-FINAL.OBRA.1.jpg'
+import betaniaPlaza2 from '../../../assets/imagenes/BETANIA-PLAZA-II-FINAL.OBRA.2.jpg'
+import betaniaPlaza3 from '../../../assets/imagenes/BETANIA-PLAZA-II-FINAL.OBRA.3.jpg'
+import betaniaPlaza4 from '../../../assets/imagenes/BETANIA-PLAZA-II-FINAL.OBRA.4.jpg'
+import betaniaPlaza5 from '../../../assets/imagenes/BETANIA-PLAZA-II-FINAL.OBRA.5.jpg'
+import betaniaPlaza1Proceso from '../../../assets/imagenes/BETANIA-PLAZA-II-PROCESO.OBRA.1.jpg'
+import betaniaPlaza2Proceso from '../../../assets/imagenes/BETANIA-PLAZA-II-PROCESO.OBRA.2.jpg'
+import betaniaPlaza3Proceso from '../../../assets/imagenes/BETANIA-PLAZA-II-PROCESO.OBRA.3.jpg'
+import betaniaPlaza4Proceso from '../../../assets/imagenes/BETANIA-PLAZA-II-PROCESO.OBRA.4.jpg'
+import betaniaPlaza5Proceso from '../../../assets/imagenes/BETANIA-PLAZA-II-PROCESO.OBRA.5.jpg'
+import casaAgPortada from '../../../assets/imagenes/Portada-home-1.jpg'
+import casaAgFinalizada1 from '../../../assets/imagenes/Cocina-AG-FINAL.OBRA.1.jpg'
+import casaAgFinalizada2 from '../../../assets/imagenes/Cocina-AG-FINAL.OBRA.2.jpg'
+import casaAgFinalizada3 from '../../../assets/imagenes/Cocina-AG-FINAL.OBRA.3.jpg'
+import casaAgFinalizada4 from '../../../assets/imagenes/Cocina-AG-FINAL.OBRA.4.jpg'
+import casaAgFinalizada5 from '../../../assets/imagenes/Cocina-AG-FINAL.OBRA.5.jpg'
+import casaAgFinalizada6 from '../../../assets/imagenes/Cocina-AG-FINAL.OBRA.6.jpg'
+import casaAgFinalizada7 from '../../../assets/imagenes/Cocina-AG-FINAL.OBRA.7.jpg'
+import casaAgProceso1 from '../../../assets/imagenes/Cocina-AG-PROCESO.OBRA.1.jpg'
+import casaAgProceso2 from '../../../assets/imagenes/Cocina-AG-PROCESO.OBRA.2.jpg'
+import casaAgProceso3 from '../../../assets/imagenes/Cocina-AG-PROCESO.OBRA.3.jpg'
+import betaniaPlazaIFinal1 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.1.jpg'
+import betaniaPlazaIFinal2 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.2.jpg'
+import betaniaPlazaIFinal3 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.3.jpg'
+import betaniaPlazaIFinal4 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.4.jpg'
+import betaniaPlazaIFinal5 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.5.jpg'
+import betaniaPlazaIProceso1 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROCESO.OBRA.1.jpg'
+import betaniaPlazaIProceso2 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROCESO.OBRA.2.jpg'
+import betaniaPlazaIProceso3 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROCESO.OBRA.3.jpg'
+import betaniaPlazaIProceso4 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROCESO.OBRA.4.jpg'
+import betaniaPlazaIProceso5 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROCESO.OBRA.5.jpg'
+
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap';
 
 const ProyectDetails = () => {
@@ -17,106 +45,66 @@ const ProyectDetails = () => {
 
     const projectData = {
         1: {
-            nombre: 'Proyecto 1',
+            nombre: 'BETANIA PLAZA II',
             descripcion: 'Descripción del Proyecto 1',
             portada: Imagen1,
-            imagesProyect: [
-                Imagen1,
-                Imagen2,
-                Imagen3,
-                Imagen4,
+            images: [
+                { src: betaniaPlaza1, type: 'finalizado' },
+                { src: betaniaPlaza2, type: 'finalizado' },
+                { src: betaniaPlaza3, type: 'finalizado' },
+                { src: betaniaPlaza4, type: 'finalizado' },
+                { src: betaniaPlaza5, type: 'finalizado' },
+                { src: betaniaPlaza1Proceso, type: 'proceso' },
+                { src: betaniaPlaza2Proceso, type: 'proceso' },
+                { src: betaniaPlaza3Proceso, type: 'proceso' },
+                { src: betaniaPlaza4Proceso, type: 'proceso' },
+                { src: betaniaPlaza5Proceso, type: 'proceso' },
             ],
-            location: 'ejemplo1',
-            año: '2024',
+            location: 'Nueva Cordoba',
+            año: '2023',
             typeService: 'Arquitectura'
         },
         2: {
-            nombre: 'Proyecto 2',
+            nombre: 'CASA AG',
             descripcion: 'Descripción del Proyecto 2',
-            portada: Imagen2,
-            imagesProyect: [
-                Imagen1,
-                Imagen2,
-                Imagen3,
-                Imagen4,
+            portada: casaAgPortada,
+            images: [
+                { src: casaAgFinalizada1, type: 'finalizado' },
+                { src: casaAgFinalizada2, type: 'finalizado' },
+                { src: casaAgFinalizada3, type: 'finalizado' },
+                { src: casaAgFinalizada4, type: 'finalizado' },
+                { src: casaAgFinalizada5, type: 'finalizado' },
+                { src: casaAgFinalizada6, type: 'finalizado' },
+                { src: casaAgFinalizada7, type: 'finalizado' },
+                { src: casaAgProceso1, type: 'proceso' },
+                { src: casaAgProceso2, type: 'proceso' },
+                { src: casaAgProceso3, type: 'proceso' },
+               
             ],
-            location: 'ejemplo1',
-            año: '2024',
-            typeService: 'Arquitectura'
+            location: 'Villa Belgrano',
+            año: '2023',
+            typeService: 'Remodelación'
         },
         3: {
-            nombre: 'Proyecto 3',
-            descripcion: 'Descripción del Proyecto 3',
-            portada: Imagen3,
-            imagesProyect: [
-                Imagen1,
-                Imagen2,
-                Imagen3,
-                Imagen4,
-            ],
-            location: 'ejemplo1',
-            año: '2024',
-            typeService: 'Arquitectura'
-        },
-        4: {
-            nombre: 'Proyecto 4',
-            descripcion: 'Descripción del Proyecto 4',
-            portada: Imagen4,
-            imagesProyect: [
-                Imagen1,
-                Imagen2,
-                Imagen3,
-                Imagen4,
-            ],
-            location: 'ejemplo1',
-            año: '2024',
-            typeService: 'Arquitectura'
-        },
-        5: {
-            nombre: 'Proyecto 5',
-            descripcion: 'Descripción del Proyecto 5',
-            portada: Imagen5,
-            imagesProyect: [
-                Imagen1,
-                Imagen2,
-                Imagen3,
-                Imagen4,
-            ],
-            location: 'ejemplo1',
-            año: '2024',
-            typeService: 'Arquitectura'
-        },
-        6: {
-            nombre: 'Proyecto 6',
-            descripcion: 'Descripción del Proyecto 6',
+            nombre: 'BETANIA PLAZA I',
+            descripcion: 'Descripción del Proyecto 1',
             portada: Imagen1,
-            imagesProyect: [
-                Imagen1,
-                Imagen2,
-                Imagen3,
-                Imagen4,
+            images: [
+                { src: betaniaPlazaIFinal1, type: 'finalizado' },
+                { src: betaniaPlazaIFinal2, type: 'finalizado' },
+                { src: betaniaPlazaIFinal3, type: 'finalizado' },
+                { src: betaniaPlazaIFinal4, type: 'finalizado' },
+                { src: betaniaPlazaIFinal5, type: 'finalizado' },
+                { src: betaniaPlazaIProceso1, type: 'proceso' },
+                { src: betaniaPlazaIProceso2, type: 'proceso' },
+                { src: betaniaPlazaIProceso3, type: 'proceso' },
+                { src: betaniaPlazaIProceso4, type: 'proceso' },
+                { src: betaniaPlazaIProceso5, type: 'proceso' },
             ],
-            location: 'ejemplo1',
-            año: '2024',
+            location: 'Nueva Cordoba',
+            año: '2023',
             typeService: 'Arquitectura'
         },
-        7: {
-            nombre: 'Proyecto 7',
-            descripcion: 'Descripción del Proyecto 7',
-            portada: Imagen2,
-            imagesProyect: [
-                Imagen1,
-                Imagen2,
-                Imagen3,
-                Imagen4,
-            ],
-            location: 'ejemplo1',
-            año: '2024',
-            typeService: 'Arquitectura'
-        },
-        // 8: { nombre: 'Proyecto 8', descripcion: 'Descripción del Proyecto 8', imagen: Imagen3 },
-        // 9: { nombre: 'Proyecto 9', descripcion: 'Descripción del Proyecto 9', imagen: Imagen4 },
-        // 10: { nombre: 'Proyecto 10', descripcion: 'Descripción del Proyecto 10', imagen: Imagen5 },
     };
 
     const project = projectData[projectId.proyectId];
@@ -128,7 +116,8 @@ const ProyectDetails = () => {
     if (!project) {
         return <div>Proyecto no encontrado</div>;
     }
-
+    
+    let lastType = null;
 
     return (
         <div className='proyect-detail'>
@@ -141,28 +130,37 @@ const ProyectDetails = () => {
             <div className='contain-description-proyect-detail'>
                 <div className='contain-location-proyect-detail'>
                     <h3 className='title-description-proyect-detail'>UBICACIÓN</h3>
-                    <p>{project.location}</p>
+                    <p className='p-description-proyect-detail'>{project.location}</p>
                 </div>
                 <div className='contain-location-proyect-detail'>
                     <h3 className='title-description-proyect-detail'>AÑO</h3>
-                    <p>{project.año}</p>
+                    <p className='p-description-proyect-detail'>{project.año}</p>
                 </div>
                 <div className='contain-location-proyect-detail'>
                     <h3 className='title-description-proyect-detail'>TIPO DE SERVICIO</h3>
-                    <p>{project.typeService}</p>
+                    <p className='p-description-proyect-detail'>{project.typeService}</p>
                 </div>
             </div>
 
             <div className='contain-image-proyect-detail'>
-                {
-                    project.imagesProyect.map((item, index) => {
-                        return (
-                            <div className='div-image-detail' key={index}>
-                                <img className='image-proyect-detail' src={item} />
+                {project.images.map((image, index) => {
+
+                    const sectionTitle = image.type !== lastType ? (
+                        <h2 key={`${image.type}-title`} className='title-proyecto-details'>
+                            {image.type === 'finalizado' ? 'FINAL DE OBRA' : 'PROYECTO EN PROCESO'}
+                        </h2>
+                    ) : null;
+                    lastType = image.type;
+
+                    return (
+                        <div key={index}>
+                            {sectionTitle}
+                            <div className='div-image-detail'>
+                                <img className='image-proyect-detail' src={image.src} alt={`Imagen ${index + 1}`} />
                             </div>
-                        )
-                    })
-                }
+                        </div>
+                    );
+                })}
             </div>
             <button className='button-ver-todos' onClick={() => navigate(-1)}>Volver atras</button>
             <BotonWhatsapp />

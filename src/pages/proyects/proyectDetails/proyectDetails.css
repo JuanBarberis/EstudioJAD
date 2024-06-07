@@ -32,7 +32,8 @@
     object-fit: cover;
     z-index: 0;
 }
-.container-name-proyect-detail{
+
+.container-name-proyect-detail {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,6 +48,7 @@
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
     gap: 15px;
 }
+
 .name-proyect-detail {
     position: absolute;
     bottom: 0;
@@ -54,11 +56,11 @@
     text-align: center;
     font-weight: 200;
     color: white;
-    
+
 }
 
-.contain-description-proyect-detail{
-    width: 70%;
+.contain-description-proyect-detail {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,12 +68,16 @@
     margin-top: 10px;
     text-align: center;
 }
-.title-description-proyect-detail{
+
+.title-description-proyect-detail {
     font-size: 25px;
     font-weight: 100;
 }
+.p-description-proyect-detail{
+    font-size: 20px;
+}
 
-.contain-image-proyect-detail{
+.contain-image-proyect-detail {
     width: 100%;
     min-height: 80vh;
     display: flex;
@@ -79,15 +85,56 @@
     gap: 10px;
 
 }
-.div-image-detail{
-    width: 100%;
+
+.div-image-detail {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.image-proyect-detail{
-    width: 70%;
-    height: 50%;
 
+.title-proyecto-details {
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-proyect-detail {
+    width: 50%;
+}
+
+@media screen and (min-width:320px) and (max-width:770px){
+    .contain-description-proyect-detail{
+        width: 100%;
+    }
+    .image-proyect-detail {
+        width: 70%;
+    }
+    .title-description-proyect-detail{
+        font-size: 20px;
+    }
+    .p-description-proyect-detail{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:771px) and (max-width:950px){
+    .contain-description-proyect-detail{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:370px){
+    .title-description-proyect-detail{
+        font-size: 18px;
+    }
+    .p-description-proyect-detail{
+        font-size: 14px;
+    }
+    .image-proyect-detail {
+        width: 90%;
+    }
 }
