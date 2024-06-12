@@ -49,6 +49,18 @@ const AllProyects = () => {
             imagen: Imagen3,
             className: 'clase1'
         },
+        {
+            id: 2,
+            nombre: 'CASA AG',
+            imagen: Imagen2,
+            className: 'clase2'
+        },
+        {
+            id: 3,
+            nombre: 'BETANIA I',
+            imagen: Imagen3,
+            className: 'clase1'
+        },
     ]
     const handleProjectClick = (id) => {
         navigate(`/proyectos/${id}`);
