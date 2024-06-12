@@ -88,7 +88,7 @@ const ProyectDetails = () => {
         3: {
             nombre: 'BETANIA PLAZA I',
             descripcion: 'Descripción del Proyecto 1',
-            portada: Imagen1,
+            portada: betaniaPlazaIFinal4,
             images: [
                 { src: betaniaPlazaIFinal1, type: 'finalizado' },
                 { src: betaniaPlazaIFinal2, type: 'finalizado' },

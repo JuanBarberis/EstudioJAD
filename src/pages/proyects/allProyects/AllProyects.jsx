@@ -3,9 +3,7 @@ import './allproyects.css'
 import { useNavigate } from 'react-router-dom'
 import Imagen1 from '../../../assets/imagenes/betania-plazaII.jpg'
 import Imagen2 from '../../../assets/imagenes/Cocina-AG-PORTADA PORTFOLIO.jpg'
-import Imagen3 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.2.jpg'
-import Imagen4 from '../../../assets/imagenes/imagen4.jpg'
-import Imagen5 from '../../../assets/imagenes/imagen5.jpg'
+import Imagen3 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.4.jpg'
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap'
 
 const AllProyects = () => {
