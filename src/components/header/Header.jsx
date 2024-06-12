@@ -62,12 +62,13 @@ export const Header = () => {
             </div>
 
 
-            {isOpen && <MenuHamburguesa  open={isOpen} />}
+            {isOpen && <MenuHamburguesa open={isOpen} />}
 
             <div className='link-container'>
                 <button className='link-path' onClick={() => handleLinkClick('/', 'inicio')}>INICIO</button>
                 <button className='link-path' onClick={() => handleLinkClick('/', 'servicios')}>SERVICIOS</button>
-                <button className='link-path' onClick={() => handleLinkClick('/', 'proyectos')}>PORTFOLIO</button>
+                <button className='link-path' onClick={() => navigate('/all-proyects')}>PORTFOLIO</button>
+                {/* <button className='link-path' onClick={() => handleLinkClick('/', 'proyectos')}>PORTFOLIO</button> */}
                 <button className='link-path' onClick={() => handleLinkClick('/', 'quienes-somos')}>ESTUDIO</button>
                 <button className='link-path' onClick={() => handleLinkClick('/', 'contacto')}>CONTACTO</button>
             </div>
