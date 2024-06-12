@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 import './contact.css'
 
 const Contact = () => {
@@ -53,8 +54,14 @@ const Contact = () => {
       .then(
         (result) => {
           if (result.status === 200 && result.text === 'OK') {
-            console.log('SUCCESS!', result);
-            setSuccessMessage('Formulario enviado correctamente.');
+            Swal.fire({
+              position: "center",
+              icon: "success",
+              title: "Formulario enviado con exito!",
+              text: 'A la brevedad nos pondremos en contacto',
+              showConfirmButton: false,
+              timer: 3000
+            });
             setData({
               user_name: '',
               user_email: '',
@@ -65,7 +72,14 @@ const Contact = () => {
             form.current.reset();
 
           } else {
-            setSuccessMessage('Algo salio mal, vuelve a intentar');
+            Swal.fire({
+              position: "center",
+              icon: "error",
+              title: "Ups!",
+              text: 'algo salio mal, vuelva a intentar',
+              showConfirmButton: false,
+              timer: 3000
+            });
             setData({
               user_name: '',
               user_email: '',
@@ -78,7 +92,14 @@ const Contact = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
-          setSuccessMessage('Algo salió mal, vuelve a intentar.');
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Ups!",
+            text: 'algo salio mal, vuelva a intentar',
+            showConfirmButton: false,
+            timer: 3000
+          });
           setIsSubmitting(false);
         },
       );
