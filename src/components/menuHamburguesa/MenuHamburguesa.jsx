@@ -32,7 +32,7 @@ const MenuHamburguesa = () => {
             <div className='profile' >
                 <button className='link-menu-hamburguesa' onClick={() => handleLinkClick('/', 'inicio')}>INICIO</button>
                 <button className='link-menu-hamburguesa' onClick={() => handleLinkClick('/', 'servicios')}>SERVICIOS</button>
-                <button className='link-menu-hamburguesa' onClick={() => handleLinkClick('/', 'proyectos')}>PORTFOLIO</button>
+                <button className='link-menu-hamburguesa' onClick={() => navigate('/all-proyects')}>PORTFOLIO</button>
                 <button className='link-menu-hamburguesa' onClick={() => handleLinkClick('/', 'quienes-somos')}>ESTUDIO</button>
                 <button className='link-menu-hamburguesa' onClick={() => handleLinkClick('/', 'contacto')}>CONTACTO</button>
             </div>

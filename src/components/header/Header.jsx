@@ -25,17 +25,18 @@ export const Header = () => {
             setNavbar(true)
         } else {
             setNavbar(false)
+           
         }
     }
-
+    
 
 
     const handleLinkClick = (path, sectionId) => {
         navigate(path, { state: { sectionId } });
     };
+
     const navClass = location.pathname === '/all-proyects'
         ? 'nav-container-black'
-        // : navParams ? 'nav-container-black'
         : (navbar ? 'nav-container-active' : 'nav-container');
 
     useEffect(() => {
@@ -51,15 +52,19 @@ export const Header = () => {
             <Link to="/inicio" spy={true} smooth={true} duration={800} className='img-logo'>
                 <img src={logo} alt='img-logo' className='logo-nav' />
             </Link>
-            <div className='div-menuhamburguesa'>
-                {
-                    !isOpen ? (
-                        <IoMenu onClick={handleRender} className='menuhamburguesa' />
-                    ) : (
-                        <IoClose onClick={handleRender} className='menuhamburguesa' />
-                    )
-                }
-            </div>
+            
+               
+                <div className='div-menuhamburguesa'>
+                    {
+                        !isOpen ? (
+                            <IoMenu onClick={handleRender} className='menuhamburguesa' />
+                        ) : (
+                            <IoClose onClick={handleRender} className='menuhamburguesa' />
+                        )
+                    }
+                </div>
+
+            
 
 
             {isOpen && <MenuHamburguesa open={isOpen} />}
