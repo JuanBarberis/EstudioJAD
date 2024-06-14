@@ -33,77 +33,126 @@ import betaniaPlazaIProceso2 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROC
 import betaniaPlazaIProceso3 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROCESO.OBRA.3.jpg'
 import betaniaPlazaIProceso4 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROCESO.OBRA.4.jpg'
 import betaniaPlazaIProceso5 from '../../../assets/imagenes/BETANIA-PLAZA-I-PROCESO.OBRA.5.jpg'
-
+import ituzaingoFinal1 from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.1.jpg'
+import ituzaingoFinal2 from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.2.jpg'
+import ituzaingoFinal3 from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.3.jpg'
+import ituzaingoFinal4 from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.4.jpg'
+import ituzaingoFinal5 from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.5.jpg'
+import ituzaingoFinal6 from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.6.jpg'
+import ituzaingoFinal7 from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.7.jpg'
+import ituzaingoFinal8 from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.8.jpg'
+import ituzaingoProceso1 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.1.jpg'
+import ituzaingoProceso2 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.2.jpg'
+import ituzaingoProceso3 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.3.jpg'
+import ituzaingoProceso4 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.4.jpg'
+import ituzaingoProceso5 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.5.jpg'
+import ituzaingoProceso6 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.6.jpg'
+import ituzaingoProceso7 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.7.jpg'
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap';
 
 const ProyectDetails = () => {
+
     const projectId = useParams();
     const navigate = useNavigate()
 
-    // Aquí puedes obtener los detalles del proyecto usando el projectId
-    // Por simplicidad, usamos datos estáticos. En una aplicación real, obtendrás datos de una API o un contexto.
-
     const projectData = {
         1: {
-            nombre: 'BETANIA PLAZA II',
-            descripcion: 'Descripción del Proyecto 1',
-            portada: Imagen1,
-            images: [
-                { src: betaniaPlaza1, type: 'finalizado' },
-                { src: betaniaPlaza2, type: 'finalizado' },
-                { src: betaniaPlaza3, type: 'finalizado' },
-                { src: betaniaPlaza4, type: 'finalizado' },
-                { src: betaniaPlaza5, type: 'finalizado' },
-                { src: betaniaPlaza1Proceso, type: 'proceso' },
-                { src: betaniaPlaza2Proceso, type: 'proceso' },
-                { src: betaniaPlaza3Proceso, type: 'proceso' },
-                { src: betaniaPlaza4Proceso, type: 'proceso' },
-                { src: betaniaPlaza5Proceso, type: 'proceso' },
+            nombre: 'BETANIA PLAZA I',
+            descripcion: ['Les presentamos Betania Plaza I, un trabajo integral de Proyecto y Ejecución de Obra, con la condición del comitente de ser un departamento destinado únicamente para alquiler temporario ubicado en el Centro de Ciudad de Córdoba.', 'De la premisa de su funcionalidad nace la idea de trabajar con materiales simples, austeros y de bajo mantenimiento como la madera aplicando una identidad al espacio y creando una calidez que se acompaña con sus tonalidades neutras en los muros.', 'La integración de espejos orgánicos y el estratégico juego de la iluminación amplía notablemente la sensación del espacio logrando una transformación completa del departamento y generando el confort de sus habitantes temporarios.'],
+            portada: betaniaPlazaIFinal4,
+            imgFinalizado: [
+
+                { src: betaniaPlazaIFinal1 },
+                { src: betaniaPlazaIFinal2 },
+                { src: betaniaPlazaIFinal3 },
+                { src: betaniaPlazaIFinal4 },
+                { src: betaniaPlazaIFinal5 },
             ],
-            location: 'Nueva Cordoba',
+            imgProceso: [
+                { src: betaniaPlazaIProceso1 },
+                { src: betaniaPlazaIProceso2 },
+                { src: betaniaPlazaIProceso3 },
+                { src: betaniaPlazaIProceso4 },
+                { src: betaniaPlazaIProceso5 },
+            ],
+            location: 'Nueva Córdoba, Córdoba',
             año: '2023',
-            typeService: 'Arquitectura'
+            typeService: 'Interiorismo '
         },
         2: {
-            nombre: 'CASA AG',
-            descripcion: 'Descripción del Proyecto 2',
-            portada: casaAgPortada,
-            images: [
-                { src: casaAgFinalizada1, type: 'finalizado' },
-                { src: casaAgFinalizada2, type: 'finalizado' },
-                { src: casaAgFinalizada3, type: 'finalizado' },
-                { src: casaAgFinalizada4, type: 'finalizado' },
-                { src: casaAgFinalizada5, type: 'finalizado' },
-                { src: casaAgFinalizada6, type: 'finalizado' },
-                { src: casaAgFinalizada7, type: 'finalizado' },
-                { src: casaAgProceso1, type: 'proceso' },
-                { src: casaAgProceso2, type: 'proceso' },
-                { src: casaAgProceso3, type: 'proceso' },
-               
+            nombre: 'BETANIA PLAZA II',
+            descripcion: ['Les presentamos Betania Plaza II, un trabajo integral de Proyecto y Ejecución de obra que se realizó paralelamente a Betania Plaza I', 'De la condición de sus comitentes, departamento destinado a ser utilizado como alquiler temporario mediante la plataforma Airbnb, nace la idea de trabajar con materiales simples, austeros y de bajo mantenimiento como la madera, aplicando una identidad al espacio y al mismo tiempo crear un contraste con las tonalidades frías elegidas para las paredes.', 'La intervención de un estratégico juego de la iluminación es la fórmula que nos lleva a lograr la sensación de amplitud de los ambientes que tanto se buscaba. De esta forma, se genera una transformación completa del departamento y el confort de sus habitantes temporarios.'],
+            portada: Imagen1,
+            imgFinalizado: [
+
+                { src: betaniaPlaza1 },
+                { src: betaniaPlaza2 },
+                { src: betaniaPlaza3 },
+                { src: betaniaPlaza4 },
+                { src: betaniaPlaza5 },
             ],
-            location: 'Villa Belgrano',
+            imgProceso: [
+                { src: betaniaPlaza1Proceso },
+                { src: betaniaPlaza2Proceso },
+                { src: betaniaPlaza3Proceso },
+                { src: betaniaPlaza4Proceso },
+                { src: betaniaPlaza5Proceso },
+            ],
+
+            location: 'Nueva Córdoba, Córdoba',
             año: '2023',
-            typeService: 'Remodelación'
+            typeService: 'Interiorismo '
         },
         3: {
-            nombre: 'BETANIA PLAZA I',
-            descripcion: 'Descripción del Proyecto 1',
-            portada: betaniaPlazaIFinal4,
-            images: [
-                { src: betaniaPlazaIFinal1, type: 'finalizado' },
-                { src: betaniaPlazaIFinal2, type: 'finalizado' },
-                { src: betaniaPlazaIFinal3, type: 'finalizado' },
-                { src: betaniaPlazaIFinal4, type: 'finalizado' },
-                { src: betaniaPlazaIFinal5, type: 'finalizado' },
-                { src: betaniaPlazaIProceso1, type: 'proceso' },
-                { src: betaniaPlazaIProceso2, type: 'proceso' },
-                { src: betaniaPlazaIProceso3, type: 'proceso' },
-                { src: betaniaPlazaIProceso4, type: 'proceso' },
-                { src: betaniaPlazaIProceso5, type: 'proceso' },
+            nombre: 'CASA AG',
+            descripcion: ['Les presentamos Cocina AG, un trabajo integral de Proyecto y Ejecución de Obra de una Remodelación que se le realizó a esta cocina de una vivienda ubicada en Villa Belgrano, zona norte de la Ciudad de Córdoba. Del encargo de sus dueños de cambiarle la cara y modernizar este espacio tan importante dentro de la casa y sumarle un valor agregado a la propiedad, nace la idea de trabajar con un diseño atemporal y funcional sobre todas la cosas.', 'La paleta de colores neutros como el gris topo dialogan con las vetas de la Piedra PuraStone quien es la protagonista en este proyecto. Los muebles laqueados blanco acompañan con su brillo y suman al gran valor del ambiente.', 'Como siempre la intervención de la estratégica iluminación en el proyecto termina de cerrar el diseño y le aporta su calidez.La reorganización y estudiada ubicación de los artefactos de cocina junto al diseño de los muebles que amplían el lugar de guardado, le generaron la funcionalidad deseada a los comitentes, logrando una cocina amplia y cómoda para sus habitantes.'],
+            portada: casaAgPortada,
+            imgFinalizado: [
+                { src: casaAgFinalizada1 },
+                { src: casaAgFinalizada2 },
+                { src: casaAgFinalizada3 },
+                { src: casaAgFinalizada4 },
+                { src: casaAgFinalizada5 },
+                { src: casaAgFinalizada6 },
+                { src: casaAgFinalizada7 },
             ],
-            location: 'Nueva Cordoba',
+            imgProceso: [
+                { src: casaAgProceso1 },
+                { src: casaAgProceso2 },
+                { src: casaAgProceso3 },
+            ],
+
+            location: 'Villa Belgrano, Cordoba',
+            año: '2022',
+            typeService: 'Remodelación'
+        },
+        4: {
+            nombre: 'ITUZAINGO',
+            descripcion: ['Les presentamos Ituzaingó, un trabajo integral de Proyecto y Ejecución de Obra, la condición del comitente consistia en un departamento que iba a ser destinado para alquiler temporario mediante la plataforma Airbnb, ubicado en Nueva Cordoba, zona céntrica de nuestra Ciudad. De la premisa de su funcionalidad nace la idea de trabajar con materiales simples, austeros y de bajo mantenimiento como la madera utilizando la misma en sus diversas texturas para aplicar una identidad al espacio y crear un diálogo armónico con las tonalidades neutras elegidas para esta tipología.', 'El diseño estratégico de la iluminación junto al juego de espejos amplios pensados en ubicaciones claves, es la fórmula que nos lleva a lograr la sensación de amplitud del espacio que tanto se buscaba. La elección de la correcta Decoración como último detalle termina de generar así una transformación completa del departamento y lograr el confort de sus habitantes temporarios, realzando de esta manera el valor del alquiler de la propiedad.'],
+            portada: ituzaingoFinal1,
+            imgFinalizado: [
+                { src: ituzaingoFinal1 },
+                { src: ituzaingoFinal2 },
+                { src: ituzaingoFinal3 },
+                { src: ituzaingoFinal4 },
+                { src: ituzaingoFinal5 },
+                { src: ituzaingoFinal6 },
+                { src: ituzaingoFinal7 },
+                { src: ituzaingoFinal8 },
+            ],
+            imgProceso: [
+                { src: ituzaingoProceso1 },
+                { src: ituzaingoProceso2 },
+                { src: ituzaingoProceso3 },
+                { src: ituzaingoProceso4 },
+                { src: ituzaingoProceso5 },
+                { src: ituzaingoProceso6 },
+                { src: ituzaingoProceso7 },
+            ],
+
+            location: 'Nueva Córdoba, Córdoba',
             año: '2023',
-            typeService: 'Arquitectura'
+            typeService: 'Interiorismo'
         },
     };
 
@@ -116,7 +165,7 @@ const ProyectDetails = () => {
     if (!project) {
         return <div>Proyecto no encontrado</div>;
     }
-    
+
     let lastType = null;
 
     return (
@@ -124,6 +173,7 @@ const ProyectDetails = () => {
             <div className='container-proyect-detail-portada'>
                 <img className='imagen-portada-proyect-detail' src={project.portada} alt={project.nombre} />
                 <div className='container-name-proyect-detail'>
+                    <h2 className='obras-proyect-detail'>OBRAS</h2>
                     <h1 className='name-proyect-detail'>{project.nombre}</h1>
                 </div>
             </div>
@@ -142,25 +192,49 @@ const ProyectDetails = () => {
                 </div>
             </div>
 
-            <div className='contain-image-proyect-detail'>
-                {project.images.map((image, index) => {
-
-                    const sectionTitle = image.type !== lastType ? (
-                        <h2 key={`${image.type}-title`} className='title-proyecto-details'>
-                            {image.type === 'finalizado' ? 'FINAL DE OBRA' : 'PROYECTO EN PROCESO'}
-                        </h2>
-                    ) : null;
-                    lastType = image.type;
-
+            <div className='div-title-projet-detail'>
+                <h2 className='title-project'>{project.nombre}</h2>
+                {project.descripcion.map((item) => {
                     return (
-                        <div key={index}>
-                            {sectionTitle}
-                            <div className='div-image-detail'>
-                                <img className='image-proyect-detail' src={image.src} alt={`Imagen ${index + 1}`} />
-                            </div>
-                        </div>
-                    );
+                        <p className='description-project-detail'>{item}</p>
+
+                    )
                 })}
+            </div>
+
+            <div className='contain-image-proyect-detail'>
+                <h2 className='title-proyecto-details'>
+                    FINAL DE OBRA
+                </h2>
+                <div className='div-section-title'>
+                    {
+                        project.imgFinalizado.map((item, index) => {
+                            return (
+                                <>
+                                    <div className='div-image-detail'>
+                                        <img className='image-proyect-detail' src={item.src} alt={project.nombre} />
+                                    </div>
+                                </>
+                            )
+                        })
+                    }
+                </div>
+                <h2 className='title-proyecto-details'>
+                    PROYECTO EN PROCESO " EL ANTES "
+                </h2>
+                <div className='div-section-title'>
+                    {
+                        project.imgProceso.map((item, index) => {
+                            return (
+                                <>
+                                    <div className='div-image-detail'>
+                                        <img className='image-proyect-detail' src={item.src} alt={project.nombre} />
+                                    </div>
+                                </>
+                            )
+                        })
+                    }
+                </div>
             </div>
             <button className='button-ver-todos' onClick={() => navigate(-1)}>Volver atras</button>
             <BotonWhatsapp />
