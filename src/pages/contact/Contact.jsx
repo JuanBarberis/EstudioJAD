@@ -2,11 +2,13 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 import './contact.css'
+import { CiInstagram, CiMail } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Contact = () => {
 
   const form = useRef();
-  const [successMessage, setSuccessMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({
     user_name: '',
@@ -147,6 +149,31 @@ const Contact = () => {
           <h6 className='text-hablemos'>HABLEMOS</h6>
           <h2 className='text-dejanos-datos'>Dejanos tus datos</h2>
           <p className='text-equipo'>NOS PONDREMOS EN CONTACTO PARA ASESORARTE</p>
+        </div>
+        <div className='div-contact-media' >
+          <a
+            href="https://www.instagram.com/estudio.jad"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none', color: 'inherit', fontWeight: 200 }}
+          >
+            <div className='social-media' >
+              <CiInstagram />
+              <p style={{ margin: 0 }}>EstudioJad</p>
+            </div>
+          </a>
+
+          <div className='social-media' >
+            <FaWhatsapp />
+            <p style={{ margin: 0 ,fontWeight: 200 }}>351 358-6001</p>
+          </div>
+
+          <div className='social-media' >
+            <CiMail />
+            <p style={{ margin: 0,fontWeight: 200  }}>estudiojad.arq@gmail.com</p>
+          </div>
+
+
         </div>
       </div>
 

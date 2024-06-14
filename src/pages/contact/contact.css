@@ -53,7 +53,16 @@
   /* color: white; */
 
 }
-
+.div-contact-media{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social-media{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .form-contacto {
   width: 50%;
   display: flex;
@@ -162,4 +171,18 @@
   .button-form {
     width: 50%;
   }
+}
+
+@media screen and (min-width:320px) and (max-width:500px){
+.div-contact-media{
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.social-media{
+  justify-content: center;
+  align-items: center;
+}
 }
