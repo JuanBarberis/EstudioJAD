@@ -37,7 +37,7 @@
 }
 .todos-los-proyectos {
     width: 90%;
-    height: 70%;
+    height: 75%;
     
 }
 .project-name-all {
@@ -82,6 +82,7 @@
     .container-all-proyectos{
         width: 70%;
     }
+    
 }
 @media screen and (min-width: 320px) and (max-width: 499px){
     .div-all-proyectos-container{
@@ -90,5 +91,8 @@
     }
     .container-all-proyectos{
         width: 90%;
+    }
+    .button-back{
+        width: 100%;
     }
 }

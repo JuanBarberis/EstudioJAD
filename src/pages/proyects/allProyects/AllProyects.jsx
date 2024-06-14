@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import Imagen1 from '../../../assets/imagenes/betania-plazaII.jpg'
 import Imagen2 from '../../../assets/imagenes/Cocina-AG-PORTADA PORTFOLIO.jpg'
 import Imagen3 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.4.jpg'
+import Ituzaingo from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.1.jpg'
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap'
 
 const AllProyects = () => {
@@ -13,54 +14,32 @@ const AllProyects = () => {
     const data = [
         {
             id: 1,
+            nombre: 'BETANIA I',
+            imagen: Imagen3,
+            className: 'clase1'
+        },
+        {
+            id: 2,
             nombre: 'BETANIA II',
             imagen: Imagen1,
             className: 'clase1'
 
         },
         {
-            id: 2,
+            id: 3,
             nombre: 'CASA AG',
             imagen: Imagen2,
             className: 'clase2'
         },
         {
-            id: 3,
-            nombre: 'BETANIA I',
-            imagen: Imagen3,
-            className: 'clase1'
-        },
-        {
-            id: 1,
-            nombre: 'BETANIA II',
-            imagen: Imagen1,
+            id: 4,
+            nombre: 'ITUZAINGO',
+            imagen: Ituzaingo,
             className: 'clase1'
 
         },
-        {
-            id: 2,
-            nombre: 'CASA AG',
-            imagen: Imagen2,
-            className: 'clase2'
-        },
-        {
-            id: 3,
-            nombre: 'BETANIA I',
-            imagen: Imagen3,
-            className: 'clase1'
-        },
-        {
-            id: 2,
-            nombre: 'CASA AG',
-            imagen: Imagen2,
-            className: 'clase2'
-        },
-        {
-            id: 3,
-            nombre: 'BETANIA I',
-            imagen: Imagen3,
-            className: 'clase1'
-        },
+      
+     
     ]
     const handleProjectClick = (id) => {
         navigate(`/proyectos/${id}`);
