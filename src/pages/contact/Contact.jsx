@@ -142,38 +142,38 @@ const Contact = () => {
   return (
     <div className='div-contact' id='contacto'>
       <div className='div-container-contact'>
-        <div className='div-todo-proyecto'>
-          <h2 className='todo-proyecto'>Todo proyecto comienza con una conversación</h2>
-        </div>
-        <div className='div-hablemos'>
-          <h6 className='text-hablemos'>HABLEMOS</h6>
-          <h2 className='text-dejanos-datos'>Dejanos tus datos</h2>
-          <p className='text-equipo'>NOS PONDREMOS EN CONTACTO PARA ASESORARTE</p>
-        </div>
-        <div className='div-contact-media' >
-          <a
-            href="https://www.instagram.com/estudio.jad"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none', color: 'inherit', fontWeight: 200 }}
-          >
+        <div  className='div-contacto-formulario' >
+          <div className='div-todo-proyecto'>
+            <h2 className='todo-proyecto'>Todo proyecto comienza con una conversación</h2>
+          </div>
+          <div className='div-hablemos'>
+            <h6 className='text-hablemos'>HABLEMOS</h6>
+            <h2 className='text-dejanos-datos'>Dejanos tus datos</h2>
+            <p className='text-equipo'>NOS PONDREMOS EN CONTACTO PARA ASESORARTE</p>
+          </div>
+          <div className='div-contact-media' >
+            <a
+              href="https://www.instagram.com/estudio.jad"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none', color: 'inherit', fontWeight: 200 }}
+            >
+              <div className='social-media' >
+                <CiInstagram />
+                <p className='social-media-p' style={{ margin: 0 }}>EstudioJad</p>
+              </div>
+            </a>
+
             <div className='social-media' >
-              <CiInstagram />
-              <p style={{ margin: 0 }}>EstudioJad</p>
+              <FaWhatsapp />
+              <p className='social-media-p' style={{ margin: 0, fontWeight: 200 }}>351 358-6001</p>
             </div>
-          </a>
 
-          <div className='social-media' >
-            <FaWhatsapp />
-            <p style={{ margin: 0 ,fontWeight: 200 }}>351 358-6001</p>
+            <div className='social-media' >
+              <CiMail />
+              <p className='social-media-p' style={{ margin: 0, fontWeight: 200 }}>estudiojad.arq@gmail.com</p>
+            </div>
           </div>
-
-          <div className='social-media' >
-            <CiMail />
-            <p style={{ margin: 0,fontWeight: 200  }}>estudiojad.arq@gmail.com</p>
-          </div>
-
-
         </div>
       </div>
 
@@ -208,7 +208,6 @@ const Contact = () => {
           {isSubmitting ? 'Enviando...' : 'Enviar'}
         </button>
       </form>
-      {/* {successMessage && <p className="success-message">{successMessage}</p>} */}
     </div>
   )
 }

@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
-
 }
 
 .arquitecture-gallery {
@@ -260,6 +259,7 @@
 .imagen-arquitecture {
     width: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 950px) {
@@ -293,7 +293,7 @@
 
     .container-presentacion-arquitectura-p {
         width: 100%;
-        
+
     }
 
     .h3-presentacion-arquitectura {
