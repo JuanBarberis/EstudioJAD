@@ -26,7 +26,9 @@ const AboutUs = () => {
     <div className='div-aboutus' id='quienes-somos'>
       <div className='div-title-about'>
         <h2 className='title-about'>¿QUIENES SOMOS?</h2>
-        <p className='text-jad'>Somos Estudio Jad, dos Hermanos que  nos enfocamos en transformar espacios y crear ambientes que reflejen la personalidad y el estilo de nuestros clientes. Con un enfoque innovador y una pasión por la excelencia, nos dedicamos a cada proyecto con un compromiso absoluto con la calidad, la funcionalidad y la estética.</p>
+        <p className='text-jad'>Somos un Estudio de Arquitectura e Interiorismo, conformado por un equipo profesional, exigente, contemporáneo y centrados en el detalle. Combinamos el diseño y la construcción para dar las mejores soluciones con estilo y vanguardia, y así transformar un rincón, en el lugar más soñado.
+          Gracias al trabajo interdisciplinario mantenemos un nivel de servicio personalizado en el cual te acompañamos en todo el proceso, desde el inicio del proyecto hasta la materialización de la obra
+        </p>
         <div className='div-nombres'>
           <p className='texto-nombre' >Arq. Juan Pablo Dousdourian</p>
           <p className='texto-nombre'>Dis. Agustina Dousdourian</p>
