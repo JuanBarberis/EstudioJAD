@@ -2,11 +2,9 @@ import React, { useEffect } from 'react'
 import './interiordesign.css'
 import ReactImageGallery from 'react-image-gallery'
 import portadaInteriorismo from '../../assets/imagenes/portada-interiorismo.jpg'
-import imagen1 from '../../assets/imagenes/imagen1.jpg'
-import imagen2 from '../../assets/imagenes/imagen2.jpg'
-import imagen3 from '../../assets/imagenes/imagen3.jpg'
-import imagen4 from '../../assets/imagenes/imagen4.jpg'
-import imagen5 from '../../assets/imagenes/imagen5.jpg'
+import imagen1 from '../../assets/imagenes/Cocina-AG-FINAL.OBRA.2.jpg'
+import imagen2 from '../../assets/imagenes/ITUZAINGO-FINAL.OBRA.2.jpg'
+import imagen3 from '../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.5.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 import { Link as ScrollLink } from 'react-scroll';
 import Divider from '../../components/divider/Divider'
@@ -69,7 +67,7 @@ const InteriorDesing = () => {
   return (
     <>
       <div className='div-arquitecture'>
-      
+
         <div className="arquitecture-gallery">
           <img src={portadaInteriorismo} className='img-arquitecture-carrousel' alt={'portadaInteriorismo'} />
         </div>
@@ -142,11 +140,13 @@ const InteriorDesing = () => {
                       </div>
                     ))}
                   </div>
-                  <img
-                    src={item.imagen}
-                    alt={item.title}
-                    className='imagen-interiorismo'
-                  />
+                  <div className='div-imagen-interiorismo'>
+                    <img
+                      src={item.imagen}
+                      alt={item.title}
+                      className='imagen-interiorismo'
+                    />
+                  </div>
                 </div>
               </>
             )

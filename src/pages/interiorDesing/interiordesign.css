@@ -130,12 +130,9 @@
 }
 
 .div-container-item-interiorismo {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* gap: 10%; */
-    /* margin-top: 5%; */
 }
 
 .div-container-item-reverse-interiorismo {
@@ -144,8 +141,7 @@
 }
 
 .div-contain-info-interiorismo {
-    width: 40%;
-    display: flex;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -153,12 +149,14 @@
 .title-interiorismo {
     font-size: 20px;
     font-weight: 600;
+    
 }
 
 .info-detallada-interiorismo {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -181,9 +179,14 @@
     font-size: 16px;
     text-wrap: wrap;
 }
+.div-imagen-interiorismo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
 
 .imagen-interiorismo {
-    width: 50%;
+    width: 90%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
