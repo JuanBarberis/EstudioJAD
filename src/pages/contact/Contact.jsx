@@ -200,7 +200,7 @@ const Contact = () => {
         </select>
         {errors.reason && <p className="error-message">{errors.reason}</p>}
 
-        <label className='label-form'>Message</label>
+        <label className='label-form'>Mensaje</label>
         <textarea className='area-form' name="message" onChange={handleChange} />
         {errors.message && <p className="error-message">{errors.message}</p>}
 
