@@ -2,7 +2,8 @@ import React from 'react'
 import './servicios.css'
 import { PiLightbulbFilamentThin, PiArmchairThin, PiHammerThin } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
-import fondoServicios from '../../assets/imagenes/fondo-servicios.png'
+// import fondoServicios from '../../assets/imagenes/fondo-servicios.png'
+import fondoServicios from '../../assets/imagenes/Portada-Servicios.jpg'
 
 const Servicios = () => {
 
@@ -34,7 +35,8 @@ const Servicios = () => {
 
             <div className='div-fondo-servicios'>
                 <img className='fondo-servicios' src={fondoServicios} />
-                <h2 className='title-servicios'>NUESTROS SERVICIOS</h2>
+                <h2 className='title-servicios'>NUESTROS </h2>
+                <h2 className='title-servicios2'> SERVICIOS</h2>
             </div>
 
 
