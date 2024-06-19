@@ -143,11 +143,6 @@
     cursor: pointer;
 }
 
-.container-recomendacion-arquitectura {
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
 
 .p-recomendacion-arquitectura {
     width: 100%;
@@ -163,10 +158,11 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 .container-proyecto-propiedad {
-    width: 100%;
+    width: 80%;
     margin-bottom: 10px;
 }
 
@@ -177,21 +173,9 @@
     font-style: italic;
 }
 
-.container-obra-propiedad {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.p-obra-propiedad {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 200;
-    font-style: italic;
-}
 
 .container-remodelacion-propiedad {
-    width: 100%;
+    width: 80%;
     display: flex;
     margin-bottom: 15px;
     margin-top: 20px;
@@ -205,10 +189,9 @@
 }
 
 .div-container-item {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     gap: 20px;
 }
 
@@ -218,13 +201,14 @@
 }
 
 .div-contain-info-arquitectura {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .info-detallada-arquitectura {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -233,6 +217,7 @@
 .title-arquitectura {
     font-size: 25px;
     font-weight: 600;
+
 }
 
 .h2-title-arquitectura {
@@ -256,20 +241,22 @@
     text-wrap: nowrap;
 }
 
-.imagen-arquitecture {
+.div-imagen-arquitectura {
     width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-arquitecture {
+    width: 90%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 950px) {
+@media screen and (min-width: 540px) and (max-width: 950px) {
 
     .div-container-item {
         flex-direction: column;
-    }
-
-    .div-contain-info-arquitectura {
-        width: 80%;
     }
 
     .imagen-arquitecture {
@@ -277,6 +264,12 @@
     }
 
     .container-presentacion-arquitectura-p {
+        width: 100%;
+    }
+    .div-imagen-arquitectura {
+        width: 60%;
+    }
+    .imagen-arquitecture{
         width: 100%;
     }
 }
@@ -313,5 +306,16 @@
         font-size: 18px;
     }
 
+    .div-imagen-arquitectura {
+        width: 100%;
+    }
+
+    .div-contain-info-arquitectura {
+        background-color: red;
+        width: 100%;
+    }
+    .div-container-item {
+        flex-direction: column;
+    }
 
 }

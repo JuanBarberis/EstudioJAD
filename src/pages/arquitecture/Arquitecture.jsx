@@ -2,15 +2,14 @@ import React, { useEffect } from 'react'
 import './arquitecture.css'
 import ReactImageGallery from 'react-image-gallery'
 import portadaArquitectura from '../../assets/imagenes/portada-arquitectura.jpg'
-import imagen1 from '../../assets/imagenes/imagen1.jpg'
-import imagen2 from '../../assets/imagenes/imagen2.jpg'
-import imagen3 from '../../assets/imagenes/imagen3.jpg'
+import imagen1 from '../../assets/imagenes/PORTADA.VISTA.PROYECTO.jpg'
+import imagen2 from '../../assets/imagenes/PORTADA.VISTA.OBRA.jpg'
+import imagen3 from '../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.5.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 import { Link as ScrollLink } from 'react-scroll';
 import Divider from '../../components/divider/Divider'
 
 const Arquitecture = () => {
-
 
   const infoServicio = [
     {
@@ -19,7 +18,7 @@ const Arquitecture = () => {
       subtitle: [
         {
           id: 1,
-          title: 'PROCESEO DE DISEÑO',
+          title: 'PROCESO DE DISEÑO',
           subtitle: 'Anteproyecto',
           description: ['Busqueda del diseño, croquis preliminares', 'Planos de Arquitectura ', 'Maqueta virtual 3D ', 'Imágenes fotorealistas en 3D ']
         },
@@ -73,7 +72,7 @@ const Arquitecture = () => {
   return (
     <>
       <div className='div-arquitecture'>
-        
+
         <div className="arquitecture-gallery">
           <img src={portadaArquitectura} className='img-arquitecture-carrousel' alt={'imagenArquitectura'} />
         </div>
@@ -133,7 +132,7 @@ const Arquitecture = () => {
                       item.id === 3 &&
                       (
                         <div key={index} className='container-remodelacion-propiedad'>
-                          <p className='p-remodelacion-propiedad'>Para remodelar o ampliar tu vivienda existente, consulta nuestro servicio de Remodelación </p>
+                          <p className='p-remodelacion-propiedad'>Si contas con una unidad ya construida y queres remodelar o ampliar los espacios, te recomendamos: </p>
                         </div>
                       )
                     }
@@ -155,11 +154,16 @@ const Arquitecture = () => {
                       </div>
                     ))}
                   </div>
-                  <img
-                    src={item.imagen}
-                    alt={item.title}
-                    className='imagen-arquitecture'
-                  />
+                  <div
+                  className='div-imagen-arquitectura'
+                  >
+
+                    <img
+                      src={item.imagen}
+                      alt={item.title}
+                      className='imagen-arquitecture'
+                    />
+                  </div>
                 </div>
               </>
             )
