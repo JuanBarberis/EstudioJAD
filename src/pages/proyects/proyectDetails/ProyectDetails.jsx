@@ -48,6 +48,80 @@ import ituzaingoProceso4 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.4
 import ituzaingoProceso5 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.5.jpg'
 import ituzaingoProceso6 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.6.jpg'
 import ituzaingoProceso7 from '../../../assets/imagenes/ITUZAINGO-PROCESO.OBRA.7.jpg'
+import CasaNgPortada from '../../../assets/imagenes/CASA.NG-PORTADA.jpg'
+import CasaNgFina1 from '../../../assets/imagenes/CASA.NG-FINAL.OBRA.1.jpg'
+import CasaNgFina2 from '../../../assets/imagenes/CASA.NG-FINAL.OBRA.2.jpg'
+import CasaNgFina3 from '../../../assets/imagenes/CASA.NG-FINAL.OBRA.3.jpg'
+import CasaNgFina4 from '../../../assets/imagenes/CASA.NG-FINAL.OBRA.4.jpg'
+import CasaNgFina5 from '../../../assets/imagenes/CASA.NG-FINAL.OBRA.5.jpg'
+import CasaNgFina6 from '../../../assets/imagenes/CASA.NG-FINAL.OBRA.6.jpg'
+import CasaNgProceso1 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.1.jpg'
+import CasaNgProceso2 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.2.jpg'
+import CasaNgProceso3 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.3.jpg'
+import CasaNgProceso4 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.4.jpg'
+import CasaNgProceso5 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.5.jpg'
+import CasaNgProceso6 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.6.jpg'
+import CasaNgProceso7 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.7.jpg'
+import CasaNgProceso8 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.8.jpg'
+import CasaNgProceso9 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.9.jpg'
+import CasaNgProceso10 from '../../../assets/imagenes/CASA.NG-PROCESO.OBRA.10.jpg'
+import RondeauPortada from '../../../assets/imagenes/BAÑO-RONDEAU-PORTADA.jpg'
+import RondeauFinal1 from '../../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.1.jpg'
+import RondeauFinal2 from '../../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.2.jpg'
+import RondeauFinal3 from '../../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.3.jpg'
+import RondeauFinal4 from '../../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.4.jpg'
+import RondeauFinal5 from '../../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.5.jpg'
+import RondeauProceso1 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.1.jpg'
+import RondeauProceso2 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.2.jpg'
+import RondeauProceso3 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.3.jpg'
+import RondeauProceso4 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.4.jpg'
+import RondeauProceso5 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.5.jpg'
+import RondeauProceso6 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.6.jpg'
+import RondeauProceso7 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.7.jpg'
+import RondeauProceso8 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.8.jpg'
+import RondeauProceso9 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.9.jpg'
+import RondeauProceso10 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.10.jpg'
+import RondeauProceso11 from '../../../assets/imagenes/BAÑO-RONDEAU-PROCESO.OBRA.11.jpg'
+import OrizaPortada from '../../../assets/imagenes/ORIZA-PORTADA.jpg'
+import OrizaFinal1 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.1.jpg'
+import OrizaFinal2 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.2.jpg'
+import OrizaFinal3 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.3.jpg'
+import OrizaFinal4 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.4.jpg'
+import OrizaFinal5 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.5.jpg'
+import OrizaFinal6 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.6.jpg'
+import OrizaFinal7 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.7.jpg'
+import OrizaFinal8 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.8.jpg'
+import OrizaFinal9 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.9.jpg'
+import OrizaFinal10 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.10.jpg'
+import OrizaFinal11 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.11.jpg'
+import OrizaFinal12 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.12.jpg'
+import OrizaFinal13 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.13.jpg'
+import OrizaFinal14 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.14.jpg'
+import OrizaFinal15 from '../../../assets/imagenes/ORIZA-FINAL.OBRA.15.jpg'
+import OrizaProceso1 from '../../../assets/imagenes/ORIZA-PROCESO.OBRA.1.jpg'
+import OrizaProceso2 from '../../../assets/imagenes/ORIZA-PROCESO.OBRA.2.jpg'
+import OrizaProceso3 from '../../../assets/imagenes/ORIZA-PROCESO.OBRA.3.jpg'
+import OrizaProceso4 from '../../../assets/imagenes/ORIZA-PROCESO.OBRA.4.jpg'
+import OrizaProceso5 from '../../../assets/imagenes/ORIZA-PROCESO.OBRA.5.jpg'
+import SorellePortada from '../../../assets/imagenes/SORELLE-PORTADA.jpg'
+import SorelleFinal1 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.1.jpg'
+import SorelleFinal3 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.3.jpg'
+import SorelleFinal4 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.4.jpg'
+import SorelleFinal5 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.5.jpg'
+import SorelleFinal6 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.6.jpg'
+import SorelleFinal7 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.7.jpg'
+import SorelleFinal8 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.8.jpg'
+import SorelleFinal9 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.9.jpg'
+import SorelleFinal10 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.10.jpg'
+import SorelleFinal11 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.11.jpg'
+import SorelleFinal12 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.12.jpg'
+import SorelleFinal13 from '../../../assets/imagenes/SORELLE-FINAL.OBRA.13.jpg'
+import SorelleProceso1 from '../../../assets/imagenes/SORELLE-PROCESO.OBRA.1.jpg'
+import SorelleProceso2 from '../../../assets/imagenes/SORELLE-PROCESO.OBRA.2.jpg'
+import SorelleProceso3 from '../../../assets/imagenes/SORELLE-PROCESO.OBRA.3.jpg'
+import SorelleProceso4 from '../../../assets/imagenes/SORELLE-PROCESO.OBRA.4.jpg'
+import SorelleProceso5 from '../../../assets/imagenes/SORELLE-PROCESO.OBRA.5.jpg'
+
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap';
 
 const ProyectDetails = () => {
@@ -77,7 +151,7 @@ const ProyectDetails = () => {
             ],
             location: 'Nueva Córdoba, Córdoba',
             año: '2023',
-            typeService: 'Interiorismo '
+            typeService: 'Interiorismo',
         },
         2: {
             nombre: 'BETANIA PLAZA II',
@@ -101,7 +175,7 @@ const ProyectDetails = () => {
 
             location: 'Nueva Córdoba, Córdoba',
             año: '2023',
-            typeService: 'Interiorismo '
+            typeService: 'Interiorismo',
         },
         3: {
             nombre: 'CASA AG',
@@ -124,7 +198,8 @@ const ProyectDetails = () => {
 
             location: 'Villa Belgrano, Cordoba',
             año: '2022',
-            typeService: 'Remodelación'
+            typeService: 'Arquitectura - Remodelación',
+            category: 'Residencial',
         },
         4: {
             nombre: 'ITUZAINGO',
@@ -152,7 +227,133 @@ const ProyectDetails = () => {
 
             location: 'Nueva Córdoba, Córdoba',
             año: '2023',
-            typeService: 'Interiorismo'
+            typeService: 'Interiorismo',
+        },
+        5: {
+            nombre: 'RONDEUA',
+            descripcion: ['Les presentamos otra obra realizada en zona de Nueva Cordoba, zona céntrica de nuestra Ciudad de Cordoba. “Rondeau” fue un trabajo integral de Proyecto y Ejecución de Obra, donde su intervención más imponente, dentro de otras, fue una transformación 100% del Baño. Del punto de partida de su funcionalidad, una unidad destinada al alquiler temporario, nace la idea de trabajar con materiales simples y austeros como revestimientos de Microcemento en muros y Porcelanato en piso, materiales fieles y de bajo mantenimiento, generando una tonalidad armónica y neutra para darle total protagonismo al sector del lavamanos que se resolvió con una pieza entera de Piedra Purastone Blanco Nube.', 'El diseño estratégico de la iluminación junto al diseño moderno del espejo nos permitió dar la sensación de amplitud que estábamos buscando ante un espacio tan pequeño e incómodo. Generando un mayor confort para sus habitantes temporarios y realzando el valor del alquiler de la propiedad.'],
+            portada: RondeauPortada,
+            imgFinalizado: [
+                { src: RondeauFinal1 },
+                { src: RondeauFinal2 },
+                { src: RondeauFinal3 },
+                { src: RondeauFinal4 },
+                { src: RondeauFinal5 },
+            ],
+            imgProceso: [
+                { src: RondeauProceso1 },
+                { src: RondeauProceso2 },
+                { src: RondeauProceso3 },
+                { src: RondeauProceso4 },
+                { src: RondeauProceso5 },
+                { src: RondeauProceso6 },
+                { src: RondeauProceso7 },
+                { src: RondeauProceso8 },
+                { src: RondeauProceso9 },
+                { src: RondeauProceso10 },
+                { src: RondeauProceso11 },
+            ],
+
+            location: 'Nueva Córdoba, Córdoba',
+            año: '2023',
+            typeService: 'Arquitectura - Remodelación',
+            category: 'Residencial'
+        },
+        6: {
+            nombre: 'CASA NG',
+            descripcion: ['“CASA NG” fue una Refacción integral de Proyecto y Ejecución de Obra ubicada en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueños de renovar los espacios y reavivar su imagen exterior nace la idea de trabajar con paletas de colores neutros y atemporales y generar un cambio de estilo con base en la restauración y reciclado.', 'La Cocina como eje de esta transformación se intervino con la restauración de todo su mueble, realizando tareas de pintura y arreglo de herrajes, reutilizando el total de sus componentes, la paleta de colores elegida junto al cambio estratégico del piso realzó la iluminación del espacio logrando la sensación de apertura hacia el patio que se buscaba.','La tarea de restauración de muros deteriorados exteriores e interiores y su posterior pintura con la correcta elección de las tonalidades acentuaron la identidad que se esperaba.'],
+            portada: CasaNgPortada,
+            imgFinalizado: [
+                { src: CasaNgFina1 },
+                { src: CasaNgFina2 },
+                { src: CasaNgFina3 },
+                { src: CasaNgFina4 },
+                { src: CasaNgFina5 },
+                { src: CasaNgFina6 },              
+            ],
+            imgProceso: [
+                { src: CasaNgProceso1 },
+                { src: CasaNgProceso2 },
+                { src: CasaNgProceso3 },
+                { src: CasaNgProceso4 },
+                { src: CasaNgProceso5 },
+                { src: CasaNgProceso6 },
+                { src: CasaNgProceso7 },
+                { src: CasaNgProceso8 },
+                { src: CasaNgProceso9 },
+                { src: CasaNgProceso10 },
+            ],
+
+            location: 'Villa Belgrano, Córdoba ',
+            año: '2023',
+            typeService: 'Arquitectura - Remodelación',
+            category: 'Residencial'
+        },
+        7: {
+            nombre: 'ORIZA',
+            descripcion: ['“CASA NG” fue una Refacción integral de Proyecto y Ejecución de Obra ubicada en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueños de renovar los espacios y reavivar su imagen exterior nace la idea de trabajar con paletas de colores neutros y atemporales y generar un cambio de estilo con base en la restauración y reciclado.', 'La Cocina como eje de esta transformación se intervino con la restauración de todo su mueble, realizando tareas de pintura y arreglo de herrajes, reutilizando el total de sus componentes, la paleta de colores elegida junto al cambio estratégico del piso realzó la iluminación del espacio logrando la sensación de apertura hacia el patio que se buscaba.','La tarea de restauración de muros deteriorados exteriores e interiores y su posterior pintura con la correcta elección de las tonalidades acentuaron la identidad que se esperaba.'],
+            portada: OrizaPortada,
+            imgFinalizado: [
+                { src: OrizaFinal1 },
+                { src: OrizaFinal2 },
+                { src: OrizaFinal3 },
+                { src: OrizaFinal4 },
+                { src: OrizaFinal5 },
+                { src: OrizaFinal6 },
+                { src: OrizaFinal7 },
+                { src: OrizaFinal8 },
+                { src: OrizaFinal9 },
+                { src: OrizaFinal10 },
+                { src: OrizaFinal11 },
+                { src: OrizaFinal12 },
+                { src: OrizaFinal13 },
+                { src: OrizaFinal14 },
+                { src: OrizaFinal15 },
+            ],
+            imgProceso: [
+                { src: OrizaProceso1 },
+                { src: OrizaProceso2 },
+                { src: OrizaProceso3 },
+                { src: OrizaProceso4},
+                { src: OrizaProceso5},
+            ],
+
+            location: 'Urca, Córdoba ',
+            año: '2019',
+            typeService: 'Arquitectura - Interiorismo',
+            category: 'Comercial'
+        },
+        8: {
+            nombre: 'SORELLE',
+            descripcion: ['“SORELLE” fue un trabajo integral de Proyecto y Ejecución de Obra de un Local de Estética Integral ubicado en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueñas de crear un ambiente armónico y femenino se decidió trabajar con colores pasteles para mantener un estilo sutil y acogedor', 'LSe realizaron varias divisiones en via seca para generar los boxes de los diferentes trabajos que no necesitan que estén conectados visualmente al resto del espacio. Y se incorporaron separaciones en forma de entramado de maderas para generar otros ambientes de conexión visual media para los trabajos menos privados.','En cuanto al exterior se restauró la fachada deteriorada y se realizaron tareas de pintura con la paleta de colores que armonice con el interior y ploteos comerciales, también en cuanto a la seguridad se agregaron rejas en vidriera y puerta. '],
+            portada: SorellePortada,
+            imgFinalizado: [
+                { src: SorelleFinal1 },
+                { src: SorelleFinal3 },
+                { src: SorelleFinal4 },
+                { src: SorelleFinal5 },
+                { src: SorelleFinal6 },
+                { src: SorelleFinal7 },
+                { src: SorelleFinal8 },
+                { src: SorelleFinal9 },
+                { src: SorelleFinal10 },
+                { src: SorelleFinal11 },
+                { src: SorelleFinal12 },
+                { src: SorelleFinal13 },
+                
+            ],
+            imgProceso: [
+                { src: SorelleProceso1 },
+                { src: SorelleProceso2 },
+                { src: SorelleProceso3 },
+                { src: SorelleProceso4 },
+                { src: SorelleProceso5 },
+            ],
+
+            location: 'Villa Belgrano, Córdoba ',
+            año: '2020',
+            typeService: 'Arquitectura - Interiorismo',
+            category: 'Comercial'
         },
     };
 
@@ -189,6 +390,10 @@ const ProyectDetails = () => {
                 <div className='contain-location-proyect-detail'>
                     <h3 className='title-description-proyect-detail'>TIPO DE SERVICIO</h3>
                     <p className='p-description-proyect-detail'>{project.typeService}</p>
+                </div>
+                <div className='contain-location-proyect-detail'>
+                    <h3 className='title-description-proyect-detail'>CATEGORIA</h3>
+                    <p className='p-description-proyect-detail'>{project.category}</p>
                 </div>
             </div>
 
