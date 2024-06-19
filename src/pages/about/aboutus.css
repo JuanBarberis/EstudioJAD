@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-around;
     gap: 20px;
     background-color: whitesmoke;
@@ -10,12 +10,14 @@
 }
 
 .div-title-about {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 40px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .title-about {
@@ -26,56 +28,50 @@
 }
 
 .text-jad {
-    width: 70%;
+    width: 80%;
     display: flex;
     font-size: 24px;
     font-weight: 200;
     color: black;
     text-align: center;
 }
-
-.div-nombres {
+.container-map {
+    width: 100%;
     display: flex;
-    gap: 10%;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+.div-nombres {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .div-nombres .texto-nombre {
+    width: 70%;
     font-size: 18px;
-    border: 1px solid grey;
-    background-color: grey;
-    color: white;
-    /* border-radius: 10px; */
+    /* border: 1px solid grey;
+    background-color: grey; */
+    /* color: white; */
+    color: black;
     text-align: center;
     padding: 3px;
-    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.2);
-
-}
-
-.container-map {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.container-map .img-quienes-somos {
-    width: 60%;
-    /* border-top-left-radius: 45%;
-    border-top-right-radius: 45%; */
-    box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.2);
     /* box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.2); */
 
 }
 
-.div-box-about {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid black; */
-    align-items: center;
-    padding: 5;
+
+
+.container-map .img-quienes-somos {
+    width: 70%;
+    box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 @media (max-width: 900px) {
     .div-nombres {
