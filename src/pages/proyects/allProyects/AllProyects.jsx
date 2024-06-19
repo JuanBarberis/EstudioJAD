@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react'
 import './allproyects.css'
 import { useNavigate } from 'react-router-dom'
-import Imagen1 from '../../../assets/imagenes/betania-plazaII.jpg'
-import Imagen2 from '../../../assets/imagenes/Cocina-AG-PORTADA PORTFOLIO.jpg'
-import Imagen3 from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.4.jpg'
+import BetaniaPlazaII from '../../../assets/imagenes/BETANIA-PLAZA-II-FINAL.OBRA.1.jpg'
+import CasaAg from '../../../assets/imagenes/Cocina-AG-PORTADA PORTFOLIO.jpg'
+import BetaniaPlazaI from '../../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.4.jpg'
 import Ituzaingo from '../../../assets/imagenes/ITUZAINGO-FINAL.OBRA.1.jpg'
+import CasaNg from '../../../assets/imagenes/CASA.NG-FINAL.OBRA.1.jpg'
+import Oriza from '../../../assets/imagenes/ORIZA-FINAL.OBRA.1.jpg'
+import Sorelle from '../../../assets/imagenes/SORELLE-FINAL.OBRA.1.jpg'
+import Rondeau from '../../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.4.jpg'
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap'
 
 const AllProyects = () => {
@@ -15,26 +19,54 @@ const AllProyects = () => {
         {
             id: 1,
             nombre: 'BETANIA I',
-            imagen: Imagen3,
+            imagen: BetaniaPlazaI,
             className: 'clase1'
         },
         {
             id: 2,
             nombre: 'BETANIA II',
-            imagen: Imagen1,
+            imagen: BetaniaPlazaII,
             className: 'clase1'
 
         },
         {
             id: 3,
-            nombre: 'CASA AG',
-            imagen: Imagen2,
+            nombre: 'COCINA AG',
+            imagen: CasaAg,
             className: 'clase2'
         },
         {
             id: 4,
             nombre: 'ITUZAINGO',
             imagen: Ituzaingo,
+            className: 'clase1'
+
+        },
+        {
+            id: 5,
+            nombre: 'RONDEAU',
+            imagen: Rondeau,
+            className: 'clase1'
+
+        },
+        {
+            id: 6,
+            nombre: 'CASA NG',
+            imagen: CasaNg,
+            className: 'clase1'
+
+        },
+        {
+            id: 7,
+            nombre: 'ORIZA',
+            imagen: Oriza,
+            className: 'clase1'
+
+        },
+        {
+            id: 8,
+            nombre: 'SORELLE',
+            imagen: Sorelle,
             className: 'clase1'
 
         },
