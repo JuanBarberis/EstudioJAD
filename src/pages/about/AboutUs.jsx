@@ -27,9 +27,9 @@ const AboutUs = () => {
   return (
     <div className='div-aboutus' id='quienes-somos'>
       <div className='div-title-about'>
-        <div style={{display:'flex', flexDirection:'row' , alignItems:'center', gap:8, }}>
-          <h2 style={{fontWeight:200, fontSize:30}}>NUESTRO </h2>
-          <h2 className='title-about'> ESTUDIO</h2>
+        <div className='div-title-estudio'>
+          <h2 className='title-about'>NUESTRO </h2>
+          <h2 className='title-about2'> ESTUDIO</h2>
         </div>
         <p className='text-jad'>Somos un Estudio de Arquitectura e Interiorismo, fundado en 2018, conformado por un equipo profesional, exigente, contemporáneo y centrados en el detalle. Combinamos el diseño y la construcción para dar las mejores soluciones con estilo y vanguardia, y así transformar un rincón, en el lugar más soñado.
           Gracias al trabajo interdisciplinario mantenemos un nivel de servicio personalizado en el cual te acompañamos en todo el proceso, desde el inicio del proyecto hasta la materialización de la obra
