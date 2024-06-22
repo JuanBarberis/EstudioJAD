@@ -7,6 +7,9 @@ import imagen2 from '../../assets/imagenes/Porta-home-2.jpg'
 import imagen3 from '../../assets/imagenes/Portada-home-3.jpg'
 import imagen4 from '../../assets/imagenes/Portada-home-4.jpg'
 import imagen5 from '../../assets/imagenes/Portada-home-5.jpg'
+import Rondeau from '../../assets/imagenes/BAÑO-RONDEAU-PORTADA.jpg'
+import CasaNG from '../../assets/imagenes/CASA.NG-PORTADA.jpg'
+import Oriza from '../../assets/imagenes/ORIZA-PORTADA.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 
 
@@ -33,6 +36,18 @@ const Home = () => {
             original: imagen5,
             thumbnail: imagen5,
         },
+        {
+            original: Rondeau,
+            thumbnail: Rondeau,
+        },
+        {
+            original: CasaNG,
+            thumbnail: CasaNG,
+        },
+        {
+            original: Oriza,
+            thumbnail: Oriza,
+        },
 
     ]
 
@@ -45,7 +60,7 @@ const Home = () => {
                 showFullscreenButton={false}
                 showThumbnails={false}
                 autoPlay={true}
-                slideDuration={9000}
+                slideDuration={5000}
                 slideInterval={5000}
                 renderItem={(item) => (
                     <div className="image-gallery">
