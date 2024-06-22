@@ -106,11 +106,16 @@ const Construction = () => {
                       </div>
                     ))}
                   </div>
-                  <img
-                    src={item.imagen}
-                    alt={item.title}
-                    className='imagen-construccion'
-                  />
+                  <div
+                  className='div-imagen-arquitectura'
+                  >
+
+                    <img
+                      src={item.imagen}
+                      alt={item.title}
+                      className='imagen-arquitecture'
+                    />
+                  </div>
                 </div>
               </>
             )
