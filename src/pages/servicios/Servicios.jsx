@@ -35,8 +35,10 @@ const Servicios = () => {
 
             <div className='div-fondo-servicios'>
                 <img className='fondo-servicios' src={fondoServicios} />
-                <h2 className='title-servicios'>NUESTROS </h2>
-                <h2 className='title-servicios2'> SERVICIOS</h2>
+                <div className='div-title-servicios'>
+                    <h2 className='title-servicios'>NUESTROS </h2>
+                    <h2 className='title-servicios2'> SERVICIOS</h2>
+                </div>
             </div>
 
 

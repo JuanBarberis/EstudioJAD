@@ -19,7 +19,18 @@
     justify-content: center;
     margin-top: 5rem;
 }
+.div-title-servicios{
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+    margin-right: 60px;
+    background-color: whitesmoke;
+    padding-right: 5px;
 
+}
 .fondo-servicios {
     position: absolute;
     top: 0;
@@ -31,25 +42,21 @@
 }
 
 .div-servicios .title-servicios {
-    width: 100%;
-    /* position: absolute; */
     font-size: 28px;
     font-weight: 200;
     text-align: end;
-    margin-right: 100px;
-    z-index: 2;
-    text-shadow: 0px 8px 10px black;
+    /* text-shadow: 0px 8px 10px black; */
+    text-shadow: 0px 5px 10px white;
+
     color: black;
 }
 .div-servicios .title-servicios2 {
-    width: 100%;
-    /* position: absolute; */
     font-size: 28px;
     font-weight: 400;
     text-align: end;
-    margin-right: 100px;
-    z-index: 2;
-    text-shadow: 0px 8px 10px black;
+    /* text-shadow: 0px 8px 10px black; */
+    text-shadow: 0px 5px 10px white;
+
     color: black;
 }
 
@@ -143,15 +150,6 @@
 
 @media (max-width: 768px) {
 
-    /* .servicio-item {
-        width: 50%;
-    } */
-
-    .div-servicios .title-servicios {
-        font-size: 24px;
-
-    }
-
     .div-map-servicios .servicio-item .type-container {
         font-size: 25px;
     }
@@ -184,43 +182,49 @@
         align-items: center;
         position: relative;
     }
-
-
-    .fondo-servicios {
-        height: 80%;
+    .div-title-servicios{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 80px;
     }
+
+ 
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
     .servicio-item {
         width: 70%;
-        height: auto;
-
     }
 
     .div-fondo-servicios {
-        min-height: 40vh;
+        min-height: 50vh;
+        position: relative;
     }
-
+   
+    /* .fondo-servicios{
+        height: 100%;
+    } */
     .div-map-servicios {
         flex-direction: column;
         align-items: center;
         position: relative;
-
+        margin-bottom: 30px;
     }
-
-    .fondo-servicios {
-        height: 100%;
-    }
-
-    .div-servicios {
-        align-items: center;
+    
+    .div-title-servicios{
+        /* background-color: aqua; */
+        margin: 0;
+        position: absolute;
+        bottom: 0;
         justify-content: center;
+        
     }
+    .div-servicios .title-servicios2{
+       text-shadow: 0px 5px 10px white;
 
-    .div-servicios .title-servicios {
-        margin-top: 150px;
-        margin-right: 0;
-        text-align: center;
-    }
+   }
+    .div-servicios .title-servicios{
+       text-shadow: 0px 5px 10px white;
+
+   }
 }
