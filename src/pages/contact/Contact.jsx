@@ -140,75 +140,79 @@ const Contact = () => {
 
 
   return (
-    <div className='div-contact' id='contacto'>
-      <div className='div-container-contact'>
-        <div  className='div-contacto-formulario' >
-          <div className='div-todo-proyecto'>
-            <h2 className='todo-proyecto'>Todo proyecto comienza con una conversación</h2>
-          </div>
-          <div className='div-hablemos'>
-            <h6 className='text-hablemos'>HABLEMOS</h6>
-            <h2 className='text-dejanos-datos'>Dejanos tus datos</h2>
-            <p className='text-equipo'>NOS PONDREMOS EN CONTACTO PARA ASESORARTE</p>
-          </div>
-          <div className='div-contact-media' >
-            <a
-              href="https://www.instagram.com/estudio.jad"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit', fontWeight: 200 }}
-            >
-              <div className='social-media' >
-                <CiInstagram />
-                <p className='social-media-p' style={{ margin: 0 }}>EstudioJad</p>
-              </div>
-            </a>
+    <div className='div-all-contact'>
 
-            <div className='social-media' >
-              <FaWhatsapp />
-              <p className='social-media-p' style={{ margin: 0, fontWeight: 200 }}>351 358-6001</p>
+      <div className='div-contact' id='contacto'>
+        <div className='div-container-contact'>
+          <div className='div-contacto-formulario' >
+            <div className='div-todo-proyecto'>
+              <h2 className='todo-proyecto'>Todo proyecto comienza con una conversación</h2>
             </div>
+            <div className='div-hablemos'>
+              <h6 className='text-hablemos'>HABLEMOS</h6>
+              <h2 className='text-dejanos-datos'>Dejanos tus datos</h2>
+              <p className='text-equipo'>NOS PONDREMOS EN CONTACTO PARA ASESORARTE</p>
+            </div>
+            <div className='div-contact-media' >
+              <a
+                href="https://www.instagram.com/estudio.jad"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: 'inherit', fontWeight: 200 }}
+              >
+                <div className='social-media' >
+                  <CiInstagram />
+                  <p className='social-media-p' style={{ margin: 0 }}>EstudioJad</p>
+                </div>
+              </a>
 
-            <div className='social-media' >
-              <CiMail />
-              <p className='social-media-p' style={{ margin: 0, fontWeight: 200 }}>estudiojad.arq@gmail.com</p>
+              <div className='social-media' >
+                <FaWhatsapp />
+                <p className='social-media-p' style={{ margin: 0, fontWeight: 200 }}>351 358-6001</p>
+              </div>
+
+              <div className='social-media' >
+                <CiMail />
+                <p className='social-media-p' style={{ margin: 0, fontWeight: 200 }}>estudiojad.arq@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <form ref={form} className={'form-contacto'} >
+
+          <label className='label-form'>Nombre</label>
+          <input className='input-form' type="text" name="user_name" onChange={handleChange} />
+          {errors.user_name && <p className="error-message">{errors.user_name}</p>}
+
+          <label className='label-form'>Email</label>
+          <input className='input-form' type="email" name="user_email" onChange={handleChange} />
+          {errors.user_email && <p className="error-message">{errors.user_email}</p>}
+
+          <label className='label-form' >Telefono</label>
+          <input className='input-form' type="number" name="user_phone" pattern="[0-9]*" onChange={handleChange} />
+          {errors.user_phone && <p className="error-message">{errors.user_phone}</p>}
+
+          <label className='label-form' for="reason">Motivo de consulta</label>
+          <select className='input-form' name="reason" onChange={handleChange} >
+            <option className='option-select' value="">Selecciona un motivo</option>
+            <option className='option-select' value="arquitectura">Arquitectura</option>
+            <option className='option-select' value="interiorismo">Interiorismo</option>
+            <option className='option-select' value="construccion">Construcción</option>
+          </select>
+          {errors.reason && <p className="error-message">{errors.reason}</p>}
+
+          <label className='label-form'>Mensaje</label>
+          <textarea className='area-form' name="message" onChange={handleChange} />
+          {errors.message && <p className="error-message">{errors.message}</p>}
+
+          <button className='button-form' type='submit' disabled={isSubmitting} onClick={handleSubmit}>
+            {isSubmitting ? 'Enviando...' : 'Enviar'}
+          </button>
+        </form>
       </div>
-
-      <form ref={form} className={'form-contacto'} >
-
-        <label className='label-form'>Nombre</label>
-        <input className='input-form' type="text" name="user_name" onChange={handleChange} />
-        {errors.user_name && <p className="error-message">{errors.user_name}</p>}
-
-        <label className='label-form'>Email</label>
-        <input className='input-form' type="email" name="user_email" onChange={handleChange} />
-        {errors.user_email && <p className="error-message">{errors.user_email}</p>}
-
-        <label className='label-form' >Telefono</label>
-        <input className='input-form' type="number" name="user_phone" pattern="[0-9]*" onChange={handleChange} />
-        {errors.user_phone && <p className="error-message">{errors.user_phone}</p>}
-
-        <label className='label-form' for="reason">Motivo de consulta</label>
-        <select className='input-form' name="reason" onChange={handleChange} >
-          <option className='option-select' value="">Selecciona un motivo</option>
-          <option className='option-select' value="arquitectura">Arquitectura</option>
-          <option className='option-select' value="interiorismo">Interiorismo</option>
-          <option className='option-select' value="construccion">Construcción</option>
-        </select>
-        {errors.reason && <p className="error-message">{errors.reason}</p>}
-
-        <label className='label-form'>Mensaje</label>
-        <textarea className='area-form' name="message" onChange={handleChange} />
-        {errors.message && <p className="error-message">{errors.message}</p>}
-
-        <button className='button-form' type='submit' disabled={isSubmitting} onClick={handleSubmit}>
-          {isSubmitting ? 'Enviando...' : 'Enviar'}
-        </button>
-      </form>
     </div>
+
   )
 }
 
