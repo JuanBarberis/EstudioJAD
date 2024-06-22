@@ -222,6 +222,7 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 539px) {
+    
     .container-presentacion-interiorismo {
         width: 90%;
     }
@@ -242,7 +243,9 @@
     .h3-presentacion-interiorismo {
         text-align: center;
     }
-
+    .div-imagen-interiorismo{
+        width: 100%;
+    }
     .imagen-interiorismo {
         width: 80%;
         margin-top: 15px;
