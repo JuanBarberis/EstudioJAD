@@ -206,19 +206,23 @@
         width: 80%;
     }
 
-    .imagen-interiorismo {
-        width: 80%;
-    }
-
+    
     .container-presentacion-interiorismo-p {
         width: 100%;
     }
-
+    
     .div-contain-info-interiorismo {
         width: 90%;
         margin-bottom: 20px;
     }
     
+    .div-imagen-interiorismo{
+        width: 70%;
+        
+    }
+    .imagen-interiorismo {
+        width: 100%;
+    }
 }
 
 
