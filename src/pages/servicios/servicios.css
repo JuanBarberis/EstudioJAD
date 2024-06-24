@@ -19,7 +19,8 @@
     justify-content: center;
     margin-top: 5rem;
 }
-.div-title-servicios{
+
+.div-title-servicios {
     width: 100%;
     z-index: 2;
     display: flex;
@@ -31,6 +32,7 @@
     padding-right: 5px;
 
 }
+
 .fondo-servicios {
     position: absolute;
     top: 0;
@@ -50,6 +52,7 @@
 
     color: black;
 }
+
 .div-servicios .title-servicios2 {
     font-size: 28px;
     font-weight: 400;
@@ -70,7 +73,7 @@
     justify-content: center;
     position: absolute;
     margin-top: 35%;
-    
+
 }
 
 .servicio-item {
@@ -85,7 +88,7 @@
     padding: 3px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
-   }
+}
 
 .icon-container {
     display: flex;
@@ -159,7 +162,7 @@
         margin-bottom: 20px;
 
     }
-    
+
 }
 
 
@@ -182,13 +185,14 @@
         align-items: center;
         position: relative;
     }
-    .div-title-servicios{
+
+    .div-title-servicios {
         position: absolute;
         bottom: 0;
         margin-bottom: 80px;
     }
 
- 
+
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
@@ -200,7 +204,7 @@
         min-height: 50vh;
         position: relative;
     }
-   
+
     /* .fondo-servicios{
         height: 100%;
     } */
@@ -210,21 +214,23 @@
         position: relative;
         margin-bottom: 30px;
     }
-    
-    .div-title-servicios{
+
+    .div-title-servicios {
         /* background-color: aqua; */
         margin: 0;
         position: absolute;
         bottom: 0;
         justify-content: center;
-        
+
     }
-    .div-servicios .title-servicios2{
-       text-shadow: 0px 5px 10px white;
 
-   }
-    .div-servicios .title-servicios{
-       text-shadow: 0px 5px 10px white;
+    .div-servicios .title-servicios2 {
+        text-shadow: 0px 5px 10px white;
 
-   }
+    }
+
+    .div-servicios .title-servicios {
+        text-shadow: 0px 5px 10px white;
+
+    }
 }

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './servicios.css'
 import { PiLightbulbFilamentThin, PiArmchairThin, PiHammerThin } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
 // import fondoServicios from '../../assets/imagenes/fondo-servicios.png'
 import fondoServicios from '../../assets/imagenes/Portada-Servicios.jpg'
+//aos libreria 
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const Servicios = () => {
 
@@ -30,10 +33,16 @@ const Servicios = () => {
         },
     ]
 
+    useEffect(()=>{
+        Aos.init({
+            duration:1200,
+        })
+    },{})
+
     return (
         <div className='div-servicios' id='servicios'>
 
-            <div className='div-fondo-servicios'>
+            <div className='div-fondo-servicios' data-aos="fade-up">
                 <img className='fondo-servicios' src={fondoServicios} />
                 <div className='div-title-servicios'>
                     <h2 className='title-servicios'>NUESTROS </h2>
@@ -42,7 +51,7 @@ const Servicios = () => {
             </div>
 
 
-            <div className='div-map-servicios'>
+            <div className='div-map-servicios'data-aos="fade-up">
                 {data.map((item, index) => (
                     <div key={index} className='servicio-item'>
                         <div className='icon-container'>
