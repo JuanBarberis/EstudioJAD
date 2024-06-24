@@ -6,6 +6,9 @@ import imagen1 from '../../assets/imagenes/PORTADA.VISTA.CONSTRUCCION.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 import { Link as ScrollLink } from 'react-scroll';
 import Divider from '../../components/divider/Divider'
+//aos libreria 
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const Construction = () => {
 
@@ -36,24 +39,25 @@ const Construction = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    Aos.init({ duration: 1200, })
   }, []);
 
   return (
     <>
       <div className='div-arquitecture'>
-    
+
         <div className="arquitecture-gallery">
           <img src={portadaConstruccion} className='img-arquitecture-carrousel' alt={'portadaConstruccion'} />
         </div>
-        
-        <div className='div-text-construction'>
+
+        <div className='div-text-construction' data-aos="fade-up">
           <p className='texto-bienvenida-construction'>{'CONSTRUCCION'}</p>
           <p className='texto-presentacion-construction'>{'Materializamos tu proyecto'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
             <button className='boton-presupuesto'>Pedi tu presupuesto</button>
           </ScrollLink>
         </div>
-        <div className='container-presentacion-construccion'>
+        <div className='container-presentacion-construccion' data-aos="fade-down">
           <div className='container-presentacion-h3-h6'>
             <p className='p-presentacion-construccion'>Te acompañamos desde el inicio hasta el final de todo el proceso, con una propuesta integral que se amolda independientemente a la etapa en la que se encuentre tu proyecto. Nuestro servicios dentro de Construccion
             </p>
@@ -79,7 +83,7 @@ const Construction = () => {
                     }`}
                 >
 
-                  <div className='div-contain-info-construccion'>
+                  <div className='div-contain-info-construccion' data-aos="fade-right">
                     {
                       item.id === 1 &&
                       (
@@ -107,7 +111,8 @@ const Construction = () => {
                     ))}
                   </div>
                   <div
-                  className='div-imagen-arquitectura'
+                    className='div-imagen-arquitectura'
+                    data-aos="fade-left"
                   >
 
                     <img
