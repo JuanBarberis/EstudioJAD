@@ -1,10 +1,12 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 import './contact.css'
 import { CiInstagram, CiMail } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
-
+//aos libreria 
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const Contact = () => {
 
@@ -138,12 +140,17 @@ const Contact = () => {
     }
   };
 
+  useEffect(() => {
+    Aos.init({
+      duration: 1200,
+    })
+  }, [])
 
   return (
     <div className='div-all-contact'>
 
       <div className='div-contact' id='contacto'>
-        <div className='div-container-contact'>
+        <div className='div-container-contact' data-aos="fade-right">
           <div className='div-contacto-formulario' >
             <div className='div-todo-proyecto'>
               <h2 className='todo-proyecto'>Todo proyecto comienza con una conversación</h2>
@@ -179,7 +186,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form ref={form} className={'form-contacto'} >
+        <form ref={form} className={'form-contacto'} data-aos="fade-left">
 
           <label className='label-form'>Nombre</label>
           <input className='input-form' type="text" name="user_name" onChange={handleChange} />

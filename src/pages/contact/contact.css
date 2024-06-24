@@ -3,6 +3,7 @@
   min-height: 80vh;
   background-color: whitesmoke;
   padding-top: 2rem;
+  overflow-x: hidden;
 }
 .div-contact {
   width: 100%;
