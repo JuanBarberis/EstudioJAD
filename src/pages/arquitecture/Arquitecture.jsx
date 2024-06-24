@@ -8,6 +8,9 @@ import imagen3 from '../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.5.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 import { Link as ScrollLink } from 'react-scroll';
 import Divider from '../../components/divider/Divider'
+//aos libreria 
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const Arquitecture = () => {
 
@@ -67,6 +70,7 @@ const Arquitecture = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    Aos.init({duration:1200,})
   }, []);
 
   return (
@@ -77,7 +81,7 @@ const Arquitecture = () => {
           <img src={portadaArquitectura} className='img-arquitecture-carrousel' alt={'imagenArquitectura'} />
         </div>
 
-        <div className='div-text-arquitectura'>
+        <div className='div-text-arquitectura'data-aos="fade-up">
           <p className='texto-bienvenida-arquitectura'>{'ARQUITECTURA'}</p>
           <p className='texto-presentacion-arquitectura'>{'Transformamos los espacios vacíos en escenarios con vida'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
@@ -85,7 +89,7 @@ const Arquitecture = () => {
           </ScrollLink>
         </div>
 
-        <div className='container-presentacion-arquitectura'>
+        <div className='container-presentacion-arquitectura'data-aos="fade-down">
           <div className='container-presentacion-h3-h6'>
             <h6 className='h6-presentacion-arquitectura'>Nuestras especialidades</h6>
             <h3 className='h3-presentacion-arquitectura'>Arquitectura Residencial, Comercial y Corporativa</h3>
@@ -119,7 +123,7 @@ const Arquitecture = () => {
                     }`}
                 >
 
-                  <div className='div-contain-info-arquitectura'>
+                  <div className='div-contain-info-arquitectura'data-aos="fade-right">
                     {
                       item.id === 1 &&
                       (
@@ -138,7 +142,7 @@ const Arquitecture = () => {
                     }
                     <h1 className='title-arquitectura'>{item.title}</h1>
                     {item.subtitle.map((subItem, subIndex) => (
-                      <div className='info-detallada-arquitectura' key={subIndex}>
+                      <div className='info-detallada-arquitectura' key={subIndex} >
                         {item.id === 2 &&
                           (<Divider />)
                         }
@@ -156,12 +160,14 @@ const Arquitecture = () => {
                   </div>
                   <div
                   className='div-imagen-arquitectura'
+                  
                   >
 
                     <img
                       src={item.imagen}
                       alt={item.title}
                       className='imagen-arquitecture'
+                      data-aos="fade-left"
                     />
                   </div>
                 </div>

@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
+    overflow: hidden;
+
 }
 
 .arquitecture-gallery {
@@ -249,7 +251,7 @@
 
 .imagen-arquitecture {
     width: 90%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
 
@@ -308,6 +310,7 @@
 
     .div-imagen-arquitectura {
         width: 100%;
+
     }
 
     .div-contain-info-arquitectura {
