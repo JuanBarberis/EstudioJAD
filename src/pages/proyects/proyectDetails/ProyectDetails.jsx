@@ -123,6 +123,9 @@ import SorelleProceso4 from '../../../assets/imagenes/SORELLE-PROCESO.OBRA.4.jpg
 import SorelleProceso5 from '../../../assets/imagenes/SORELLE-PROCESO.OBRA.5.jpg'
 
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap';
+//aos libreria 
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const ProyectDetails = () => {
 
@@ -230,7 +233,7 @@ const ProyectDetails = () => {
             typeService: 'Interiorismo',
         },
         5: {
-            nombre: 'RONDEUA',
+            nombre: 'RONDEAU',
             descripcion: ['Les presentamos otra obra realizada en zona de Nueva Cordoba, zona céntrica de nuestra Ciudad de Cordoba. “Rondeau” fue un trabajo integral de Proyecto y Ejecución de Obra, donde su intervención más imponente, dentro de otras, fue una transformación 100% del Baño. Del punto de partida de su funcionalidad, una unidad destinada al alquiler temporario, nace la idea de trabajar con materiales simples y austeros como revestimientos de Microcemento en muros y Porcelanato en piso, materiales fieles y de bajo mantenimiento, generando una tonalidad armónica y neutra para darle total protagonismo al sector del lavamanos que se resolvió con una pieza entera de Piedra Purastone Blanco Nube.', 'El diseño estratégico de la iluminación junto al diseño moderno del espejo nos permitió dar la sensación de amplitud que estábamos buscando ante un espacio tan pequeño e incómodo. Generando un mayor confort para sus habitantes temporarios y realzando el valor del alquiler de la propiedad.'],
             portada: RondeauPortada,
             imgFinalizado: [
@@ -261,7 +264,7 @@ const ProyectDetails = () => {
         },
         6: {
             nombre: 'CASA NG',
-            descripcion: ['“CASA NG” fue una Refacción integral de Proyecto y Ejecución de Obra ubicada en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueños de renovar los espacios y reavivar su imagen exterior nace la idea de trabajar con paletas de colores neutros y atemporales y generar un cambio de estilo con base en la restauración y reciclado.', 'La Cocina como eje de esta transformación se intervino con la restauración de todo su mueble, realizando tareas de pintura y arreglo de herrajes, reutilizando el total de sus componentes, la paleta de colores elegida junto al cambio estratégico del piso realzó la iluminación del espacio logrando la sensación de apertura hacia el patio que se buscaba.','La tarea de restauración de muros deteriorados exteriores e interiores y su posterior pintura con la correcta elección de las tonalidades acentuaron la identidad que se esperaba.'],
+            descripcion: ['“CASA NG” fue una Refacción integral de Proyecto y Ejecución de Obra ubicada en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueños de renovar los espacios y reavivar su imagen exterior nace la idea de trabajar con paletas de colores neutros y atemporales y generar un cambio de estilo con base en la restauración y reciclado.', 'La Cocina como eje de esta transformación se intervino con la restauración de todo su mueble, realizando tareas de pintura y arreglo de herrajes, reutilizando el total de sus componentes, la paleta de colores elegida junto al cambio estratégico del piso realzó la iluminación del espacio logrando la sensación de apertura hacia el patio que se buscaba.', 'La tarea de restauración de muros deteriorados exteriores e interiores y su posterior pintura con la correcta elección de las tonalidades acentuaron la identidad que se esperaba.'],
             portada: CasaNgPortada,
             imgFinalizado: [
                 { src: CasaNgFina1 },
@@ -269,7 +272,7 @@ const ProyectDetails = () => {
                 { src: CasaNgFina3 },
                 { src: CasaNgFina4 },
                 { src: CasaNgFina5 },
-                { src: CasaNgFina6 },              
+                { src: CasaNgFina6 },
             ],
             imgProceso: [
                 { src: CasaNgProceso1 },
@@ -291,7 +294,7 @@ const ProyectDetails = () => {
         },
         7: {
             nombre: 'ORIZA',
-            descripcion: ['“CASA NG” fue una Refacción integral de Proyecto y Ejecución de Obra ubicada en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueños de renovar los espacios y reavivar su imagen exterior nace la idea de trabajar con paletas de colores neutros y atemporales y generar un cambio de estilo con base en la restauración y reciclado.', 'La Cocina como eje de esta transformación se intervino con la restauración de todo su mueble, realizando tareas de pintura y arreglo de herrajes, reutilizando el total de sus componentes, la paleta de colores elegida junto al cambio estratégico del piso realzó la iluminación del espacio logrando la sensación de apertura hacia el patio que se buscaba.','La tarea de restauración de muros deteriorados exteriores e interiores y su posterior pintura con la correcta elección de las tonalidades acentuaron la identidad que se esperaba.'],
+            descripcion: ['“CASA NG” fue una Refacción integral de Proyecto y Ejecución de Obra ubicada en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueños de renovar los espacios y reavivar su imagen exterior nace la idea de trabajar con paletas de colores neutros y atemporales y generar un cambio de estilo con base en la restauración y reciclado.', 'La Cocina como eje de esta transformación se intervino con la restauración de todo su mueble, realizando tareas de pintura y arreglo de herrajes, reutilizando el total de sus componentes, la paleta de colores elegida junto al cambio estratégico del piso realzó la iluminación del espacio logrando la sensación de apertura hacia el patio que se buscaba.', 'La tarea de restauración de muros deteriorados exteriores e interiores y su posterior pintura con la correcta elección de las tonalidades acentuaron la identidad que se esperaba.'],
             portada: OrizaPortada,
             imgFinalizado: [
                 { src: OrizaFinal1 },
@@ -314,8 +317,8 @@ const ProyectDetails = () => {
                 { src: OrizaProceso1 },
                 { src: OrizaProceso2 },
                 { src: OrizaProceso3 },
-                { src: OrizaProceso4},
-                { src: OrizaProceso5},
+                { src: OrizaProceso4 },
+                { src: OrizaProceso5 },
             ],
 
             location: 'Urca, Córdoba ',
@@ -325,7 +328,7 @@ const ProyectDetails = () => {
         },
         8: {
             nombre: 'SORELLE',
-            descripcion: ['“SORELLE” fue un trabajo integral de Proyecto y Ejecución de Obra de un Local de Estética Integral ubicado en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueñas de crear un ambiente armónico y femenino se decidió trabajar con colores pasteles para mantener un estilo sutil y acogedor', 'LSe realizaron varias divisiones en via seca para generar los boxes de los diferentes trabajos que no necesitan que estén conectados visualmente al resto del espacio. Y se incorporaron separaciones en forma de entramado de maderas para generar otros ambientes de conexión visual media para los trabajos menos privados.','En cuanto al exterior se restauró la fachada deteriorada y se realizaron tareas de pintura con la paleta de colores que armonice con el interior y ploteos comerciales, también en cuanto a la seguridad se agregaron rejas en vidriera y puerta. '],
+            descripcion: ['“SORELLE” fue un trabajo integral de Proyecto y Ejecución de Obra de un Local de Estética Integral ubicado en barrio Villa Belgrano, zona norte de la Ciudad de Córdoba. De la condición de sus dueñas de crear un ambiente armónico y femenino se decidió trabajar con colores pasteles para mantener un estilo sutil y acogedor', 'LSe realizaron varias divisiones en via seca para generar los boxes de los diferentes trabajos que no necesitan que estén conectados visualmente al resto del espacio. Y se incorporaron separaciones en forma de entramado de maderas para generar otros ambientes de conexión visual media para los trabajos menos privados.', 'En cuanto al exterior se restauró la fachada deteriorada y se realizaron tareas de pintura con la paleta de colores que armonice con el interior y ploteos comerciales, también en cuanto a la seguridad se agregaron rejas en vidriera y puerta. '],
             portada: SorellePortada,
             imgFinalizado: [
                 { src: SorelleFinal1 },
@@ -340,7 +343,7 @@ const ProyectDetails = () => {
                 { src: SorelleFinal11 },
                 { src: SorelleFinal12 },
                 { src: SorelleFinal13 },
-                
+
             ],
             imgProceso: [
                 { src: SorelleProceso1 },
@@ -361,24 +364,33 @@ const ProyectDetails = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        Aos.init({ duration: 1200, })
+
     }, []);
 
     if (!project) {
-        return <div>Proyecto no encontrado</div>;
+        return <div className='proyect-not-found'>
+            <div className='not-found-message'>
+                Proyecto no encontrado
+            </div>
+            <button className='button-not-found' onClick={() => navigate(-1)}>Volver atrás</button>
+            <BotonWhatsapp />
+        </div>
+
     }
 
-    let lastType = null;
 
     return (
         <div className='proyect-detail'>
-            <div className='container-proyect-detail-portada'>
+
+            <div className='container-proyect-detail-portada' >
                 <img className='imagen-portada-proyect-detail' src={project.portada} alt={project.nombre} />
-                <div className='container-name-proyect-detail'>
+                <div className='container-name-proyect-detail' data-aos='fade-up'>
                     <h2 className='obras-proyect-detail'>OBRAS</h2>
                     <h1 className='name-proyect-detail'>{project.nombre}</h1>
                 </div>
             </div>
-            <div className='contain-description-proyect-detail'>
+            <div className='contain-description-proyect-detail' data-aos='fade-up'>
                 <div className='contain-location-proyect-detail'>
                     <h3 className='title-description-proyect-detail'>UBICACIÓN</h3>
                     <p className='p-description-proyect-detail'>{project.location}</p>
@@ -397,7 +409,7 @@ const ProyectDetails = () => {
                 </div>
             </div>
 
-            <div className='div-title-projet-detail'>
+            <div className='div-title-projet-detail' data-aos='fade-up'>
                 <h2 className='title-project'>{project.nombre}</h2>
                 {project.descripcion.map((item) => {
                     return (
@@ -408,32 +420,32 @@ const ProyectDetails = () => {
             </div>
 
             <div className='contain-image-proyect-detail'>
-                <h2 className='title-proyecto-details'>
+                <h2 className='title-proyecto-details' data-aos='fade-up'>
                     FINAL DE OBRA
                 </h2>
                 <div className='div-section-title'>
                     {
-                        project.imgFinalizado.map((item, index) => {
+                        project.imgFinalizado.map((item) => {
                             return (
                                 <>
-                                    <div className='div-image-detail'>
-                                        <img className='image-proyect-detail' src={item.src} alt={project.nombre} />
+                                    <div className='div-image-detail' data-aos='fade-up'>
+                                        <img className='image-proyect-detail'  src={item.src} alt={project.nombre} />
                                     </div>
                                 </>
                             )
                         })
                     }
                 </div>
-                <h2 className='title-proyecto-details'>
-                    PROYECTO EN PROCESO " EL ANTES "
+                <h2 className='title-proyecto-details' data-aos='fade-up'>
+                    PROYECTO EN PROCESO " ANTES "
                 </h2>
                 <div className='div-section-title'>
                     {
                         project.imgProceso.map((item, index) => {
                             return (
                                 <>
-                                    <div className='div-image-detail'>
-                                        <img className='image-proyect-detail' src={item.src} alt={project.nombre} />
+                                    <div className='div-image-detail' data-aos='fade-up'>
+                                        <img className='image-proyect-detail'  src={item.src} alt={project.nombre} />
                                     </div>
                                 </>
                             )
@@ -441,7 +453,7 @@ const ProyectDetails = () => {
                     }
                 </div>
             </div>
-            <button className='button-ver-todos' onClick={() => navigate(-1)}>Volver atras</button>
+            <button className='button-ver-todos' data-aos='fade-up' onClick={() => navigate(-1)}>Volver atras</button>
             <BotonWhatsapp />
 
         </div>

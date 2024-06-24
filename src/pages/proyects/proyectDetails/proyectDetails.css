@@ -148,6 +148,56 @@
     border-radius: 3px;
 
 }
+/*codigo para cuando no se encuentra el proyecto*/
+.proyect-not-found {
+    width: 100%;
+    height: 60vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.not-found-message {
+    font-size: 24px;
+    
+}
+
+.button-not-found {
+    width: 15%;
+    padding: 3px;
+    border: none;
+    color: black;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 100;
+    position: relative;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    transition: transform 0.7s ease-out; 
+}
+
+.button-not-found:hover {
+    transform: scale(1.05);
+}
+
+.button-not-found::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.button-not-found:hover::after {
+    transform: scaleX(1);
+}
 
 @media screen and (min-width:320px) and (max-width:770px){
     .div-section-title{
@@ -161,6 +211,9 @@
     }
     .title-description-proyect-detail {
         font-size: 20px;
+    }
+    .button-not-found{
+        width: 40%;
     }
 }
 @media screen and (min-width:320px) and (max-width:500px){
