@@ -10,6 +10,9 @@ import Oriza from '../../../assets/imagenes/ORIZA-FINAL.OBRA.1.jpg'
 import Sorelle from '../../../assets/imagenes/SORELLE-FINAL.OBRA.1.jpg'
 import Rondeau from '../../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.4.jpg'
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap'
+//aos libreria 
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const AllProyects = () => {
 
@@ -70,19 +73,23 @@ const AllProyects = () => {
             className: 'clase1'
 
         },
-      
-     
+
+
     ]
     const handleProjectClick = (id) => {
         navigate(`/proyectos/${id}`);
     };
     useEffect(() => {
         window.scrollTo(0, 0);
+        Aos.init({
+            duration: 1200,
+        })
     }, []);
 
     return (
         <div className='div-all-proyects'>
-            <div className='div-all-proyectos-container'>
+            <div className='div-all-proyectos-container' data-aos="fade-up"
+            >
                 {data.map((item, index) => (
                     <div
                         className='container-all-proyectos'
@@ -95,6 +102,7 @@ const AllProyects = () => {
                             alt={item.nombre}
                         />
                         <h2 className='project-name-all'>{item.nombre}</h2>
+
                     </div>
                 ))}
             </div>
