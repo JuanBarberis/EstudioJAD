@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './home.css'
 import "react-image-gallery/styles/css/image-gallery.css"
 import ImageGallery from 'react-image-gallery'
@@ -11,7 +11,9 @@ import Rondeau from '../../assets/imagenes/BAÑO-RONDEAU-PORTADA.jpg'
 import CasaNG from '../../assets/imagenes/CASA.NG-PORTADA.jpg'
 import Oriza from '../../assets/imagenes/ORIZA-PORTADA.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
-
+//aos libreria 
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const Home = () => {
 
@@ -51,6 +53,12 @@ const Home = () => {
 
     ]
 
+    useEffect(()=>{
+        Aos.init({
+            duration:1200
+        })
+    },[])
+
     return (
         <div className='div-home' id='inicio'>
             <ImageGallery
@@ -68,7 +76,7 @@ const Home = () => {
                     </div>
                 )}
             />
-            <div className='div-text-welcome'>
+            <div className='div-text-welcome' data-aos="fade-up">
                 <p className='texto-presentacion'>{'Creamos espacios que potencian tus sentidos'}</p>
                 <p className='texto-bienvenida'>{'Bienvenidos, te invitamos a pasar.'}</p>
             </div>
