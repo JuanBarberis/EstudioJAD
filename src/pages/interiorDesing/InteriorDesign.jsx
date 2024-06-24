@@ -8,7 +8,9 @@ import imagen3 from '../../assets/imagenes/BETANIA-PLAZA-I-FINAL.OBRA.5.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 import { Link as ScrollLink } from 'react-scroll';
 import Divider from '../../components/divider/Divider'
-
+//aos libreria 
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const InteriorDesing = () => {
 
@@ -62,6 +64,9 @@ const InteriorDesing = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    Aos.init({
+      duration:1200,
+    })
   }, []);
 
   return (
@@ -72,7 +77,7 @@ const InteriorDesing = () => {
           <img src={portadaInteriorismo} className='img-arquitecture-carrousel' alt={'portadaInteriorismo'} />
         </div>
 
-        <div className='div-text-interior'>
+        <div className='div-text-interior' data-aos="fade-up">
           <p className='texto-bienvenida-interior'>{'INTERIORISMO'}</p>
           <p className='texto-presentacion-interior'>{'Estudiamos a las texturas para que nos reciten sensaciones'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
@@ -80,7 +85,7 @@ const InteriorDesing = () => {
           </ScrollLink>
         </div>
 
-        <div className='container-presentacion-interiorismo'>
+        <div className='container-presentacion-interiorismo' data-aos="fade-up">
           <div className='container-presentacion-h3-h6'>
             <h6 className='h6-presentacion-interiorismo'>Nuestras especialidades</h6>
             <h3 className='h3-presentacion-interiorismo'>Interiorismo para Alquileres Temporarios, Viviendas y Locales Comerciales</h3>
@@ -113,7 +118,7 @@ const InteriorDesing = () => {
                     }`}
                 >
 
-                  <div className='div-contain-info-interiorismo'>
+                  <div className='div-contain-info-interiorismo' data-aos="fade-right">
                     {
                       item.id === 1 &&
                       (
@@ -140,7 +145,7 @@ const InteriorDesing = () => {
                       </div>
                     ))}
                   </div>
-                  <div className='div-imagen-interiorismo'>
+                  <div className='div-imagen-interiorismo' data-aos="fade-left">
                     <img
                       src={item.imagen}
                       alt={item.title}
