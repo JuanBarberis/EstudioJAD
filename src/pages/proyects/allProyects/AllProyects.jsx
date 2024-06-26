@@ -9,6 +9,7 @@ import CasaNg from '../../../assets/imagenes/CASA.NG-FINAL.OBRA.1.jpg'
 import Oriza from '../../../assets/imagenes/ORIZA-FINAL.OBRA.1.jpg'
 import Sorelle from '../../../assets/imagenes/SORELLE-FINAL.OBRA.1.jpg'
 import Rondeau from '../../../assets/imagenes/BAÑO-RONDEAU-FINAL.OBRA.4.jpg'
+import Duomo from '../../../assets/imagenes/DUOMO-FINAL.OBRA.2.jpg'
 import BotonWhatsapp from '../../../components/whatsapp/BotonWhatsap'
 //aos libreria 
 import 'aos/dist/aos.css';
@@ -70,6 +71,13 @@ const AllProyects = () => {
             id: 8,
             nombre: 'SORELLE',
             imagen: Sorelle,
+            className: 'clase1'
+
+        },
+        {
+            id: 9,
+            nombre: 'DUOMO',
+            imagen: Duomo,
             className: 'clase1'
 
         },
