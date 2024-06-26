@@ -26,9 +26,9 @@ const Construction = () => {
             'Plan de Avance',
             'Planificación  de inversión por Etapas',
             'Tramites preliminares para el inicio de obra',
-            'Administración de Materiales',
+            'Administración de Materiales / Recursos',
             'Equipos de Trabajos Especializados para cada Etapa',
-            'Dirección Técnica '
+            'Dirección Técnica de obra por Profesionales designados '
           ]
         },
       ],
