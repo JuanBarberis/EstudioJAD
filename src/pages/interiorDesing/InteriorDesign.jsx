@@ -41,7 +41,7 @@ const InteriorDesing = () => {
           id: 2,
           title: 'PROCESO DE OBRA',
           subtitle: 'Ejecucion de Obra de Interiorismo',
-          description: ['Fabricacion e Instalacion de Mobiliarios con nuestro Equipo Especializado', 'Administracion de Materiales', 'Conduccion Tecnica, por profesionales en Interiorismo ']
+          description: ['Fabricacion e Instalacion de Mobiliarios con nuestro Equipo Especializado', 'Administración de Materiales / Recursos', 'Conduccion Tecnica, por profesionales en Interiorismo ']
         },
       ],
       imagen: imagen2,
