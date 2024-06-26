@@ -165,29 +165,32 @@
 
 .container-proyecto-propiedad {
     width: 80%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .p-proyecto-propiedad {
     text-align: start;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
     font-style: italic;
+    /* margin-bottom: 10px; */
 }
 
 
 .container-remodelacion-propiedad {
     width: 80%;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
 .p-remodelacion-propiedad {
     text-align: start;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
     font-style: italic;
+    /* margin-bottom: 10px; */
+
 }
 
 .div-container-item {
