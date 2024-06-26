@@ -18,11 +18,17 @@ const ProyectDetails = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        Aos.init({duration:1200,})
+        Aos.init({ duration: 1200, })
     }, []);
 
     if (!project) {
-        return <div>Proyecto no encontrado</div>;
+        return <div className='proyect-not-found'>
+            <div className='not-found-message'>
+                Proyecto no encontrado
+            </div>
+            <button className='button-not-found' onClick={() => navigate(-1)}>Volver atrás</button>
+            <BotonWhatsapp />
+        </div>
     }
 
 
