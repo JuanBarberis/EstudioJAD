@@ -107,13 +107,13 @@
 }
 
 .container-construccion-propiedad {
-    width: 90%;
-    margin-bottom: 10px;
+    /* width: 80%; */
+    margin-bottom: 20px;
 }
 
 .p-construccion-propiedad {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
     font-style: italic;
 }
