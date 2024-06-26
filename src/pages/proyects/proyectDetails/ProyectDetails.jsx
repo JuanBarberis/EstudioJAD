@@ -25,7 +25,6 @@ const ProyectDetails = () => {
         return <div>Proyecto no encontrado</div>;
     }
 
-    let lastType = null;
 
     return (
         <div className='proyect-detail'>
@@ -83,7 +82,7 @@ const ProyectDetails = () => {
                     }
                 </div>
                 <h2 className='title-proyecto-details' data-aos='fade-up'>
-                    PROYECTO EN PROCESO " ANTES "
+                    PROCESO DE OBRA " ANTES "
                 </h2>
                 <div className='div-section-title'>
                     {
