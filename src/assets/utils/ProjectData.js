@@ -45,6 +45,11 @@ import ituzaingoProceso4 from '../imagenes/ITUZAINGO-PROCESO.OBRA.4.jpg'
 import ituzaingoProceso5 from '../imagenes/ITUZAINGO-PROCESO.OBRA.5.jpg'
 import ituzaingoProceso6 from '../imagenes/ITUZAINGO-PROCESO.OBRA.6.jpg'
 import ituzaingoProceso7 from '../imagenes/ITUZAINGO-PROCESO.OBRA.7.jpg'
+import ituzaingoProceso8 from '../imagenes/ITUZAINGO-PROCESO.OBRA.8.jpg'
+import ituzaingoProceso9 from '../imagenes/ITUZAINGO-PROCESO.OBRA.9.jpg'
+import ituzaingoProceso10 from '../imagenes/ITUZAINGO-PROCESO.OBRA.10.jpg'
+import ituzaingoProceso11 from '../imagenes/ITUZAINGO-PROCESO.OBRA.11.jpg'
+import ituzaingoProceso12 from '../imagenes/ITUZAINGO-PROCESO.OBRA.12.jpg'
 import CasaNgPortada from '../imagenes/CASA.NG-PORTADA.jpg'
 import CasaNgFina1 from '../imagenes/CASA.NG-FINAL.OBRA.1.jpg'
 import CasaNgFina2 from '../imagenes/CASA.NG-FINAL.OBRA.2.jpg'
@@ -118,6 +123,20 @@ import SorelleProceso2 from '../imagenes/SORELLE-PROCESO.OBRA.2.jpg'
 import SorelleProceso3 from '../imagenes/SORELLE-PROCESO.OBRA.3.jpg'
 import SorelleProceso4 from '../imagenes/SORELLE-PROCESO.OBRA.4.jpg'
 import SorelleProceso5 from '../imagenes/SORELLE-PROCESO.OBRA.5.jpg'
+import DuomoPortada from '../imagenes/DOUMO-PORTADA.jpg'
+import DuomoFinal1 from '../imagenes/DUOMO-FINAL.OBRA.1.jpg'
+import DuomoFinal2 from '../imagenes/DUOMO-FINAL.OBRA.2.jpg'
+import DuomoFinal3 from '../imagenes/DUOMO-FINAL.OBRA.3.jpg'
+import DuomoFinal4 from '../imagenes/DUOMO-FINAL.OBRA.4.jpg'
+import DuomoFinal5 from '../imagenes/DUOMO-FINAL.OBRA.5.jpg'
+import DuomoProceso1 from '../imagenes/DUOMO-PROCESO.OBRA.1.jpg'
+import DuomoProceso2 from '../imagenes/DUOMO-PROCESO.OBRA.2.jpg'
+import DuomoProceso3 from '../imagenes/DUOMO-PROCESO.OBRA.3.jpg'
+import DuomoProceso4 from '../imagenes/DUOMO-PROCESO.OBRA.4.jpg'
+import DuomoProceso5 from '../imagenes/DUOMO-PROCESO.OBRA.5.jpg'
+import DuomoProceso6 from '../imagenes/DUOMO-PROCESO.OBRA.6.jpg'
+import DuomoProceso7 from '../imagenes/DUOMO-PROCESO.OBRA.7.jpg'
+import DuomoProceso8 from '../imagenes/DUOMO-PROCESO.OBRA.8.jpg'
 
 
 const projectData = {
@@ -143,6 +162,7 @@ const projectData = {
         location: 'Nueva Córdoba, Córdoba',
         año: '2023',
         typeService: 'Interiorismo',
+        category: 'Residencial',
     },
     2: {
         nombre: 'BETANIA PLAZA II',
@@ -167,9 +187,11 @@ const projectData = {
         location: 'Nueva Córdoba, Córdoba',
         año: '2023',
         typeService: 'Interiorismo',
+        category: 'Residencial',
+
     },
     3: {
-        nombre: 'CASA AG',
+        nombre: 'Cocina AG',
         descripcion: ['Les presentamos Cocina AG, un trabajo integral de Proyecto y Ejecución de Obra de una Remodelación que se le realizó a esta cocina de una vivienda ubicada en Villa Belgrano, zona norte de la Ciudad de Córdoba. Del encargo de sus dueños de cambiarle la cara y modernizar este espacio tan importante dentro de la casa y sumarle un valor agregado a la propiedad, nace la idea de trabajar con un diseño atemporal y funcional sobre todas la cosas.', 'La paleta de colores neutros como el gris topo dialogan con las vetas de la Piedra PuraStone quien es la protagonista en este proyecto. Los muebles laqueados blanco acompañan con su brillo y suman al gran valor del ambiente.', 'Como siempre la intervención de la estratégica iluminación en el proyecto termina de cerrar el diseño y le aporta su calidez.La reorganización y estudiada ubicación de los artefactos de cocina junto al diseño de los muebles que amplían el lugar de guardado, le generaron la funcionalidad deseada a los comitentes, logrando una cocina amplia y cómoda para sus habitantes.'],
         portada: casaAgPortada,
         imgFinalizado: [
@@ -214,11 +236,18 @@ const projectData = {
             { src: ituzaingoProceso5 },
             { src: ituzaingoProceso6 },
             { src: ituzaingoProceso7 },
+            { src: ituzaingoProceso8 },
+            { src: ituzaingoProceso9 },
+            { src: ituzaingoProceso10 },
+            { src: ituzaingoProceso11 },
+            { src: ituzaingoProceso12 },
         ],
 
         location: 'Nueva Córdoba, Córdoba',
         año: '2023',
         typeService: 'Interiorismo',
+        category: 'Residencial',
+
     },
     5: {
         nombre: 'RONDEUA',
@@ -345,6 +374,33 @@ const projectData = {
         año: '2020',
         typeService: 'Arquitectura - Interiorismo',
         category: 'Comercial'
+    },
+    9: {
+        nombre: 'DUOMO',
+        descripcion: ['“DUOMO” fue un trabajo integral de Proyecto y Ejecución de Obra de un Departamento ubicado en barrio Nueva Córdoba, zona centro de la Ciudad de Córdoba. De la condición de su dueño de destinar la unidad para Alquiler Temporario, creando un ambiente cómodo y con buena carga estética para poder lucirse a la hora de promocionarlo, se decidió trabajar en un proyecto moderno y atemporal.', 'Se propuso trabajar con materiales de bajo mantenimiento como la madera natural, que a su vez le aporta una calidez especial a los ambientes. De la mano de esta iniciativa, se propusieron colores claros y pasteles a intervenir en las paredes interiores.', 'El juego estratégico de la iluminación, con artefactos minimalistas y luz led que se esconde detrás del mobiliario, provoca la sensación de amplitud del espacio que se buscaba.','El producto final coincidió fielmente al Proyecto presentado, y el encargo del comitente fue logrado con éxito.'],
+        portada: DuomoPortada,
+        imgFinalizado: [
+            { src: DuomoFinal1 },
+            { src: DuomoFinal2 },
+            { src: DuomoFinal3 },
+            { src: DuomoFinal4 },
+            { src: DuomoFinal5 },
+        ],
+        imgProceso: [
+            { src: DuomoProceso1 },
+            { src: DuomoProceso2 },
+            { src: DuomoProceso3 },
+            { src: DuomoProceso4 },
+            { src: DuomoProceso5 },
+            { src: DuomoProceso6 },
+            { src: DuomoProceso7 },
+            { src: DuomoProceso8 },
+        ],
+
+        location: 'Nueva Córdoba, Córdoba ',
+        año: '2021',
+        typeService: ' Interiorismo',
+        category: 'Residencial'
     },
 };
 
