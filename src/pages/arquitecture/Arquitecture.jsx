@@ -41,7 +41,7 @@ const Arquitecture = () => {
           id: 1,
           title: 'PROCESO DE EJECUCION DE OBRA',
           subtitle: '',
-          description: ['	Plan de Avance', 'Planificación de Inversión por Etapas', '	Tramites preliminares para el inicio de obra ', 'Administración de Materiales/Recursos', 'Equipos de Trabajos Especializados para cada Etapa', 'Dirección Técnica de obra por Profesionales designados']
+          description: ['	Plan de Avance', 'Planificación de Inversión por Etapas', '	Tramites preliminares para el inicio de obra ', 'Administración de Materiales / Recursos', 'Equipos de Trabajos Especializados para cada Etapa', 'Dirección Técnica de obra por Profesionales designados']
         },
       ],
       imagen: imagen2,
@@ -60,7 +60,7 @@ const Arquitecture = () => {
           id: 2,
           title: 'PROCESO DE OBRA',
           subtitle: 'Ejecución de Obra de Refacción',
-          description: ['Administración de Materiales/Recursos', '	Equipos de Trabajos Especializados ', 'Dirección Técnica de obra por Profesionales designados']
+          description: ['Administración de Materiales / Recursos', '	Equipos de Trabajos Especializados ', 'Dirección Técnica de obra por Profesionales designados']
         }
       ],
       imagen: imagen3,
