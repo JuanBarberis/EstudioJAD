@@ -7,9 +7,10 @@ import imagen2 from '../../assets/imagenes/Porta-home-2.jpg'
 import imagen3 from '../../assets/imagenes/Portada-home-3.jpg'
 import imagen4 from '../../assets/imagenes/Portada-home-4.jpg'
 import imagen5 from '../../assets/imagenes/Portada-home-5.jpg'
-import Rondeau from '../../assets/imagenes/BAÑO-RONDEAU-PORTADA.jpg'
-import CasaNG from '../../assets/imagenes/CASA.NG-PORTADA.jpg'
+import Rondeau from '../../assets/imagenes/Portada-HOME-7.jpg'
+import CasaNG from '../../assets/imagenes/Portada-HOME-6.jpg'
 import Oriza from '../../assets/imagenes/ORIZA-PORTADA.jpg'
+import Duomo from '../../assets/imagenes/Portada-HOME-8.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
 //aos libreria 
 import 'aos/dist/aos.css';
@@ -49,6 +50,10 @@ const Home = () => {
         {
             original: Oriza,
             thumbnail: Oriza,
+        },
+        {
+            original: Duomo,
+            thumbnail: Duomo,
         },
 
     ]
