@@ -250,7 +250,7 @@ const projectData = {
 
     },
     5: {
-        nombre: 'RONDEUA',
+        nombre: 'RONDEAU',
         descripcion: ['Les presentamos otra obra realizada en zona de Nueva Cordoba, zona céntrica de nuestra Ciudad de Cordoba. “Rondeau” fue un trabajo integral de Proyecto y Ejecución de Obra, donde su intervención más imponente, dentro de otras, fue una transformación 100% del Baño. Del punto de partida de su funcionalidad, una unidad destinada al alquiler temporario, nace la idea de trabajar con materiales simples y austeros como revestimientos de Microcemento en muros y Porcelanato en piso, materiales fieles y de bajo mantenimiento, generando una tonalidad armónica y neutra para darle total protagonismo al sector del lavamanos que se resolvió con una pieza entera de Piedra Purastone Blanco Nube.', 'El diseño estratégico de la iluminación junto al diseño moderno del espejo nos permitió dar la sensación de amplitud que estábamos buscando ante un espacio tan pequeño e incómodo. Generando un mayor confort para sus habitantes temporarios y realzando el valor del alquiler de la propiedad.'],
         portada: RondeauPortada,
         imgFinalizado: [
