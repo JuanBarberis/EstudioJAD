@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import './arquitecture.css'
-import ReactImageGallery from 'react-image-gallery'
 import portadaArquitectura from '../../assets/imagenes/portada-arquitectura.jpg'
 import imagen1 from '../../assets/imagenes/PORTADA.VISTA.PROYECTO.jpg'
 import imagen2 from '../../assets/imagenes/PORTADA.VISTA.OBRA.jpg'

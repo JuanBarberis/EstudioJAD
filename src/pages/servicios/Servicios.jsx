@@ -37,13 +37,13 @@ const Servicios = () => {
         Aos.init({
             duration:1200,
         })
-    },{})
+    },[])
 
     return (
         <div className='div-servicios' id='servicios'>
 
             <div className='div-fondo-servicios' data-aos="fade-up">
-                <img className='fondo-servicios' src={fondoServicios} />
+                <img className='fondo-servicios' src={fondoServicios} alt='fondo-portada'/>
                 <div className='div-title-servicios'>
                     <h2 className='title-servicios'>NUESTROS </h2>
                     <h2 className='title-servicios2'> SERVICIOS</h2>

@@ -4,15 +4,13 @@ import logo from '../../assets/imagenes/logo-vector.png'
 // import { Link } from 'react-scroll';
 import MenuHamburguesa from '../menuHamburguesa/MenuHamburguesa';
 import { IoMenu, IoClose } from "react-icons/io5";
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate,  } from 'react-router-dom'
 
 export const Header = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
 
-    const params = useParams()
-    const navParams = params.proyectId
     const [isOpen, setIsOpen] = useState(false);
     const [navbar, setNavbar] = useState(false);
 

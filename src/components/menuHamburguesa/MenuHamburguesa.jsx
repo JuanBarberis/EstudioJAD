@@ -1,16 +1,13 @@
-import React, { useState } from 'react'
-// import { Link } from 'react-scroll';
+import React from 'react'
 import './menuhamburguesa.css'
 import { motion } from "framer-motion";
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
+import {  useLocation, useNavigate } from 'react-router-dom'
 
 const MenuHamburguesa = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
 
-    const params = useParams()
-    const navParams = params.proyectId
     
     const handleLinkClick = (path, sectionId) => {
         navigate(path, { state: { sectionId } });
@@ -18,7 +15,6 @@ const MenuHamburguesa = () => {
 
     const navClass = location.pathname === '/all-proyects'
         ? 'nav-container-hamburguesa-black'
-        // : navParams ? 'nav-container-hamburguesa-black'
             : 'nav-container-hamburguesa';
 
     return (

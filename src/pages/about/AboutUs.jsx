@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 import './aboutus.css'
-import imgEjemplo from '../../assets/imagenes/img-ejemplo.jpg'
-import imgfoto from '../../assets/imagenes/juan-agus.jpg'
 import imgJuan from '../../assets/imagenes/Arq-juanPablo.jpg'
 import imgAgus from '../../assets/imagenes/Dis-Int-Agustina.jpg'
 
@@ -30,11 +28,11 @@ const AboutUs = () => {
       </div>
       <div className='container-map' data-aos="fade-up">
         <div className='div-nombres'>
-          <img src={imgJuan} className='img-quienes-somos' />
+          <img src={imgJuan} className='img-quienes-somos' alt='img-juanPablo' />
           <p className='texto-nombre' >Arquitecto Juan Pablo Dousdourian</p>
         </div>
         <div className='div-nombres'>
-          <img src={imgAgus} className='img-quienes-somos' />
+          <img src={imgAgus} className='img-quienes-somos' alt='img-Agustina' />
           <p className='texto-nombre'>Lic. Diseño de Interiores Agustina Dousdourian</p>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import './construction.css'
-import ReactImageGallery from 'react-image-gallery'
 import portadaConstruccion from '../../assets/imagenes/portada-construccion.jpg'
 import imagen1 from '../../assets/imagenes/PORTADA.VISTA.CONSTRUCCION.jpg'
 import BotonWhatsapp from '../../components/whatsapp/BotonWhatsap'
@@ -93,7 +92,7 @@ const Construction = () => {
                       )
                     }
                     <h1 className='title-construccion'>{item.title}</h1>
-                    {item.id != 2 &&
+                    {item.id !== 2 &&
                       (<Divider width={'100%'} />)
                     }
                     {item.subtitle.map((subItem, subIndex) => (

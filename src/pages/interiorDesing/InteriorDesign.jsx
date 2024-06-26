@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import './interiordesign.css'
-import ReactImageGallery from 'react-image-gallery'
 import portadaInteriorismo from '../../assets/imagenes/portada-interiorismo.jpg'
 import imagen1 from '../../assets/imagenes/Cocina-AG-FINAL.OBRA.2.jpg'
 import imagen2 from '../../assets/imagenes/ITUZAINGO-FINAL.OBRA.2.jpg'
@@ -128,7 +127,7 @@ const InteriorDesing = () => {
                       )
                     }
                     <h1 className='title-interiorismo'>{item.title}</h1>
-                    {item.id != 2 &&
+                    {item.id !== 2 &&
                       (<Divider width={'80%'} />)
                     }
                     {item.subtitle.map((subItem, subIndex) => (
