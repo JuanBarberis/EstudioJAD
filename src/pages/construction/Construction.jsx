@@ -21,7 +21,7 @@ const Construction = () => {
           title: 'PROCESO DE EJECUCION DE OBRA',
           subtitle: '',
           description: [
-            'Computo Métrico de Materiales',
+            'Cómputo Métrico de materiales',
             'Presupuesto de Obra',
             'Plan de Avance',
             'Planificación  de inversión por Etapas',

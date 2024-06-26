@@ -28,7 +28,7 @@ const Arquitecture = () => {
           id: 2,
           title: 'PROCESO TECNICO',
           subtitle: 'Proyecto Ejecutivo',
-          description: ['Proyecto de Ingeniería ', '	Proyecto de Instalaciones ', 'Plano Municipal', 'Computo Métrico de materiales', 'Presupuesto de Obra / Costo de la Inversión']
+          description: ['Proyecto de Ingeniería ', '	Proyecto de Instalaciones ', 'Plano Municipal', 'Cómputo Métrico de materiales', 'Presupuesto de Obra / Costo de la Inversión']
         }
       ],
       imagen: imagen1,
@@ -54,7 +54,7 @@ const Arquitecture = () => {
           id: 1,
           title: 'PROCESO DE DISEÑO',
           subtitle: 'Proyecto de Refacción',
-          description: ['Relevamiento fotográfico de  espacios a intervenir', 'Planteo de ideas preliminares', 'Planos 2D del proyecto de Refaccion', 'Presupuesto de obra / Costo de la Inversión']
+          description: ['Relevamiento fotográfico de  espacios a intervenir', 'Planteo de ideas preliminares', 'Planos 2D del proyecto de Refacción', 'Presupuesto de obra / Costo de la Inversión']
         },
         {
           id: 2,

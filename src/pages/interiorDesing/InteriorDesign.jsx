@@ -40,8 +40,8 @@ const InteriorDesing = () => {
         {
           id: 2,
           title: 'PROCESO DE OBRA',
-          subtitle: 'Ejecucion de Obra de Interiorismo',
-          description: ['Fabricacion e Instalacion de Mobiliarios con nuestro Equipo Especializado', 'Administración de Materiales / Recursos', 'Conduccion Tecnica, por profesionales en Interiorismo ']
+          subtitle: 'Ejecución de Obra de Interiorismo',
+          description: ['Fabricación e Instalación de Mobiliarios con nuestro Equipo Especializado', 'Administración de Materiales / Recursos', 'Conducción Tecnica, por profesionales en Interiorismo ']
         },
       ],
       imagen: imagen2,
@@ -52,9 +52,9 @@ const InteriorDesing = () => {
       subtitle: [
         {
           id: 1,
-          title: 'FABRICACION A MEDIDA',
+          title: 'FABRICACIÓN A MEDIDA',
           subtitle: '',
-          description: ['Diseño a medida de Mobiliario ', 'Fabricacion e Instalacion con nuestro Equipo de Carpinteros y Herreros']
+          description: ['Diseño a medida de Mobiliario ', 'Fabricación e Instalación con nuestro Equipo de Carpinteros y Herreros']
         },
       ],
       imagen: imagen3,
