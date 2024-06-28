@@ -127,24 +127,43 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 40px;  
 }
 
 .div-container-item-interiorismo {
     width: 90%;
+    height: 70vh;
     display: flex;
     align-items: center;
+
 }
 
 .div-container-item-reverse-interiorismo {
     flex-direction: row-reverse;
-
 }
 
 .div-contain-info-interiorismo {
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.container-proyecto-interiorismo {
+    width: 80%;
+    margin-bottom: 20px;
+}
+.p-proyecto-interiorismo {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+.div-proyecto-obra-interiorismo{
+    width: 90%;
+    min-height: 50%;
 }
 
 .title-interiorismo {
@@ -154,10 +173,9 @@
 }
 
 .info-detallada-interiorismo {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 10px;
 }
 
@@ -182,20 +200,23 @@
 }
 .div-imagen-interiorismo{
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .imagen-interiorismo {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 950px) {
 
     .div-container-item-interiorismo {
         flex-direction: column;
+        height: 100%;
     }
 
     .h3-presentacion-interiorismo {
@@ -222,6 +243,19 @@
     }
     .imagen-interiorismo {
         width: 100%;
+    }
+    .div-proyecto-obra-interiorismo{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 50%;
+        align-items: center;
+    }
+    .div-si-contas {
+        width: 90%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -259,7 +293,8 @@
     .descripcion-interiorismo {
         text-wrap: wrap;
     }
-
+    
 
 
 }
+

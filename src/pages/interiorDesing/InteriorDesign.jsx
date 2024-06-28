@@ -64,7 +64,7 @@ const InteriorDesing = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     Aos.init({
-      duration:1200,
+      duration: 1200,
     })
   }, []);
 
@@ -118,31 +118,36 @@ const InteriorDesing = () => {
                 >
 
                   <div className='div-contain-info-interiorismo' data-aos="fade-right">
-                    {
-                      item.id === 1 &&
-                      (
-                        <div key={index} className='container-proyecto-propiedad'>
-                          <p className='p-proyecto-propiedad'>Si queres darle vida a tus ambientes interiores, eso si.. ¡ con diseño y buen gusto! te recomendamos el servicio de Interiorismo</p>
-                        </div>
-                      )
-                    }
-                    <h1 className='title-interiorismo'>{item.title}</h1>
-                    {item.id !== 2 &&
-                      (<Divider width={'80%'} />)
-                    }
-                    {item.subtitle.map((subItem, subIndex) => (
-                      <div className='info-detallada-interiorismo' key={subIndex}>
-                        <h2 className='h2-title-interiorismo'>{subItem.title}</h2>
-                        <p className={subItem.subtitle ? 'p-subtitle-interiorismo' : ''}>
-                          {subItem.subtitle}
-                        </p>
-                        {subItem.description.map((desc, descIndex) => (
-                          <p key={descIndex} className='descripcion-interiorismo'>
-                            {`- ${desc}`}
+                    <div className='div-si-contas' >
+                      {
+                        item.id === 1 &&
+                        (
+                          <div key={index} className='container-proyecto-interiorismo'>
+                            <p className='p-proyecto-interiorismo'>Si queres darle vida a tus ambientes interiores, eso si.. ¡ con diseño y buen gusto! te recomendamos el servicio de Interiorismo</p>
+                          </div>
+                        )
+                      }
+                    </div>
+                    <div className='div-proyecto-obra-interiorismo'>
+                      <h1 className='title-interiorismo'>{item.title}</h1>
+                      {item.id !== 2 &&
+                        (<Divider width={'80%'} />)
+                      }
+                      {item.subtitle.map((subItem, subIndex) => (
+                        <div className='info-detallada-interiorismo' key={subIndex}>
+                          <h2 className='h2-title-interiorismo'>{subItem.title}</h2>
+                          <p className={subItem.subtitle ? 'p-subtitle-interiorismo' : ''}>
+                            {subItem.subtitle}
                           </p>
-                        ))}
-                      </div>
-                    ))}
+                          {subItem.description.map((desc, descIndex) => (
+                            <p key={descIndex} className='descripcion-interiorismo'>
+                              {`- ${desc}`}
+                            </p>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+
                   </div>
                   <div className='div-imagen-interiorismo' data-aos="fade-left">
                     <img
@@ -157,7 +162,8 @@ const InteriorDesing = () => {
           })
 
           }
-        </div>
+        </div >
+        
       </div>
       <BotonWhatsapp />
     </>
