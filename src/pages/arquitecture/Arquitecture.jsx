@@ -82,7 +82,7 @@ const Arquitecture = () => {
 
         <div className='div-text-arquitectura' data-aos="fade-up">
           <p className='texto-bienvenida-arquitectura'>{'ARQUITECTURA'}</p>
-          <p className='texto-presentacion-arquitectura'>{'Transformamos los espacios vacíos en escenarios con vida'}</p>
+          <p className='texto-presentacion-arquitectura'>{'Transformamos espacios vacíos en escenarios con vida'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
             <button className='boton-presupuesto'>Pedi tu presupuesto</button>
           </ScrollLink>
