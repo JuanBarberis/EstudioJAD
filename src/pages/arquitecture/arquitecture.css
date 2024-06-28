@@ -196,9 +196,10 @@
 
 .div-container-item {
     width: 90%;
-    height: 70vh;
+    height: 70%;
     display: flex;
     align-items: center;
+
     /* gap: 20px; */
 }
 
@@ -208,15 +209,17 @@
 }
 .div-proyecto-obra-remodelacion{
     width: 90%;
+    height: 70%;
 }
 
 .div-contain-info-arquitectura {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+
 }
 
 .info-detallada-arquitectura {
@@ -268,30 +271,7 @@
     margin-bottom: 20px;
 }
 
-/* @media screen and (min-width: 540px) and (max-width: 950px) {
 
-    .div-container-item {
-        height: 90vh;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-   
-
-    .container-presentacion-arquitectura-p {
-        width: 100%;
-    }
-    .div-imagen-arquitectura {
-        background-color: green;
-        width: 70%;
-        height: 100%;
-        margin-bottom: 20px;
-    }
-    .imagen-arquitecture{
-        width: 100%;
-        height: 100%;
-    }
-} */
 
 
 
@@ -300,6 +280,7 @@
         width: 100%;
     }
     .div-proyecto-obra-remodelacion {
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -340,6 +321,7 @@
 
     .div-contain-info-arquitectura {
         width: 100%;
+        height: 100%;
     }
     .div-container-item {
         flex-direction: column;

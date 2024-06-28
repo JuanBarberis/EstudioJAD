@@ -219,9 +219,7 @@
         position: relative;
     }
 
-    /* .fondo-servicios{
-        height: 100%;
-    } */
+  
     .div-map-servicios {
         flex-direction: column;
         align-items: center;
@@ -230,7 +228,6 @@
     }
 
     .div-title-servicios {
-        /* background-color: aqua; */
         margin: 0;
         position: absolute;
         bottom: 0;
@@ -238,13 +235,5 @@
 
     }
 
-    /* .div-servicios .title-servicios2 {
-        text-shadow: 0px 5px 10px white;
-
-    }
-
-    .div-servicios .title-servicios {
-        text-shadow: 0px 5px 10px white;
-
-    } */
+  
 }
