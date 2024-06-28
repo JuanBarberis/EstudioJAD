@@ -65,8 +65,8 @@
 
 .project-name-all {
     text-align: center;
-    margin-top: 18px;
-    font-weight: 200;
+    /* margin-top: 18px; */
+    font-weight: 300;
     font-size: 20px;
 }
 
@@ -151,6 +151,20 @@
 
     .container-all-proyectos {
         width: 100%;
+        height: 300px;
+    }
+
+    .button-back {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 371px) and (max-width: 499px) {
+    .div-all-proyectos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container-all-proyectos {
+        width: 70%;
         height: 300px;
     }
 

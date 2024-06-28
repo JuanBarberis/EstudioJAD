@@ -23,12 +23,14 @@ const AllProyects = () => {
         {
             id: 1,
             nombre: 'BETANIA I',
+            año: '2023',
             imagen: BetaniaPlazaI,
             className: 'clase1'
         },
         {
             id: 2,
             nombre: 'BETANIA II',
+            año: '2023',
             imagen: BetaniaPlazaII,
             className: 'clase1'
 
@@ -36,12 +38,14 @@ const AllProyects = () => {
         {
             id: 3,
             nombre: 'COCINA AG',
+            año: '2022',
             imagen: CasaAg,
             className: 'clase2'
         },
         {
             id: 4,
             nombre: 'ITUZAINGO',
+            año: '2023',
             imagen: Ituzaingo,
             className: 'clase1'
 
@@ -49,6 +53,7 @@ const AllProyects = () => {
         {
             id: 5,
             nombre: 'RONDEAU',
+            año: '2024',
             imagen: Rondeau,
             className: 'clase1'
 
@@ -56,6 +61,7 @@ const AllProyects = () => {
         {
             id: 6,
             nombre: 'CASA NG',
+            año: '2023',
             imagen: CasaNg,
             className: 'clase1'
 
@@ -63,6 +69,7 @@ const AllProyects = () => {
         {
             id: 7,
             nombre: 'ORIZA',
+            año: '2019',
             imagen: Oriza,
             className: 'clase1'
 
@@ -70,6 +77,7 @@ const AllProyects = () => {
         {
             id: 8,
             nombre: 'SORELLE',
+            año: '2020',
             imagen: Sorelle,
             className: 'clase1'
 
@@ -77,6 +85,7 @@ const AllProyects = () => {
         {
             id: 9,
             nombre: 'DUOMO',
+            año: '2021',
             imagen: Duomo,
             className: 'clase1'
 
@@ -109,8 +118,10 @@ const AllProyects = () => {
                             className='todos-los-proyectos'
                             alt={item.nombre}
                         />
-                        <h2 className='project-name-all'>{item.nombre}</h2>
-
+                        <div style={{display: 'flex', flexDirection:'column', justifyContent: "center", marginTop:20, gap:5}}>
+                            <h2 className='project-name-all'>{item.nombre}</h2>
+                            <p style={{fontSize:16, fontWeight:200}} className='project-name-all'>{item.año}</p>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -191,7 +191,7 @@ const projectData = {
 
     },
     3: {
-        nombre: 'Cocina AG',
+        nombre: 'COCINA AG',
         descripcion: ['Les presentamos Cocina AG, un trabajo integral de Proyecto y Ejecución de Obra de una Remodelación que se le realizó a esta cocina de una vivienda ubicada en Villa Belgrano, zona norte de la Ciudad de Córdoba. Del encargo de sus dueños de cambiarle la cara y modernizar este espacio tan importante dentro de la casa y sumarle un valor agregado a la propiedad, nace la idea de trabajar con un diseño atemporal y funcional sobre todas la cosas.', 'La paleta de colores neutros como el gris topo dialogan con las vetas de la Piedra PuraStone quien es la protagonista en este proyecto. Los muebles laqueados blanco acompañan con su brillo y suman al gran valor del ambiente.', 'Como siempre la intervención de la estratégica iluminación en el proyecto termina de cerrar el diseño y le aporta su calidez.La reorganización y estudiada ubicación de los artefactos de cocina junto al diseño de los muebles que amplían el lugar de guardado, le generaron la funcionalidad deseada a los comitentes, logrando una cocina amplia y cómoda para sus habitantes.'],
         portada: casaAgPortada,
         imgFinalizado: [
