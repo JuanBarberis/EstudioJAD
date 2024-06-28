@@ -78,7 +78,7 @@ const InteriorDesing = () => {
 
         <div className='div-text-interior' data-aos="fade-up">
           <p className='texto-bienvenida-interior'>{'INTERIORISMO'}</p>
-          <p className='texto-presentacion-interior'>{'Estudiamos a las texturas para que nos reciten sensaciones'}</p>
+          <p className='texto-presentacion-interior'>{'Estudiamos las texturas para que nos reciten sensaciones'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
             <button className='boton-presupuesto'>Pedi tu presupuesto</button>
           </ScrollLink>
