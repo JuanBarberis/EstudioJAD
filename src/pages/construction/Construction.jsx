@@ -83,41 +83,45 @@ const Construction = () => {
                 >
 
                   <div className='div-contain-info-construccion' data-aos="fade-right">
-                    {
-                      item.id === 1 &&
-                      (
-                        <div key={index} className='container-construccion-propiedad'>
-                          <p className='p-construccion-propiedad'>Si contas con un Proyecto de Arquitectura o Refaccion y queres comenzar con la construccion te recomendamos el servicio de Sistema de Contratacion Llave en mano que te detallamos debajo</p>
-                        </div>
-                      )
-                    }
-                    <h1 className='title-construccion'>{item.title}</h1>
-                    {item.id !== 2 &&
-                      (<Divider width={'100%'} />)
-                    }
-                    {item.subtitle.map((subItem, subIndex) => (
-                      <div className='info-detallada-construccion' key={subIndex}>
-                        <h2 className='h2-title-construccion'>{subItem.title}</h2>
-                        <p className={subItem.subtitle ? 'p-subtitle-construccion' : ''}>
-                          {subItem.subtitle}
-                        </p>
-                        {subItem.description.map((desc, descIndex) => (
-                          <p key={descIndex} className='descripcion-construccion'>
-                            {`- ${desc}`}
+                    <div className='div-si-contas' >
+                      {
+                        item.id === 1 &&
+                        (
+                          <div key={index} className='container-construccion-propiedad'>
+                            <p className='p-construccion-propiedad'>Si contas con un Proyecto de Arquitectura o Refaccion y queres comenzar con la construccion te recomendamos el servicio de Sistema de Contratacion Llave en mano que te detallamos debajo</p>
+                          </div>
+                        )
+                      }
+                    </div>
+                    <div className='div-proyecto-obra-construccion'>
+                      <h1 className='title-construccion'>{item.title}</h1>
+                      {item.id !== 2 &&
+                        (<Divider width={'100%'} />)
+                      }
+                      {item.subtitle.map((subItem, subIndex) => (
+                        <div className='info-detallada-construccion' key={subIndex}>
+                          <h2 className='h2-title-construccion'>{subItem.title}</h2>
+                          <p className={subItem.subtitle ? 'p-subtitle-construccion' : ''}>
+                            {subItem.subtitle}
                           </p>
-                        ))}
-                      </div>
-                    ))}
+                          {subItem.description.map((desc, descIndex) => (
+                            <p key={descIndex} className='descripcion-construccion'>
+                              {`- ${desc}`}
+                            </p>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                   <div
-                    className='div-imagen-arquitectura'
+                    className='div-imagen-construccion'
                     data-aos="fade-left"
                   >
 
                     <img
                       src={item.imagen}
                       alt={item.title}
-                      className='imagen-arquitecture'
+                      className='imagen-construccion'
                     />
                   </div>
                 </div>
