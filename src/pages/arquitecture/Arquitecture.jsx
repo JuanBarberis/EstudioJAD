@@ -69,7 +69,7 @@ const Arquitecture = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    Aos.init({duration:1200,})
+    Aos.init({ duration: 1200, })
   }, []);
 
   return (
@@ -80,7 +80,7 @@ const Arquitecture = () => {
           <img src={portadaArquitectura} className='img-arquitecture-carrousel' alt={'imagenArquitectura'} />
         </div>
 
-        <div className='div-text-arquitectura'data-aos="fade-up">
+        <div className='div-text-arquitectura' data-aos="fade-up">
           <p className='texto-bienvenida-arquitectura'>{'ARQUITECTURA'}</p>
           <p className='texto-presentacion-arquitectura'>{'Transformamos los espacios vacíos en escenarios con vida'}</p>
           <ScrollLink to="contacto" spy={true} smooth={true} offset={-70} duration={800} className='scroll-link-arquitecture'>
@@ -88,7 +88,7 @@ const Arquitecture = () => {
           </ScrollLink>
         </div>
 
-        <div className='container-presentacion-arquitectura'data-aos="fade-down">
+        <div className='container-presentacion-arquitectura' data-aos="fade-down">
           <div className='container-presentacion-h3-h6'>
             <h6 className='h6-presentacion-arquitectura'>Nuestras especialidades</h6>
             <h3 className='h3-presentacion-arquitectura'>Arquitectura Residencial, Comercial y Corporativa</h3>
@@ -122,44 +122,49 @@ const Arquitecture = () => {
                     }`}
                 >
 
-                  <div className='div-contain-info-arquitectura'data-aos="fade-right">
-                    {
-                      item.id === 1 &&
-                      (
-                        <div key={index} className='container-proyecto-propiedad'>
-                          <p className='p-proyecto-propiedad'>Si contas solo con un terreno y queres comenzar el proceso de construir te recomendamos los servicios de Proyecto + Obra :</p>
-                        </div>
-                      )
-                    }
-                    {
-                      item.id === 3 &&
-                      (
-                        <div key={index} className='container-remodelacion-propiedad'>
-                          <p className='p-remodelacion-propiedad'>Si contas con una unidad ya construida y queres remodelar o ampliar los espacios, te recomendamos: </p>
-                        </div>
-                      )
-                    }
-                    <h1 className='title-arquitectura'>{item.title}</h1>
-                    {item.subtitle.map((subItem, subIndex) => (
-                      <div className='info-detallada-arquitectura' key={subIndex} >
-                        {item.id === 2 &&
-                          (<Divider />)
-                        }
-                        <h2 className='h2-title-arquitectura'>{subItem.title}</h2>
-                        <p className={subItem.subtitle ? 'p-subtitle-arquitectura' : ''}>
-                          {subItem.subtitle}
-                        </p>
-                        {subItem.description.map((desc, descIndex) => (
-                          <p key={descIndex} className='descripcion-arquitectura'>
-                            {`- ${desc}`}
+                  <div className='div-contain-info-arquitectura' data-aos="fade-right">
+                    <div className='div-si-contas' >
+                      {
+                        item.id === 1 &&
+                        (
+                          <div key={index} className='container-proyecto-propiedad'>
+                            <p className='p-proyecto-propiedad'>Si contas solo con un terreno y queres comenzar el proceso de construir te recomendamos los servicios de Proyecto + Obra :</p>
+                          </div>
+                        )
+                      }
+                      {
+                        item.id === 3 &&
+                        (
+                          <div key={index} className='container-remodelacion-propiedad'>
+                            <p className='p-remodelacion-propiedad'>Si contas con una unidad ya construida y queres remodelar o ampliar los espacios, te recomendamos: </p>
+                          </div>
+                        )
+                      }
+                    </div>
+                    <div className='div-proyecto-obra-remodelacion'>
+                      <h1 className='title-arquitectura'>{item.title}</h1>
+                      {item.subtitle.map((subItem, subIndex) => (
+                        <div className='info-detallada-arquitectura' key={subIndex} >
+                          {item.id === 2 &&
+                            (<Divider />)
+                          }
+                          <h2 className='h2-title-arquitectura'>{subItem.title}</h2>
+                          <p className={subItem.subtitle ? 'p-subtitle-arquitectura' : ''}>
+                            {subItem.subtitle}
                           </p>
-                        ))}
-                      </div>
-                    ))}
+                          {subItem.description.map((desc, descIndex) => (
+                            <p key={descIndex} className='descripcion-arquitectura'>
+                              {`- ${desc}`}
+                            </p>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+
                   </div>
                   <div
-                  className='div-imagen-arquitectura'
-                  
+                    className='div-imagen-arquitectura'
+
                   >
 
                     <img
