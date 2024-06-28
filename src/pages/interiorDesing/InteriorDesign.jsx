@@ -88,7 +88,7 @@ const InteriorDesing = () => {
           <div className='container-presentacion-h3-h6'>
             <h6 className='h6-presentacion-interiorismo'>Nuestras especialidades</h6>
             <h3 className='h3-presentacion-interiorismo'>Interiorismo para Alquileres Temporarios, Viviendas y Locales Comerciales</h3>
-            <p className='p-presentacion-interiorismo'>Te guiamos en todas las etapas de tu proyecto con una propuesta integral. Nuestros servicios de interiorismo incluyen
+            <p className='p-presentacion-interiorismo'>Te acompañamos en todas las etapas de tu proyecto con una propuesta integral. Nuestros servicios de interiorismo incluyen
             </p>
           </div>
           <div className='container-presentacion-interiorismo-p'>
