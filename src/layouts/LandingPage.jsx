@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Home from '../pages/home/Home'
 import AboutUs from '../pages/about/AboutUs'
 import Servicios from '../pages/servicios/Servicios'
-import Proyects from '../pages/proyects/Proyects'
 import Contact from '../pages/contact/Contact'
 import { Header } from '../components/header/Header'
 import { useLocation } from 'react-router-dom';
@@ -25,12 +24,7 @@ const LandingPage = () => {
     return (
         <>
             <Header />
-            {/* <Home />
-            <Servicios />
-            <Proyects />
-            <AboutUs />
-            <Contact /> */}
-             <Header />
+           
             <div id='inicio'><Home /></div>
             <div id='servicios'><Servicios /></div>
             {/* <div id='proyectos'><Proyects /></div> */}

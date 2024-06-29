@@ -3,8 +3,6 @@ import './proyects.css'
 import Imagen1 from '../../assets/imagenes/imagen1.jpg'
 import Imagen2 from '../../assets/imagenes/imagen2.jpg'
 import Imagen3 from '../../assets/imagenes/imagen3.jpg'
-import Imagen4 from '../../assets/imagenes/imagen4.jpg'
-import Imagen5 from '../../assets/imagenes/imagen5.jpg'
 import { useNavigate } from 'react-router-dom'
 
 const Proyects = () => {
